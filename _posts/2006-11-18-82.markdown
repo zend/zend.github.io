@@ -1,0 +1,69 @@
+---
+layout: post
+status: publish
+published: true
+title: ! '[转]给国内一些中学生，大学生，毕业生，求职者的忠告'
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "因为中文打字慢，我部分用英文写：<br />\r\n<br />\r\n1。为学问做学问是理想，为谋生做学问是现实，为学位或分数而读书是错误。混到的文凭是没有用的赝品。为一技之长，脚踏实地的去精通才是正道。如果想投机取巧，必然会在全球化的软件人力市场里被其他国家的竞争人才淘汰。<br
+  />\r\n<br />\r\n2。会写程序，并且是高手，是难得。但如果要创业，需要知道的还有许多。有机会和国外在商业，法律的高手合作，其实是极其难得的学习机会。<br
+  />\r\n<br />\r\n3。国内招聘和应征双方，常有缺乏诚信的问题，这会造成恶性循环的文化，对自己的国际竞争力会有重大无形的破坏。看..."
+wordpress_id: 75
+date: !binary |-
+  MjAwNi0xMS0xOCAyMDoxODo1MCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0xMS0xOCAyMDoxODo1MCArMDgwMA==
+categories:
+- 收藏夹
+tags: []
+comments: []
+---
+<p>因为中文打字慢，我部分用英文写：<br &#47;><br />
+<br &#47;><br />
+1。为学问做学问是理想，为谋生做学问是现实，为学位或分数而读书是错误。混到的文凭是没有用的赝品。为一技之长，脚踏实地的去精通才是正道。如果想投机取巧，必然会在全球化的软件人力市场里被其他国家的竞争人才淘汰。<br &#47;><br />
+<br &#47;><br />
+2。会写程序，并且是高手，是难得。但如果要创业，需要知道的还有许多。有机会和国外在商业，法律的高手合作，其实是极其难得的学习机会。<br &#47;><br />
+<br &#47;><br />
+3。国内招聘和应征双方，常有缺乏诚信的问题，这会造成恶性循环的文化，对自己的国际竞争力会有重大无形的破坏。看得见的短视损失往往只是冰山一角，没有看见的损失往往是庞大的。越是能干本领的人，是越忌浪费时间在缺乏诚信或能力的人，很少会给第二次机会。<br &#47;><br />
+<br &#47;><br />
+4。创业并不难。主要是要有眼光和干劲。眼光使你能抓对重点，不走冤枉路。干劲使你尽快的学到重要的技能，能够尽早在经济和事业上独立。但绝对不能急功近利，要有耐心，脚踏实地。国外看重的是实际能力，文凭并不重要。但国内的习俗还是死板的讲学位比文凭，早已落伍了。只要你是个聪明能干虚心负责认真的，能胜任，有精益求精的精神，即使没有任何文凭，我都会认真考虑用你。 相反如果你缺乏以上的基本素质和能力，即使是清华北大毕业又如何？反而更可能骄傲自大，自以为是，我行我素，无法合作。<br &#47;><br />
+<br &#47;><br />
+5。YouTube 创业不久，就被 Google 以 16.5亿美元 (US$1.65 billion) 收购，主要不是它的程序。其实它的程序并不是什么高科技。因此有许多其它重要因素。<br &#47;><br />
+<br &#47;><br />
+6。英语沟通能力非常重要。培养这种能力最好的环境就是实际应用。最理想的是能找到母语中文，但英语能力超强的，有国外商业法律经验的合作伙伴。<br &#47;><br />
+<br &#47;><br />
+7。国内每年毕业而找不到工作的有几千万。而在美国，会写程序的高中生许多都能找到半工或暑期全工。印度，俄国的程序员有许多都在拿项目。 国外和外国的能，为何国内的不能？缺乏指导，缺乏干劲，缺乏能力？<br &#47;><br />
+<br &#47;><br />
+8。我没有也不用 QQ.   想和我联络的话，请用 Skype 打 Lin41216   国外是 Skype 最流行，因为最方便，效率最高。<br &#47;><br />
+<br &#47;><br />
+Here's how I see it:<br &#47;><br />
+<br &#47;><br />
+If American high school kids can get software projects (say PHP coding), and programmers in India, Russia and other countries (located in their own countries) can get software assignments in the U.S., why not Chinese college graduates?  In other words, the problem lies with the un-employed Chinese college graduates themselves, more than any other factor.   Don't assume that young people in other countries are lazy, they are not.  They may seem lazy sometimes only because they prefer working smart rather than working hard.  The former approach is wiser than the latter.   Internet is the easiest area to succeed for those with high-level software ability and motivation, but no capital.  The world does not owe you a job, and you can create yourself a job, even a career.  It takes entrepreneurial motivation, often lacking among Chinese students.  In that sense, one can say that Chinese students, especially un-employed Chinese graduates, are entrepreneurially lazy, compared with their American, Indian or Russian counterparts.<br &#47;><br />
+<br &#47;><br />
+People who just want to live from paycheck to paycheck are usually not very ambitious or motivated.  Can an unambitious or unmotivated person be a very capable programmer?  Possible, but not likely.  Now I don't deny that there are people who just want to master something 110% and do not care too much about being rich as long as they are comfortable and have a secure job, but people such as these who dedicate themselves to the pursuit of knowledge for knowledge's sake are rare.  <br &#47;><br />
+<br &#47;><br />
+To be truly successful in life such as in business, you need to know more than programming.  Of course, you can concentrate on coding and programming and be very successful if you're truly outstanding, but if you want to have your own business or be an order of magnitude richer, you need to know much more and to take risks.  In that case, you need to know much more than programming or have the right and dependable (and I emphasize, right and dependable) partners who are truly able and know their stuff that can complement yours.  That means you better be very able in your field and be complementary to them also or the relationship won't last.<br &#47;><br />
+<br &#47;><br />
+You need to know what the trend is and see far ahead.  Re-inventing the wheel is stupid, so is coding a website from scratch unless extremely simple.  For example, if you want to be very capable in e-commerce, besides mastering a well-chosen language and related technologies, e.g. PHP+MySQL or ASP.NET+SQLServer, you still need to master a few useful tools, e.g. Drupal&#47;Joomla + SMF, or DotNetNuke, etc.<br &#47;><br />
+<br &#47;><br />
+If you want to set up a e-commerce website, you will need expertise in law and business, preferably in advance, and in any case sooner or later.  You can master all these if you're very focused and start early in life.  Otherwise, you will need to partner with others of proven ability in areas that you're deficient.<br &#47;><br />
+<br &#47;><br />
+Trust is very important.  Never inflate abilities or promise more than you can deliver, if you want to win the trust of very capable people.  Don't cut corners or mislead the other side, if you want a long-term partnership.  The wise do not squander their opportunities or valuable relationships and have a long-term perspective.  <br &#47;><br />
+<br &#47;><br />
+Be humble and objective.  Technologies (especially in the software area) change  very rapidly.  What you know today can become obsolete or superseded in ten years or less.  Make the best of what you know but don't play hard to get.  There are lots of very able Indian and Russian programmers competing with you globally.  It should be obvious to the Chinese software professionals that they are already falling behind.  Any arrogance here will only cause them to fall further behind in global competition.<br &#47;><br />
+<br &#47;><br />
+If you can find a very reliable, capable and well-rounded overseas partner to work with you, consider yourself very lucky.  Remember, you need to have qualities (abilities, smarts, character, etc.) that will make yourself attractive enough to very capable people overseas as to make them willing to spend time with you and work with you.  That's simply the reality of life.<br &#47;><br />
+<br &#47;><br />
+One can boast and exaggerate one's abilities and qualifications and fool a few people sometimes.  However, it does not work with truly able people, partners and employers.  So, if your goal is to work with the very best, don't play games.  Be sincere and honest and you may have a chance.  <br &#47;><br />
+<br &#47;><br />
+My background: Software (desktop applications mostly), Law, Business, Medicine, Patents.<br &#47;><br />
+If you want to get in touch Skype me at Lin41216.  I don't use QQ.  Good luck.<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[FONT-COLOR=Red]原文地址： <br &#47;><br />
+http:&#47;&#47;www.phpx.com&#47;happy&#47;viewthread.php?tid=127705&pid=869068&page=1&extra=page%3D1#pid869068[&#47;FONT-COLOR]</p>

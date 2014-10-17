@@ -1,0 +1,129 @@
+---
+layout: post
+status: publish
+published: true
+title: 用PHP读取MP3的标签信息ID3v1版
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+wordpress_id: 154
+date: !binary |-
+  MjAwNy0wOC0xMSAyMzozOTozNCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wOC0xMSAxNTozOTozNCArMDgwMA==
+categories:
+- 个人作品
+tags:
+- php
+comments: []
+---
+<p>读取部分：<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">PHP代码<&#47;div></p>
+<ol class="dp-c">
+<li class="alt"><span><span class="vars">$filename<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">"srkl.mp3"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$fp<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">fopen<&#47;span><span>(<&#47;span><span class="vars">$filename<&#47;span><span>,&nbsp;<&#47;span><span class="string">"rb"<&#47;span><span>)&nbsp;<&#47;span><span class="keyword">or<&#47;span><span>&nbsp;<&#47;span><span class="keyword">die<&#47;span><span>(<&#47;span><span class="string">"Unable&nbsp;to&nbsp;open&nbsp;this&nbsp;mp3."<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="func">fseek<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,-128,SEEK_END);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$header<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">fread<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,3);&nbsp;<&#47;span><span class="comment">&#47;&#47;&nbsp;Header[3]<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">if<&#47;span><span>&nbsp;(<&#47;span><span class="string">'TAG'<&#47;span><span>!=<&#47;span><span class="vars">$header<&#47;span><span>)&nbsp;<&#47;span><span class="keyword">die<&#47;span><span>(<&#47;span><span class="string">"Unknown&nbsp;Header&nbsp;Information:"<&#47;span><span>.<&#47;span><span class="vars">$header<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="vars">$title<&#47;span><span>&nbsp;=&nbsp;trim(<&#47;span><span class="func">fread<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,30));&nbsp;<&#47;span><span class="comment">&#47;&#47;&nbsp;Title[30]<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$artist<&#47;span><span>&nbsp;=&nbsp;trim(<&#47;span><span class="func">fread<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,30));&nbsp;<&#47;span><span class="comment">&#47;&#47;&nbsp;Artist[30]<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$album<&#47;span><span>&nbsp;=&nbsp;trim(<&#47;span><span class="func">fread<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,30));&nbsp;&nbsp;&nbsp;<&#47;span><span class="comment">&#47;&#47;&nbsp;Album[30]<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$year<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">fread<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,4);&nbsp;&nbsp;&nbsp;<&#47;span><span class="comment">&#47;&#47;&nbsp;Year[4]<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$comment<&#47;span><span>&nbsp;=&nbsp;trim(<&#47;span><span class="func">fread<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,28));&nbsp;<&#47;span><span class="comment">&#47;&#47;&nbsp;Comment[28]<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="func">fseek<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,1,SEEK_CUR);&nbsp;&nbsp;<&#47;span><span class="comment">&#47;&#47;&nbsp;reserve<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="vars">$track<&#47;span><span>&nbsp;=&nbsp;ord(<&#47;span><span class="func">fread<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,1));&nbsp;<&#47;span><span class="comment">&#47;&#47;&nbsp;Track[1]<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$genre<&#47;span><span>&nbsp;=&nbsp;ord(<&#47;span><span class="func">fread<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,1));&nbsp;<&#47;span><span class="comment">&#47;&#47;Genre[1]<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>fclose(<span class="vars">$fp<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="func">echo<&#47;span><span>&nbsp;<&#47;span><span class="string">"<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="string">Title:$title<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="string">Artist:$artist<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="string">Album:$album<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="string">Year:$year<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="string">Comment:$comment<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="string">Track:$track<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="string">Genre:$genre<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="string">"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>写入：<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">PHP代码<&#47;div></p>
+<ol class="dp-c">
+<li class="alt"><span><span class="comment">&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;&#47;<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$title<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">"生日快乐"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$artist<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">"小S"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$album<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">"旅程"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$year<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">"2006"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$comment<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">"这是我的第一个专辑哦！"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="comment">&#47;&#47;fseek($fp,1,SEEK_CUR);&nbsp;&nbsp;&nbsp;&nbsp;&#47;&#47;&nbsp;reserve<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="vars">$track<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">"1"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$genre<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">"4"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="comment">&#47;&#47;&nbsp;规定字节，不足用\0补<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$title<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">str_pad<&#47;span><span>(&nbsp;<&#47;span><span class="func">substr<&#47;span><span>(<&#47;span><span class="vars">$title<&#47;span><span>,0,30)&nbsp;,30,<&#47;span><span class="func">chr<&#47;span><span>(0));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$artist<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">str_pad<&#47;span><span>(&nbsp;<&#47;span><span class="func">substr<&#47;span><span>(<&#47;span><span class="vars">$artist<&#47;span><span>,0,30)&nbsp;,30,<&#47;span><span class="func">chr<&#47;span><span>(0));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$album<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">str_pad<&#47;span><span>(&nbsp;<&#47;span><span class="func">substr<&#47;span><span>(<&#47;span><span class="vars">$album<&#47;span><span>,0,30)&nbsp;,30,<&#47;span><span class="func">chr<&#47;span><span>(0));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$year<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">str_pad<&#47;span><span>(&nbsp;<&#47;span><span class="func">substr<&#47;span><span>(<&#47;span><span class="vars">$year<&#47;span><span>,0,4)&nbsp;,4,<&#47;span><span class="func">chr<&#47;span><span>(0));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$comment<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">str_pad<&#47;span><span>(&nbsp;<&#47;span><span class="func">substr<&#47;span><span>(<&#47;span><span class="vars">$comment<&#47;span><span>,0,28)&nbsp;,28,<&#47;span><span class="func">chr<&#47;span><span>(0));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$track<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">chr<&#47;span><span>(<&#47;span><span class="func">intval<&#47;span><span>(<&#47;span><span class="vars">$track<&#47;span><span>));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$genre<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">chr<&#47;span><span>(<&#47;span><span class="func">intval<&#47;span><span>(<&#47;span><span class="vars">$genre<&#47;span><span>));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="comment">&#47;&#47;<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$mp3<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">substr<&#47;span><span>(<&#47;span><span class="func">file_get_contents<&#47;span><span>(<&#47;span><span class="string">"srkl.mp3"<&#47;span><span>),0,<&#47;span><span class="func">filesize<&#47;span><span>(<&#47;span><span class="string">'srkl.mp3'<&#47;span><span>)-128);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$fp<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">fopen<&#47;span><span>(<&#47;span><span class="string">"1.mp3"<&#47;span><span>,<&#47;span><span class="string">"wb"<&#47;span><span>)&nbsp;<&#47;span><span class="keyword">or<&#47;span><span>&nbsp;<&#47;span><span class="keyword">die<&#47;span><span>(<&#47;span><span class="string">"Unable&nbsp;open."<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="vars">$mp3<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="string">"TAG"<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="vars">$title<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="vars">$artist<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="vars">$album<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="vars">$year<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="vars">$comment<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="func">fseek<&#47;span><span>(<&#47;span><span class="vars">$fp<&#47;span><span>,1,SEEK_CUR);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="vars">$track<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>fwrite(<span class="vars">$fp<&#47;span><span>,<&#47;span><span class="vars">$genre<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>fclose(<span class="vars">$fp<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>参考资料：<br &#47;><br />
+(来自CSDN)<br &#47;><br />
+关于Mp3文件的ID3v1标签的格式错误地方指正!首先非常感谢原作者,给我非常大的帮助,有误的地方我给予指正,望这能表达出我是对原作者的一些感谢!&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp; 原文地址:&nbsp; <br &#47;><br />
+&nbsp; http:&#47;&#47;dev.csdn.net&#47;develop&#47;article&#47;14&#47;14798.shtm&nbsp; <br &#47;><br />
+&nbsp;&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp; ID3V1比较简单，它是存放在MP3文件的末尾，用16进制的编辑器打开一个MP3文件，查看其末尾的128个顺序存放字节，数据结构定义如下：&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp; Header[3];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*标签头必须是"TAG"否则认为没有标签*&#47;&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp; Title[30];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*标题*&#47;&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp; Artist[30];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*作者*&#47;&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp; Album[30];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*专集*&#47;&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp; Year[4];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*出品年代*&#47;&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp; Comment[30];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*备注*&#47;&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp; Genre;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*类型*&#47;&nbsp; <br &#47;><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ID3V1的各项信息都是顺序存放，没有任何标识将其分开，比如标题信息不足30个字节，则使用'\0'补足，否则将造成信息错误。&nbsp; <br &#47;><br />
+&nbsp;&nbsp; <br &#47;><br />
+&nbsp;&nbsp; <br &#47;><br />
+&nbsp;&nbsp; <br &#47;><br />
+&nbsp; 结构应该是:&nbsp; <br &#47;><br />
+&nbsp; char&nbsp;&nbsp; Header[3];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*标签头必须是"TAG"否则认为没有标签*&#47;&nbsp; <br &#47;><br />
+&nbsp; char&nbsp;&nbsp; Title[30];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*标题*&#47;&nbsp; <br &#47;><br />
+&nbsp; char&nbsp;&nbsp; Artist[30];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*作者*&#47;&nbsp; <br &#47;><br />
+&nbsp; char&nbsp;&nbsp; Album[30];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*专集*&#47;&nbsp; <br &#47;><br />
+&nbsp; char&nbsp;&nbsp; Year[4];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*出品年代*&#47;&nbsp; <br &#47;><br />
+&nbsp; char&nbsp;&nbsp; Comment[29];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*备注*&#47;&nbsp; <br &#47;><br />
+&nbsp; byte&nbsp;&nbsp; track;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*音轨*&#47;&nbsp; <br &#47;><br />
+&nbsp; byte&nbsp;&nbsp; Genre;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#47;*类型*&#47;&nbsp; <br &#47;><br />
+&nbsp;&nbsp; <br &#47;><br />
+&nbsp; 以上仅是个人看法,有误之处,还请指正!<&#47;p></p>

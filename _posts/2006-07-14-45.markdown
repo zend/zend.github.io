@@ -1,0 +1,66 @@
+---
+layout: post
+status: publish
+published: true
+title: 秀一下我的ubuntu！！
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: 新装了ubuntu6.06LTS。点击进入看截图。
+wordpress_id: 44
+date: !binary |-
+  MjAwNi0wNy0xNCAxNToyNTo1NSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNy0xNCAwNzoyNTo1NSArMDgwMA==
+categories:
+- 其他技术
+tags:
+- linux
+comments: []
+---
+<p>[IMG]upload&#47;ubuntu&#47;Screenshot.png[&#47;IMG]<br &#47;><br />
+全屏1<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-1.png[&#47;IMG]<br &#47;><br />
+网页浏览器，有一个QQ聊天界面在！<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-2.png[&#47;IMG]<br &#47;><br />
+这是cyclone（linux下的QQ聊天工具！）的主界面和聊天界面。<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-6.png[&#47;IMG]<br &#47;><br />
+这是下载工具！d4x! 类似于windows下的flashget!可以由flashgot直接调用。<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-4.png[&#47;IMG]<br &#47;><br />
+这是EVA，另外一款QQ聊天工具，功能比较接近QQ2005了！可以截屏，可以收发图片！<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-5.png[&#47;IMG]<br &#47;><br />
+是上边EVA的登录窗口！<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-7.png[&#47;IMG]<br &#47;><br />
+EVA的主界面！<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-8.png[&#47;IMG]<br &#47;><br />
+gaim，互联网通讯程序，可以通过很多种协议发送即时消息。比如MSN, IRC, ICQ, JABBER, YAHOO等。如果配合上openq插件，同样可以聊QQ！<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-9.png[&#47;IMG]<br &#47;><br />
+这是linux下的管理远程桌面的小工具。用它可以登陆windows远程桌面。<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-10.png[&#47;IMG]<br &#47;><br />
+这是登陆windows 2003远程桌面时的截图。<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-11.png[&#47;IMG]<br &#47;><br />
+这是大名鼎鼎的realplayer. 不用介绍了吧。<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-12.png[&#47;IMG]<br &#47;><br />
+这是有点类似于photoshop的图像编辑软件gimp！功能很强大。<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-13.png[&#47;IMG]<br &#47;><br />
+这是Mplayer. 如果你正确的安装了需要用到的解码器，它就可以为你播放常见的媒体！<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;ubuntu&#47;Screenshot-14.png[&#47;IMG]<br &#47;><br />
+gaim里边的IRC截图。<br &#47;></p>

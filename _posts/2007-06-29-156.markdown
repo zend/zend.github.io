@@ -1,0 +1,80 @@
+---
+layout: post
+status: publish
+published: true
+title: 新白娘子传奇《四川搞笑版》
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "<p><font size=\"2\">男:走幺儿出去逛街街<br />\r\n女:等老公,我窝粑粑(WC)　<br />\r\n男:过老子的一天屎尿多.搞快点哈..　</font></p>"
+wordpress_id: 133
+date: !binary |-
+  MjAwNy0wNi0yOSAwMTozNzo0NSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNi0yOSAwMTozNzo0NSArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments:
+- id: 56
+  author: Kylin
+  author_email: anony@mo.us
+  author_url: ''
+  date: !binary |-
+    MjAwNy0wOC0xMiAwNjo0ODozOCArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wOC0xMiAwNjo0ODozOCArMDgwMA==
+  content: ! "是我脑壳二级管短路\r\n\r\n全歌亮点所在。。。。"
+---
+<p><wbr><&#47;wbr><wbr><&#47;wbr><&#47;p></p>
+<p><font size="2">男:走幺儿出去逛街街<br &#47;><br />
+女:等老公,我窝粑粑(WC)　<br &#47;><br />
+男:过老子的一天屎尿多.搞快点哈..　<br &#47;><br />
+男：啊&hellip;啊&hellip;啊&hellip;　<br &#47;><br />
+　　山城美景 山城啤酒　 <br &#47;><br />
+　　看得安逸 喝得爽A　<br &#47;><br />
+女：我喜欢逛解放碑　<br &#47;><br />
+男：解放碑有摸包贼　<br &#47;><br />
+女：最喜欢逛大都会　<br &#47;><br />
+男：老子给你皮托紧到吹　<br &#47;><br />
+女：惹是我的外婆在这的话　<br &#47;><br />
+男: 你外婆还在牛角沱(地名)　<br &#47;><br />
+女: 你就绝对不敢这样哈(傻)　<br &#47;><br />
+男: 老子还不是整得你哈错错(很傻)　<br &#47;><br />
+女: 55 555　 <br &#47;><br />
+男: 你哭个吹子哦　<br &#47;><br />
+　　你再哭给你勾子一脚　　　　<br &#47;><br />
+　　老虎不发威你当我是病猫　<br &#47;><br />
+　　跪到地下给老子唱征服　<br &#47;><br />
+<br &#47;><br />
+女:外婆!!!!　<br &#47;><br />
+男:呀外婆你啷个来老　<br &#47;><br />
+外婆：乖乖爪子老　<br &#47;><br />
+女：他欺负我　<br &#47;><br />
+外婆：你个死胆胆 想住爪子 抄反老所　<br &#47;><br />
+男：没有　 <br &#47;><br />
+女：外婆他再欺负我怎么办也　 <br &#47;><br />
+男：不得 不得老　<br &#47;><br />
+外婆:死胆胆再欺负你话 喊他跪 戳衣板　 <br &#47;><br />
+男:哎呀呀 哎呀呀&hellip; <br &#47;><br />
+　 耙而多些 听到起也　<br &#47;><br />
+　 做好男人 黑不容易也　<br &#47;><br />
+女:你让老娘唱征服　<br &#47;><br />
+男:我其实是在耍酷　<br &#47;><br />
+女:要跪到唱才舒服?　<br &#47;><br />
+男:是我脑壳二级管短路　　 <br &#47;><br />
+女:惹是我的外婆没来的话　<br &#47;><br />
+男:我还不是要脆到认错　<br &#47;><br />
+女:看你以后还敢不敢发哈　　 <br &#47;><br />
+　 回切给老娘撮脚　<br &#47;><br />
+男:唉哟 我的妈　<br &#47;><br />
+　 唉哟 我的妈　 <br &#47;><br />
+　 她想要 虐待我通宵　 <br &#47;><br />
+　 老子的命好苦好求造孽　<br &#47;><br />
+　 还不如 跪到唱征服<br &#47;><br />
+<wbr><&#47;wbr><&#47;font><wbr><&#47;wbr><br &#47;><br />
+<embed src="&#47;attachments&#47;date_200706&#47;he.swf" width="1" height="1" type="application&#47;x-shockwave-flash" scale="noborder" play="true" loop="true" menu="false"><&#47;embed><&#47;p></p>

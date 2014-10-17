@@ -1,0 +1,55 @@
+---
+layout: post
+status: publish
+published: true
+title: SUSE 调优笔记
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "<p>linux-server:~ # /sbin/chkconfig --level 3 alsasound off<br />\r\nlinux-server:~
+  # /sbin/chkconfig --level 3 cups off<br />\r\nYou have new mail in /var/mail/root<br
+  />\r\nlinux-server:~ # /sbin/chkconfig --level 3 fbset off<br />\r\nlinux-server:~
+  # /sbin/chkconfig --level 3 hplip off<br />\r\nlinux-server:~ # /sbin/chkconfig
+  --level 3 irq_balancer off<br />\r\nlinux-server:~ # /sbin/chkconfig --level 3 nfs
+  off<br />\r\nYou have new mail in /var/mail/root<br />\r\nlinux-server:~ # /sbin/chkconfig
+  --level 3 nfsboot off<br />\r\nlinux-server:~ # /sbin/chkconfig --level 3 nmb off<br
+  />\r\nYou have new mail in /var/mail/root<br />\r\nlinux-server:~ # /sbin/chkconfig
+  --level 3 novell-zmd off<br />\r\nlinux-server:~ # /sbin/chkconfig --level 3 random
+  off<br />\r\nYou have new mail in /var/mail/root<br />\r\nlinux-server:~ # /sbin/chkconfig
+  --level 3 smb off<br />\r\nlinux-server:~ # /sbin/chkconfig --level 3 smbfs off<br
+  />\r\nlinux-server:~ # /sbin/chkconfig --level 3 splash off<br />\r\nlinux-server:~
+  # /sbin/chkconfig --level 3 splash_early off</p>"
+wordpress_id: 189
+date: !binary |-
+  MjAwOC0wMy0yOSAxMDoxMjozMCArMDgwMA==
+date_gmt: !binary |-
+  MjAwOC0wMy0yOSAwMjoxMjozMCArMDgwMA==
+categories:
+- 服务器
+tags:
+- linux
+comments: []
+---
+<p>linux-server:~ # &#47;sbin&#47;chkconfig --level 3 alsasound off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 cups off<br &#47;><br />
+You have new mail in &#47;var&#47;mail&#47;root<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 fbset off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 hplip off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 irq_balancer off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 nfs off<br &#47;><br />
+You have new mail in &#47;var&#47;mail&#47;root<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 nfsboot off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 nmb off<br &#47;><br />
+You have new mail in &#47;var&#47;mail&#47;root<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 novell-zmd off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 random off<br &#47;><br />
+You have new mail in &#47;var&#47;mail&#47;root<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 smb off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 smbfs off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 splash off<br &#47;><br />
+linux-server:~ # &#47;sbin&#47;chkconfig --level 3 splash_early off<&#47;p></p>

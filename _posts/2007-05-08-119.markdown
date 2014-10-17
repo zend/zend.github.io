@@ -1,0 +1,116 @@
+---
+layout: post
+status: publish
+published: true
+title: 诚征友情链接Seaprince's Web Diary
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: 请直接回复。
+wordpress_id: 105
+date: !binary |-
+  MjAwNy0wNS0wOCAwNTowODo1MyArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNS0wOCAwNTowODo1MyArMDgwMA==
+categories:
+- 生活点滴
+tags: []
+comments:
+- id: 14
+  author: simba
+  author_email: anony@mo.us
+  author_url: http://simba.cn/
+  date: !binary |-
+    MjAwNy0wNS0xMCAyMjoyMzozMyArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNS0xMCAyMjoyMzozMyArMDgwMA==
+  content: ! "名字：Simba\r\n\r\n链接：http:&#47;&#47;simba.cn"
+- id: 15
+  author: Jhui
+  author_email: anony@mo.us
+  author_url: ''
+  date: !binary |-
+    MjAwNy0wNS0xMyAxNzoxNTowNSArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNS0xMyAxNzoxNTowNSArMDgwMA==
+  content: ! "来一个\r\n又一周\r\nhttp:&#47;&#47;www.kkwiy.com.ru&#47;\r\n你的我已经做好了"
+- id: 16
+  author: 私奔
+  author_email: anony@mo.us
+  author_url: ''
+  date: !binary |-
+    MjAwNy0wNS0xNSAxNzo1NzoyNCArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNS0xNSAxNzo1NzoyNCArMDgwMA==
+  content: ! "名字：私奔\r\n链接：http:&#47;&#47;4ben.cn\r\n嘿嘿～合作愉快"
+- id: 17
+  author: aruo
+  author_email: anony@mo.us
+  author_url: http://www.euroegg.com
+  date: !binary |-
+    MjAwNy0wNS0xNSAxOTo1MjoxOSArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNS0xNSAxOTo1MjoxOSArMDgwMA==
+  content: ! "名字：euroegg \r\n\r\n链接：http:&#47;&#47;www.euroegg.com"
+- id: 18
+  author: cmsphp
+  author_email: anony@mo.us
+  author_url: http://www.cmsphp.com
+  date: !binary |-
+    MjAwNy0wNS0xNiAxNTowNjozNyArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNS0xNiAxNTowNjozNyArMDgwMA==
+  content: www.cmsphp.com
+- id: 19
+  author: '32751'
+  author_email: anony@mo.us
+  author_url: http://www.32751.cn
+  date: !binary |-
+    MjAwNy0wNS0xNiAxNTowNzoxMyArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNS0xNiAxNTowNzoxMyArMDgwMA==
+  content: http:&#47;&#47;www.32751.cn
+- id: 20
+  author: 爬爬社区
+  author_email: anony@mo.us
+  author_url: ''
+  date: !binary |-
+    MjAwNy0wNS0yOCAxNToxNzowNSArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNS0yOCAxNToxNzowNSArMDgwMA==
+  content: ! "爬爬社区\r\nhttp:&#47;&#47;www.papa123.cn"
+- id: 21
+  author: SeaPrince
+  author_email: anony@mo.us
+  author_url: ''
+  date: !binary |-
+    MjAwNy0wNS0yOCAxNToxODo0MiArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNS0yOCAxNToxODo0MiArMDgwMA==
+  content: ! "[quote=爬爬社区]爬爬社区\r\nhttp:&#47;&#47;www.papa123.cn[&#47;quote]\r\n\r\n已经添加"
+- id: 22
+  author: FoEyes
+  author_email: anony@mo.us
+  author_url: ''
+  date: !binary |-
+    MjAwNy0wNi0xOCAyMDoxODozMCArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNi0xOCAyMDoxODozMCArMDgwMA==
+  content: 我的blog换地址了哈，http:&#47;&#47;foeyes.cn
+- id: 23
+  author: SeaPrince
+  author_email: anony@mo.us
+  author_url: ''
+  date: !binary |-
+    MjAwNy0wNi0yMCAxOToxMzoyMyArMDgwMA==
+  date_gmt: !binary |-
+    MjAwNy0wNi0yMCAxOToxMzoyMyArMDgwMA==
+  content: ! "[quote=FoEyes]我的blog换地址了哈，http:&#47;&#47;foeyes.cn[&#47;quote]\r\n\r\n连接已经更新"
+---
+<p>名字：Seaprince's Web Diary<&#47;p></p>
+<p>链接：<a href="http:&#47;&#47;blog.eaxi.com">http:&#47;&#47;blog.eaxi.com<&#47;a><&#47;p></p>
+<p>用同样的格式回复哈。<&#47;p></p>

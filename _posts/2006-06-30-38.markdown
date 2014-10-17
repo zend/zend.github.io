@@ -1,0 +1,48 @@
+---
+layout: post
+status: publish
+published: true
+title: AJAX的编码问题
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "晕死了！！<br />\r\n原来在ajax的数据传输中，不支持GB2312！！<br />\r\n感觉象是限制死在UTF-8了！<br />\r\n原来乱码是这样产生的。<br
+  />\r\n<br />\r\n解决方案：<br />\r\n把文件改成UTF-8编码。<br />\r\n方法：<br />\r\n用editplus打开文件，文档－使用其它编码重新载入。<br
+  />\r\n选择UTF-8就好，不过中文太多时不推荐！因为中文这么一搞要变成乱码的。<br />\r\n<br />\r\n如果谁有更好的方法，希望可以不吝赐教！<br
+  />\r\n（建议把editplus的默认编码设为utf-8.方法：工具－配置用户工具－文件－新建文件为pc utf-8...."
+wordpress_id: 37
+date: !binary |-
+  MjAwNi0wNi0zMCAwMzowMjoyNiArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0yOSAxOTowMjoyNiArMDgwMA==
+categories:
+- 脚本语言
+tags:
+- javascript
+comments: []
+---
+<p>晕死了！！<br &#47;><br />
+原来在ajax的数据传输中，不支持GB2312！！<br &#47;><br />
+感觉象是限制死在UTF-8了！<br &#47;><br />
+原来乱码是这样产生的。<br &#47;><br />
+<br &#47;><br />
+解决方案：<br &#47;><br />
+把文件改成UTF-8编码。<br &#47;><br />
+方法：<br &#47;><br />
+用editplus打开文件，文件另存为！存成utf-8成就可以了。<br &#47;><br />
+<br &#47;><br />
+如果谁有更好的方法，希望可以不吝赐教！<br &#47;><br />
+（建议把editplus的默认编码设为utf-8.方法：工具－配置用户工具－文件－新建文件为pc utf-8.）<br &#47;><br />
+<br &#47;><br />
+[FONT-COLOR=Red]－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－[&#47;FONT-COLOR]<br &#47;><br />
+这里，firefox和IE对表单里的数据的处理方式也是不一样的。<br &#47;><br />
+这也是firefox标准的一个地方。<br &#47;><br />
+一个utf-8的文档以GET方式传递时，IE得到的是GB2312,firefox得到的是跟文档一样的字符集！也就是utf-8.<br &#47;><br />
+<br &#47;><br />
+下一个问题：<br &#47;><br />
+xmlHttp.send();的数据都去哪里了？</p>

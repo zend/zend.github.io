@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: 王码五笔型输入法 86&98
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: <a href="ftp://seaprince.cn/soft/">ftp://seaprince.cn/soft/</a>王码五笔型输入法 86&amp;98.exe
+wordpress_id: 107
+date: !binary |-
+  MjAwNy0wNS0xNCAyMDoyMTozNCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNS0xNCAxMjoyMTozNCArMDgwMA==
+categories:
+- 其他技术
+tags:
+- 五笔
+comments: []
+---
+<p><a href="ftp:&#47;&#47;blog.eaxi.com&#47;soft&#47;">ftp:&#47;&#47;blog.eaxi.com&#47;soft&#47;<&#47;a>王码五笔型输入法 86&amp;98.exe</p>

@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: 日记搬家＆＆端午快乐！
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "今天端午节，早上一起来，就接到了好多好多的祝福！好开心，好开心～<br />\r\n同学从后校门买回来了粽子，好不开心～！"
+wordpress_id: 8
+date: !binary |-
+  MjAwNi0wNS0zMSAxMDozNzozMCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNS0zMSAxMDozNzozMCArMDgwMA==
+categories:
+- 生活点滴
+tags: []
+comments: []
+---
+<p>今天端午节，早上一起来，就接到了好多好多的祝福！好开心，好开心～<br &#47;><br />
+同学从后校门买回来了粽子，好不开心～！<br &#47;><br />
+<br &#47;><br />
+天公不做美，上天偏偏让我在今天同遭快乐与伤悲：<br &#47;><br />
+刚才接到通知，说是服务涉嫌发送垃圾邮件！<br &#47;><br />
+天，这个机器上连邮件服务都没有，何来的垃圾邮件呢？？冤枉！<br &#47;><br />
+迫不得已，把站点搬到了外边。<br &#47;><br />
+移到了http:&#47;&#47;blog.eaxi.com<br &#47;><br />
+以前的资料、数据都是从搜索引擎一点一点收集回来的。<br &#47;><br />
+唉，学校真是个无奈的地方。</p>

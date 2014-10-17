@@ -1,0 +1,32 @@
+---
+layout: post
+status: publish
+published: true
+title: 用千千静听来给你的音乐转换格式
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "<p>很方便，很简单。</p>\r\n<p>以前很多时候都是去网上去下载些乱七八糟的小软件来完成的，这下好了，直接用播放就可以搞定常见音乐格式间的互相转换。</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>"
+wordpress_id: 125
+date: !binary |-
+  MjAwNy0wNi0xNSAwODo1NDoxOCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNi0xNSAwODo1NDoxOCArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments: []
+---
+<p>以前很多时候都是去网上去下载些乱七八糟的小软件来完成的，这下好了，直接用播放就可以搞定。<br &#47;><br />
+<br &#47;><br />
+点音乐，选格式转换：<br &#47;><br />
+[attach=64]<br &#47;><br />
+<br &#47;><br />
+播放器会让你选择转换成什么格式，转mp3，选择目标目录。<br &#47;><br />
+<br &#47;><br />
+开始转换：<br &#47;><br />
+[attach=63]<&#47;p></p>

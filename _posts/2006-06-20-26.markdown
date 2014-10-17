@@ -1,0 +1,48 @@
+---
+layout: post
+status: publish
+published: true
+title: 说爱我
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "<p><code>歌曲:说爱我主唱:梁一贞<br />\r\ndesign by gouky<br />\r\n我的眼睛并不向往另一片天空<br
+  />\r\n禁止进入爱情是我说的<br />\r\n谁也听不见这种孤单真可怜<br />\r\n多爱一次就多些寂寞<br />\r\n你为什么还是不懂我要的自由<br
+  />\r\n一句话就让你离我远了<br />\r\n别让我以为快乐最后会粉碎<br />\r\n人最孤单的时候绝不会掉眼泪<br />\r\n说爱我在我的耳边对我说<br
+  />\r\n我已经真的太久忘了这种心动<br />\r\n爱太难了解了我们还看不懂<br />\r\n那一些心酸快乐有多少还很真呢<br />\r\n说爱我用你的手心温暖我<br
+  />\r\n就算你不能证明爱我能爱多久<br />\r\n我知道你想躲我要的并不多<br />\r\n一起看天空好吗最后一分钟<br />\r\n一起看天空好吗最后爱我<br
+  />\r\n说爱我</code></p>"
+wordpress_id: 25
+date: !binary |-
+  MjAwNi0wNi0yMCAxNzo1NToxMSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0yMCAxNzo1NToxMSArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments: []
+---
+<p><code>歌曲:说爱我主唱:梁一贞<br &#47;><br />
+design by gouky<br &#47;><br />
+我的眼睛并不向往另一片天空<br &#47;><br />
+禁止进入爱情是我说的<br &#47;><br />
+谁也听不见这种孤单真可怜<br &#47;><br />
+多爱一次就多些寂寞<br &#47;><br />
+你为什么还是不懂我要的自由<br &#47;><br />
+一句话就让你离我远了<br &#47;><br />
+别让我以为快乐最后会粉碎<br &#47;><br />
+人最孤单的时候绝不会掉眼泪<br &#47;><br />
+说爱我在我的耳边对我说<br &#47;><br />
+我已经真的太久忘了这种心动<br &#47;><br />
+爱太难了解了我们还看不懂<br &#47;><br />
+那一些心酸快乐有多少还很真呢<br &#47;><br />
+说爱我用你的手心温暖我<br &#47;><br />
+就算你不能证明爱我能爱多久<br &#47;><br />
+我知道你想躲我要的并不多<br &#47;><br />
+一起看天空好吗最后一分钟<br &#47;><br />
+一起看天空好吗最后爱我<br &#47;><br />
+说爱我<&#47;code><&#47;p></p>

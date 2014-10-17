@@ -1,0 +1,75 @@
+---
+layout: post
+status: publish
+published: true
+title: 在Google Earth里看到的有趣标语
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "[IMG]upload/word/甘肃嘉峪关.jpg[/IMG]<br />\r\n<br />\r\n39 45'04.26\" N,98
+  12'53.42\" E 甘肃嘉峪关 <br />\r\n<br />\r\n<br />\r\n[B][FONT-COLOR=Red]更多的点击进入[/FONT-COLOR][/B]"
+wordpress_id: 23
+date: !binary |-
+  MjAwNi0wNi0xOSAxODo0NTowMSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0xOSAxMDo0NTowMSArMDgwMA==
+categories:
+- 生活点滴
+tags:
+- Google
+comments: []
+---
+<p>[IMG]upload&#47;word&#47;甘肃嘉峪关.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+39 45'04.26" N,98 12'53.42" E 甘肃嘉峪关 <br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;毛主席万岁.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+42 39'19.06" n,94 10'04.80"e  毛主席万岁 <br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;内蒙古自治区-昆都仑木水库.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+40 45'41.13" N,109 47'49.43" E 内蒙古自治区-昆都仑木水库 <br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;排除万难去争取胜利.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+42 27'12.83" n,94 08'49.41"e  排除万难去争取胜利 <br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;松赞林寺.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+27 52'05.24" N,99 41'52.32" E 云南松赞林寺 <br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;为人民服务.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+42 32'24.86" n,94 19'22.75"e  为人民服务 <br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;卫国戍边.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+卫国戍边   新疆境内中哈边境<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;向斗争中学习.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+42 27'35.34" n,94 14'20.22"e  向斗争中学习 <br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;只争朝夕.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+42 39'34.64" n,94 16'07.98"e  只争朝夕 <br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[IMG]upload&#47;word&#47;祖国在我心中.jpg[&#47;IMG]<br &#47;><br />
+<br &#47;><br />
+39 41'43.31" n,73 55'37.40"e  新疆境内中哈边境 祖国在我心中 <br &#47;><br />
+<br &#47;><br />
+<br &#47;></p>

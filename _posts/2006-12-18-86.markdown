@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: 猪猪生日快乐
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: 猪猪生日快乐........
+wordpress_id: 79
+date: !binary |-
+  MjAwNi0xMi0xOCAwOTo0Mzo0OSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0xMi0xOCAwOTo0Mzo0OSArMDgwMA==
+categories:
+- 生活点滴
+tags: []
+comments: []
+---
+<p>猪猪生日快乐.....</p>

@@ -1,0 +1,35 @@
+---
+layout: post
+status: publish
+published: true
+title: online payment gateway
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "<p>Nochex:<br />\r\nhttp://www.nochex.com/logos/checkout.html<br />\r\n<br
+  />\r\nPaypal:<br />\r\nhttps://www.paypal.com/cgi-bin/webscr?cmd=p/mer/cowp_summary-outside<br
+  />\r\n<br />\r\n2Checkout:<br />\r\nhttps://support.2co.com/deskpro/faq.php?categoryid=25...</p>"
+wordpress_id: 78
+date: !binary |-
+  MjAwNi0xMi0xMyAyMTo0ODowNCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0xMi0xMyAxMzo0ODowNCArMDgwMA==
+categories:
+- 脚本语言
+tags:
+- php
+comments: []
+---
+<p>Nochex:<br &#47;><br />
+http:&#47;&#47;www.nochex.com&#47;logos&#47;checkout.html<br &#47;><br />
+<br &#47;><br />
+Paypal:<br &#47;><br />
+https:&#47;&#47;www.paypal.com&#47;cgi-bin&#47;webscr?cmd=p&#47;mer&#47;cowp_summary-outside<br &#47;><br />
+<br &#47;><br />
+2Checkout:<br &#47;><br />
+https:&#47;&#47;support.2co.com&#47;deskpro&#47;faq.php?categoryid=25<&#47;p></p>

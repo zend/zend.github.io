@@ -1,0 +1,40 @@
+---
+layout: post
+status: publish
+published: true
+title: HTML5 video 标签测试
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+wordpress_id: 439
+wordpress_url: http://seaprince.cn/?p=439
+date: !binary |-
+  MjAwOS0wOC0xMSAxMjoxMDoyNyArMDgwMA==
+date_gmt: !binary |-
+  MjAwOS0wOC0xMSAwNDoxMDoyNyArMDgwMA==
+categories:
+- 脚本语言
+tags:
+- html5
+- video
+comments:
+- id: 1140
+  author: GOODSPEED
+  author_email: FOX_GOODSPEED@HOTMAIL.COM
+  author_url: ''
+  date: !binary |-
+    MjAxMS0wMy0wOCAxMTo0OToxMyArMDgwMA==
+  date_gmt: !binary |-
+    MjAxMS0wMy0wOCAwMzo0OToxMyArMDgwMA==
+  content: IE 9  LOOKS FINE!
+---
+<p>如果你的浏览器支持HTML5，那么，你将可以看到下面的视频。<br />
+<br &#47;><br />
+<video width="500" controls><source src="http:&#47;&#47;videos.mozilla.org&#47;serv&#47;blizzard&#47;35days&#47;face-detection&#47;face-off-480.ogv" type="video&#47;ogg"&#47;><source src="http:&#47;&#47;videos.mozilla.org&#47;serv&#47;blizzard&#47;35days&#47;face-detection&#47;face-off-480.mp4" type="video&#47;mp4"&#47;><embed src="http:&#47;&#47;blip.tv&#47;play&#47;AYGLhG2U8hw" type="application&#47;x-shockwave-flash" width="500" height="394" allowscriptaccess="always" allowfullscreen="true"><&#47;embed><&#47;video><br />
+<br &#47;><br />
+如果看不到&hellip;&hellip;下载一个firefox3.5最新版吧。</p>

@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: 一些很漂亮的进度条
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "By Jakob Skjerning: \t\t\t\t \t\t\t\t \t\t\t\t \t\t\t\t \t\t\t\t \t\t\t\t
+  \t\t\t\t \t\t\t\t \t\t\t\t \t\t\t\t \t\t\t\t \t\t\t\t \t\t\t  \t\t\t \t\t\t\tBy
+  Virgin Radio: \t\t\t\t \t\t\t  \t\t\t \t\t\t\tBy Keppler-IT: \t\t\t\t \t\t\t  \t\t\t
+  \t\t\t\tBy absofort: \t\t\t\t \t\t\t  \t\t\t \t\t\t\tBy FreeSolutions: \t\t\t\t
+  \t\t\t\t \t\t\t  \t\t\t \t\t\t\tBy Pascal Germrot..."
+wordpress_id: 21
+date: !binary |-
+  MjAwNi0wNi0xOCAyMTozMToxMSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0xOCAyMTozMToxMSArMDgwMA==
+categories:
+- 其他技术
+tags: []
+comments: []
+---
+<p>By <a title="Jakob Skjerning" href="http:&#47;&#47;mentalized.net&#47;">Jakob Skjerning<&#47;a>: 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;circle-ball-dark-antialiased.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;circling-ball-3-frame-fade-black.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;circling-ball-3-frame-fade-transparent-back-dark-antialiased.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;circling-ball-black-back.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;radar-transparent.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;scanner.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;kittscanner.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;circling-squares-with-trail.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;bouncing_ball.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;snake_transparent.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;expanding_circle.gif" &#47;> 				<img border="0" alt="By Jakob Skjerning (http:&#47;&#47;mentalized.net)" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;hypnotize_out.gif" &#47;> 			<&#47;p>
+<p> 				By <a title="Virgin Radio" href="http:&#47;&#47;www.virginradio.co.uk&#47;">Virgin Radio<&#47;a>: 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;virgin_radio&#47;refresh.gif" &#47;> 			<&#47;p>
+<p> 				By <a title="Keppler-IT" href="http:&#47;&#47;www.keppler-it.de&#47;">Keppler-IT<&#47;a>: 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;keppler-it&#47;pleasewait.gif" &#47;> 			<&#47;p>
+<p> 				By <a title="absofort" href="http:&#47;&#47;absofort.de&#47;">absofort<&#47;a>: 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;absofort&#47;progress.gif" &#47;> 			<&#47;p>
+<p> 				By <a title="FreeSolutions" href="http:&#47;&#47;www.freesolutions.com.ar&#47;">FreeSolutions<&#47;a>: 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;freesolutions&#47;progressBarShort.gif" &#47;> 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;freesolutions&#47;progressBarLong.gif" &#47;> 			<&#47;p>
+<p> 				By <a title="Pascal Germroth" href="mailto:pascal@germroth.name">Pascal Germroth<&#47;a>: 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;pascal_germroth&#47;indicator.black.gif" &#47;> 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;pascal_germroth&#47;indicator.white.gif" &#47;> 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;pascal_germroth&#47;progress.gif" &#47;> 			<&#47;p>
+<p> 				By <a title="Eyedive" href="http:&#47;&#47;eyedive.com&#47;">Martin Jespersen<&#47;a>: 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;eyedive&#47;icon_animated_busy.gif" &#47;> 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;eyedive&#47;icon_animated_busy2.gif" &#47;> 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;eyedive&#47;icon_animated_busy2_2.gif" &#47;> 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;eyedive&#47;icon_animated_busy2_2_5.gif" &#47;> 			<&#47;p>
+<p> 				By <a title="3 Man Army" href="http:&#47;&#47;3manarmy.com&#47;">3 Man Army<&#47;a>: 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;3manarmy&#47;3MA_loadingcontent.gif" &#47;> 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;3manarmy&#47;3MA_processingbar.gif" &#47;> 			<&#47;p>
+<p> 				By <a title="Nicolai Willems" href="http:&#47;&#47;www.pacific-assault.dk&#47;">Nicolai Willems<&#47;a>: 				<img border="0" src="http:&#47;&#47;mentalized.net&#47;activity-indicators&#47;indicators&#47;pacific-assault&#47;loader.gif" &#47;> 			<&#47;p></p>

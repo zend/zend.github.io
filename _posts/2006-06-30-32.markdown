@@ -1,0 +1,105 @@
+---
+layout: post
+status: publish
+published: true
+title: 戴上我的爱
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: <p>等我，总有一天，我会亲手给你戴上我的爱。</p>
+wordpress_id: 31
+date: !binary |-
+  MjAwNi0wNi0zMCAwMDoxMzo0OCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0zMCAwMDoxMzo0OCArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments: []
+---
+<p><code> <&#47;code><&#47;p></p>
+<div class="codeText">
+<div class="codeHead">Java代码<&#47;div></p>
+<ol class="dp-j">
+<li class="alt"><span>[ti:戴上我的爱] &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[ar:潘玮柏&#47;王珞丹] &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[al:] &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[by:甜麦圈o0]&nbsp; &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">00.00<&#47;span><span>]戴上我的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">00.10<&#47;span><span>]演唱：潘玮柏&#47;王珞丹 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">01.17<&#47;span><span>]戴上我的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">06.44<&#47;span><span>]心海闪亮着金色的期盼 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">15.32<&#47;span><span>]今晚环绕在幸福的等待 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">21.70<&#47;span><span>]今晚星空看来有些怪 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">22.78<&#47;span><span>]我望着你心里话我不能再等待 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">25.17<&#47;span><span>]有一些感概添加着期待 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">27.60<&#47;span><span>]一路走来有你有我的日子很浪漫 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">30.06<&#47;span><span>]我还记得第一场电影我们一起看 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">32.41<&#47;span><span>]想要偷偷牵你手却又不够勇敢 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">34.87<&#47;span><span>]ha&nbsp;ha想起当时一直狂飚汗 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">37.38<&#47;span><span>]但现在慢慢已经成为一种甜蜜习惯 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">40.43<&#47;span><span>]<&#47;span><span class="number">2<&#47;span><span>月<&#47;span><span class="number">14<&#47;span><span>第一个烛光晚餐 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">42.09<&#47;span><span>]餐点不多但是相对价值很可观 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">44.68<&#47;span><span>]眼睛注视着你祈求时针慢慢的转 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">46.82<&#47;span><span>]红酒渐渐让你微醺躺在我的臂弯 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">50.05<&#47;span><span>]see&nbsp;baby&nbsp;girl每滴回忆我都印在脑海 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">52.08<&#47;span><span>]但还有更多经典回忆值得一起等待 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">53.88<&#47;span><span>]上辈子的爱今世的恋爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">56.47<&#47;span><span>]今世还是请你戴上我的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">00<&#47;span><span>:<&#47;span><span class="number">59.27<&#47;span><span>]到底会是情人或是朋友 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">03.77<&#47;span><span>]什么时候我们才跨得过 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">09.27<&#47;span><span>]还欠些感动 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">11.71<&#47;span><span>]你站在我的背后轻轻对我说 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">16.32<&#47;span><span>]让我为你戴上我的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">22.76<&#47;span><span>]最幸福的人是我 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">29.01<&#47;span><span>]当你寂寞的时候你会否想起我 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">30.50<&#47;span><span>]当你难过的时候你是否想到我 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">32.93<&#47;span><span>]当你开心的时候你会否打给我 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">35.30<&#47;span><span>]电话上问我幸福是什么 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">37.74<&#47;span><span>]幸福就是什么话也不必再多说 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">40.06<&#47;span><span>]两人互看几个钟头也不嫌久 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">42.52<&#47;span><span>]问候总是带着即将见面的冲动 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">45.00<&#47;span><span>]累不累想不想睡需不需要我陪 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">47.38<&#47;span><span>]你说有我在身边你才能安心的睡 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">49.83<&#47;span><span>]万事不用担心让我擦去你的泪 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">52.32<&#47;span><span>]如果遇上别的女孩你问我会不会追 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">54.56<&#47;span><span>]我向你保证我绝对不会 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">56.98<&#47;span><span>]因为认真爱我的你才是无缺完美 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">01<&#47;span><span>:<&#47;span><span class="number">59.35<&#47;span><span>]我会轻轻在你心上贴上小心易碎 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">01.76<&#47;span><span>]如果前世有罪今世不可畏 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">04.16<&#47;span><span>]今世还是选择彼此一起去面对 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">06.45<&#47;span><span>]并不是相爱的人全都能够 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">11.00<&#47;span><span>]在茫茫人海相遇 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">14.85<&#47;span><span>]你和我还欠些感动 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">19.21<&#47;span><span>]你握起我的右手套上了永远 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">23.26<&#47;span><span>]让我为你戴上我的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">29.70<&#47;span><span>]最幸福的人是我 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">35.40<&#47;span><span>]如果是天意的安排让我们相遇相爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">37.53<&#47;span><span>]我盼望有一天能彼此互换戒环 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">39.89<&#47;span><span>]今生换了角色场地我也绝不更改 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">42.24<&#47;span><span>]让世人见证许下的承诺我对你的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">45.57<&#47;span><span>]我知道有时候我会让你心烦 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">47.69<&#47;span><span>]我也知道有时候我真的慢半拍 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">50.00<&#47;span><span>]但我会守护着你直到头发全都变白 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">52.51<&#47;span><span>]爱意不会随着眉毛颜色慢慢转淡 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">54.90<&#47;span><span>]记忆可能随着年纪逐渐凋零衰老 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">02<&#47;span><span>:<&#47;span><span class="number">57.39<&#47;span><span>]但戒环上永远刻着祝福白头到老永远 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">01.03<&#47;span><span>]完美的一天天时地利人和 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">03.37<&#47;span><span>]感动气氛毫无缺陷 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">04.56<&#47;span><span>]未来日子里双手请交给我牵 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">07.17<&#47;span><span>]我愿意为了你赌上我所有一切 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">09.35<&#47;span><span>]前世欠的爱今世加倍还 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">11.99<&#47;span><span>]今晚愿不愿意戴上这只戒环 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">13.45<&#47;span><span>]戴上我的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">18.48<&#47;span><span>]心海闪亮着金色的期盼 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">28.18<&#47;span><span>]今晚环绕在幸福的等待 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">32.99<&#47;span><span>]戴上我的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">37.89<&#47;span><span>]心海闪亮着金色的期盼 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">42.49<&#47;span><span>]戴上我的爱 &nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>[<&#47;span><span class="number">03<&#47;span><span>:<&#47;span><span class="number">47.50<&#47;span><span>]今晚环绕在幸福的等待 &nbsp;&nbsp;<&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>

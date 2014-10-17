@@ -1,0 +1,39 @@
+---
+layout: post
+status: publish
+published: true
+title: Perl 的测试代码
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+wordpress_id: 177
+date: !binary |-
+  MjAwOC0wMS0xNiAwOTowNDoxNSArMDgwMA==
+date_gmt: !binary |-
+  MjAwOC0wMS0xNiAwOTowNDoxNSArMDgwMA==
+categories:
+- 脚本语言
+tags: []
+comments: []
+---
+<div class="codeText">
+<div class="codeHead">Java代码<&#47;div></p>
+<ol class="dp-j" start="1">
+<li class="alt"><span><span>#!E:&#47;Perl&#47;bin&#47;perl.exe&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>##&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>##&nbsp;&nbsp;printenv&nbsp;--&nbsp;demo&nbsp;CGI&nbsp;program&nbsp;which&nbsp;just&nbsp;prints&nbsp;its&nbsp;environment&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>##&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>print&nbsp;<span class="string">"Content-type:&nbsp;text&#47;html;&nbsp;charset=iso-8859-1\n\n"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>foreach&nbsp;$var&nbsp;(sort(keys(%ENV)))&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;$val&nbsp;=&nbsp;$ENV{$var};&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;$val&nbsp;=~&nbsp;s|\n|\\n|g;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;$val&nbsp;=~&nbsp;s|<span class="string">"|\\"|g;<&#47;span>&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"<&#47;span><span>${var}=\<&#47;span><span class="string">"${val}\"\n"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;<&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>

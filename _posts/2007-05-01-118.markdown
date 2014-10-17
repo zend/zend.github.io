@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: 蓝牙模块到手啦
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: 正式开始做毕业设计咯
+wordpress_id: 104
+date: !binary |-
+  MjAwNy0wNS0wMSAxMjo0OToxMyArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNS0wMSAwNDo0OToxMyArMDgwMA==
+categories:
+- 其他技术
+tags:
+- 单片机
+comments: []
+---
+<p>拇指头大的东西，竟然花去了我260块大洋~ 心痛啊~！希望毕设可以顺利！阿门</p>

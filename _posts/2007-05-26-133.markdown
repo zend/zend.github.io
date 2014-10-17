@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: Bluetooth串行端口设置
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: 点点滴滴。。。。
+wordpress_id: 115
+date: !binary |-
+  MjAwNy0wNS0yNiAwMjo0NzowOSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNS0yNSAxODo0NzowOSArMDgwMA==
+categories:
+- 其他技术
+tags:
+- 单片机
+comments: []
+---
+<p><span style="font-weight: bold;">Pocket PC上的端口设置<br &#47;><br &#47;><&#47;span>端口：<br &#47;><br &#47;>入站COM端口： 5<br &#47;>出站COM端口： 8</p>

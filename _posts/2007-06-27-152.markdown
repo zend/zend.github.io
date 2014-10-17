@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: 昨天答辩完毕
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: <p>呵呵，还好，没有被问多少问题，过得比较轻松。</p>
+wordpress_id: 131
+date: !binary |-
+  MjAwNy0wNi0yNyAwMDoyODowMyArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNi0yNyAwMDoyODowMyArMDgwMA==
+categories:
+- 生活点滴
+tags: []
+comments: []
+---
+<p>本来想把答辩时用的PPT做得尽可能简洁，预算只做九页，结果预答辩时就被老师说了一顿，唉。想偷懒还真难！<&#47;p></p>
+<p>后来好好做了一下，因为第二天要答辩，所以连夜赶工了，赶到了两点多，把九页变成了十七页！<&#47;p></p>
+<p>第二天是排在第五个，结果小马老师居然忽略我了，直接把我的名字跳过，让下一位先答辩了，后来还是干涉后才好了的。<&#47;p></p>
+<p>要不然不知道会不会直接没答辩机会呢，<img src="http:&#47;&#47;blog.eaxi.com&#47;images&#47;smiles&#47;cry.gif" alt="" &#47;><img src="http:&#47;&#47;blog.eaxi.com&#47;images&#47;smiles&#47;cry.gif" alt="" &#47;><img src="http:&#47;&#47;blog.eaxi.com&#47;images&#47;smiles&#47;cry.gif" alt="" &#47;>.被忽视的感觉真是不爽啊。<&#47;p></p>
+<p>呵呵。<&#47;p></p>

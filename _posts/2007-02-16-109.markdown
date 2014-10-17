@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: 笑脸
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: 书上说有情人千里能共婵娟<br />可是我现在只想把你手儿牵<br />听说过许多山盟海誓的表演<br />突然想看看你曾经纯真的笑脸
+wordpress_id: 98
+date: !binary |-
+  MjAwNy0wMi0xNiAxMzozMjo1NiArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wMi0xNiAxMzozMjo1NiArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments: []
+---
+<p><font size="4">笑脸<br &#47;>常常地想<br &#47;>现在的你<br &#47;>就在我身边露出笑脸<br &#47;>可是可是我却搞不清<br &#47;>你离我是近还是远<br &#47;>但我仍然仍然相信<br &#47;>你和我前生一定有缘<br &#47;>于是我就让你看看我<br &#47;>一往情深的双眼<br &#47;>书上说有情人千里能共婵娟<br &#47;>可是我现在只想把你手儿牵<br &#47;>听说过许多山盟海誓的表演<br &#47;>突然想看看你曾经纯真的笑脸<&#47;font></p>

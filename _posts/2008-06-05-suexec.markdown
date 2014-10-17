@@ -1,0 +1,61 @@
+---
+layout: post
+status: publish
+published: true
+title: suexec
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: <p>给Apache 加了Suexec的支持。这里是一些步骤。</p>
+wordpress_id: 197
+date: !binary |-
+  MjAwOC0wNi0wNSAxNDowNzoxNiArMDgwMA==
+date_gmt: !binary |-
+  MjAwOC0wNi0wNSAwNjowNzoxNiArMDgwMA==
+categories:
+- 服务器
+tags:
+- linux
+- apache
+comments: []
+---
+<p>重新编译Apache<&#47;p></p>
+<p>&nbsp;<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">XML&#47;HTML代码<&#47;div></p>
+<ol class="dp-xml">
+<li class="alt"><span><span>.&#47;configure&nbsp;<&#47;span><span class="attribute">--prefix<&#47;span><span>=&#47;usr&#47;local&#47;httpd2&nbsp;<&#47;span><span class="attribute">--sbindir<&#47;span><span>=&#47;usr&#47;local&#47;httpd2&#47;sbin&nbsp;--enable-so&nbsp;<&#47;span><span class="attribute">--enable-rewrite<&#47;span><span>=<&#47;span><span class="attribute-value">shared<&#47;span><span>&nbsp;--enable-deflate&nbsp;--enable-nonportable-atomics&nbsp;<&#47;span><span class="attribute">--with-ssl<&#47;span><span>=&#47;usr&#47;lib64&#47;openssl&nbsp;<&#47;span><span class="attribute">--with-expat<&#47;span><span>=<&#47;span><span class="attribute-value">builtin<&#47;span><span>&nbsp;--enable-suexec&nbsp;<&#47;span><span class="attribute">--with-suexec-caller<&#47;span><span>=<&#47;span><span class="attribute-value">www<&#47;span><span>&nbsp;<&#47;span><span class="attribute">--with-suexec-userdir<&#47;span><span>=<&#47;span><span class="attribute-value">public_html<&#47;span><span>&nbsp;<&#47;span><span class="attribute">--with-suexec-docroot<&#47;span><span>=&#47;www&#47;htdocs&nbsp;<&#47;span><span class="attribute">--with-suexec-uidmin<&#47;span><span>=<&#47;span><span class="attribute-value">103<&#47;span><span>&nbsp;<&#47;span><span class="attribute">--with-suexec-gidmin<&#47;span><span>=<&#47;span><span class="attribute-value">504<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>&nbsp;<&#47;p></p>
+<p>在虚拟主机：<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">XML&#47;HTML代码<&#47;div></p>
+<ol class="dp-xml">
+<li class="alt"><span><span>SuexecUserGroup&nbsp;seaprince&nbsp;vhostuser&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>ScriptAlias&nbsp;&#47;cgi-bin&#47;&nbsp;&#47;www&#47;htdocs&#47;public_users&#47;blog.eaxi.com&#47;public_html&#47;cgi-bin&#47;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="tag"><<&#47;span><span class="tag-name">Location<&#47;span><span>&nbsp;"&#47;php-cgi&#47;php"<&#47;span><span class="tag">><&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SetHandler&nbsp;fcgid-script&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Options&nbsp;ExecCGI&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allow&nbsp;from&nbsp;all&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="tag"><&#47;<&#47;span><span class="tag-name">Location<&#47;span><span class="tag">><&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>家目录：<&#47;p></p>
+<p>&nbsp;<&#47;p></p>
+<p>&nbsp;<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">XML&#47;HTML代码<&#47;div></p>
+<ol class="dp-xml">
+<li class="alt"><span><span>mkdir&nbsp;-p&nbsp;~&#47;public_html&#47;cgi-bin&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>cp&nbsp;&#47;usr&#47;local&#47;php5&#47;bin&#47;php-cgi&nbsp;~&#47;public_html&#47;cgi-bin&#47;php.cgi&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>chown&nbsp;seaprince.vhostuser&nbsp;-R&nbsp;&#47;public_html&#47;cgi-bin&#47;&nbsp;&nbsp;<&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>重启Apache<&#47;p></p>
+<p>&nbsp;<&#47;p></p>

@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: 没有情人的情人节
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: 兄弟姐妹们，情人节怎么过呢？一定很开心吧。祝大家情人节快乐，我自己听没有情人节的情人这悲伤的音乐。
+wordpress_id: 92
+date: !binary |-
+  MjAwNy0wMi0xNCAwODoxNjozOCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wMi0xNCAwODoxNjozOCArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments: []
+---
+<div class="BlueBG"><strong>歌曲：<&#47;strong><strong><font style="COLOR: #e10900">没有情人的情人节<&#47;font><&#47;strong><&#47;div></p>
+<div style="PADDING-LEFT: 15px; PADDING-TOP: 10px"><strong>歌手：<&#47;strong>孟庭苇 <strong>专辑：<&#47;strong>冬季到台北来看你 <&#47;div></p>
+<p>没有情人的情人节<br &#47;>多少会有落寞的感觉<br &#47;>为那爱过的人不了解<br &#47;>想念还留在心里面<&#47;p></p>
+<p>没有情人的情人节<br &#47;>意外收到安慰的卡片<br &#47;>想必爱过的心已发现<br &#47;>要我打开回忆的结<&#47;p></p>
+<p>情人节快乐快乐情人节<br &#47;>我只听见悲伤的音乐<br &#47;>情人节快乐快乐情人节<br &#47;>把那忧郁的发丝轻剪<&#47;p></p>
+<p>没有情人的情人节<br &#47;>多少会有落寞的感觉<br &#47;>为那爱过的人不了解<br &#47;>想念还留在心里面<&#47;p></p>
+<p>没有情人的情人节<br &#47;>意外收到安慰的卡片<br &#47;>想必爱过的心已发现<br &#47;>要我打开回忆的结<&#47;p></p>
+<p>情人节真快乐快乐情人节<br &#47;>一个人流连花好月圆<br &#47;>情人节快乐快乐情人节<br &#47;>烟火的天空下起了雪<&#47;p></p>
+<p>幻想去年有你欢乐的情节<br &#47;>是否明年有我未知的情缘<&#47;p></p>
+<p>情人节真快乐快乐情人节<br &#47;>我只听见悲伤的音乐<br &#47;>情人节快乐快乐情人节<br &#47;>把那忧郁的发丝轻剪<&#47;p></p>

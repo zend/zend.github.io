@@ -1,0 +1,151 @@
+---
+layout: post
+status: publish
+published: true
+title: UTF-8转unicode PHP版本+Javascript版本
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "<div class=\"codeText\">\r\n<div class=\"codeHead\">PHP代码</div>\r\n<ol
+  start=\"1\" class=\"dp-c\">\r\n    <li class=\"alt\"><span><span class=\"keyword\">function</span><span>&nbsp;uni(</span><span
+  class=\"vars\">$str</span><span>)&nbsp;{&nbsp;&nbsp;</span></span></li>\r\n    <li
+  class=\"\"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"vars\">$ret</span><span>&nbsp;=&nbsp;</span><span
+  class=\"string\">''</span><span>;&nbsp;&nbsp;</span></span></li>\r\n    <li class=\"alt\"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+  class=\"keyword\">for</span><span>(</span><span class=\"vars\">$i</span><span>=0;</span><span
+  class=\"vars\">$i</span><span>&lt;mb_strlen(</span><span class=\"vars\">$str</span><span>,</span><span
+  class=\"string\">'utf-8'</span><span>);</span><span class=\"vars\">$i</span><span>=</span><span
+  class=\"vars\">$i</span><span>+1)&nbsp;{&nbsp;&nbsp;</span></span></li>\r\n    <li
+  class=\"\"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"vars\">$ret</span><span>&nbsp;.=&nbsp;</span><span
+  class=\"string\">&quot;&amp;#&quot;</span><span>&nbsp;.&nbsp;uniord(mb_substr(</span><span
+  class=\"vars\">$str</span><span>,&nbsp;</span><span class=\"vars\">$i</span><span>,&nbsp;1,&nbsp;</span><span
+  class=\"string\">'utf-8'</span><span>))&nbsp;.&nbsp;</span><span class=\"string\">&quot;;&quot;</span><span>;&nbsp;&nbsp;</span></span></li>\r\n
+  \   <li class=\"alt\"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>\r\n
+  \   <li class=\"\"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"keyword\">return</span><span>&nbsp;</span><span
+  class=\"vars\">$ret</span><span>;&nbsp;&nbsp;</span></span></li>\r\n    <li class=\"alt\"><span>}&nbsp;&nbsp;</span></li>\r\n
+  \   <li class=\"\"><span><span class=\"func\">echo</span><span>&nbsp;uni(</span><span
+  class=\"string\">&quot;海海家园&quot;</span><span>);&nbsp;&nbsp;</span></span></li>\r\n
+  \   <li class=\"alt\"><span>&nbsp;&nbsp;<span class=\"keyword\">function</span><span>&nbsp;unichr(</span><span
+  class=\"vars\">$u</span><span>)&nbsp;{&nbsp;&nbsp;</span></span></li>\r\n    <li
+  class=\"\"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"keyword\">return</span><span>&nbsp;mb_convert_encoding(pack(</span><span
+  class=\"string\">&quot;N&quot;</span><span>,</span><span class=\"vars\">$u</span><span>),&nbsp;mb_internal_encoding(),&nbsp;</span><span
+  class=\"string\">'UCS-4BE'</span><span>);&nbsp;&nbsp;</span></span></li>\r\n    <li
+  class=\"alt\"><span>&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>\r\n    <li class=\"\"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+  class=\"keyword\">function</span><span>&nbsp;uniord(</span><span class=\"vars\">$u</span><span>)&nbsp;{&nbsp;&nbsp;</span></span></li>\r\n
+  \   <li class=\"alt\"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"vars\">$c</span><span>&nbsp;=&nbsp;unpack(</span><span
+  class=\"string\">&quot;N&quot;</span><span>,&nbsp;mb_convert_encoding(</span><span
+  class=\"vars\">$u</span><span>,&nbsp;</span><span class=\"string\">'UCS-4BE'</span><span>,&nbsp;</span><span
+  class=\"string\">'UTF-8'</span><span>));&nbsp;&nbsp;</span></span></li>\r\n    <li
+  class=\"\"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"keyword\">return</span><span>&nbsp;</span><span
+  class=\"vars\">$c</span><span>[1];&nbsp;&nbsp;</span></span></li>\r\n    <li class=\"alt\"><span>&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>\r\n</ol>\r\n</div>\r\n<p>&nbsp;</p>"
+wordpress_id: 153
+date: !binary |-
+  MjAwNy0wOC0xMCAyMDo1NzoyMyArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wOC0xMCAxMjo1NzoyMyArMDgwMA==
+categories:
+- 个人作品
+tags:
+- php
+- javascript
+comments: []
+---
+<div class="codeText">
+<div class="codeHead">PHP代码<&#47;div></p>
+<ol class="dp-c" start="1">
+<li class="alt"><span><span class="keyword">function<&#47;span><span>&nbsp;uni(<&#47;span><span class="vars">$str<&#47;span><span>)&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$ret<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">''<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for<&#47;span><span>(<&#47;span><span class="vars">$i<&#47;span><span>=0;<&#47;span><span class="vars">$i<&#47;span><span><mb_strlen(<&#47;span><span class="vars">$str<&#47;span><span>,<&#47;span><span class="string">'utf-8'<&#47;span><span>);<&#47;span><span class="vars">$i<&#47;span><span>=<&#47;span><span class="vars">$i<&#47;span><span>+1)&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$ret<&#47;span><span>&nbsp;.=&nbsp;<&#47;span><span class="string">"&amp;#"<&#47;span><span>&nbsp;.&nbsp;uniord(mb_substr(<&#47;span><span class="vars">$str<&#47;span><span>,&nbsp;<&#47;span><span class="vars">$i<&#47;span><span>,&nbsp;1,&nbsp;<&#47;span><span class="string">'utf-8'<&#47;span><span>))&nbsp;.&nbsp;<&#47;span><span class="string">";"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;<&#47;span><span class="vars">$ret<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="func">echo<&#47;span><span>&nbsp;uni(<&#47;span><span class="string">"海海家园"<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<span class="keyword">function<&#47;span><span>&nbsp;unichr(<&#47;span><span class="vars">$u<&#47;span><span>)&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;mb_convert_encoding(pack(<&#47;span><span class="string">"N"<&#47;span><span>,<&#47;span><span class="vars">$u<&#47;span><span>),&nbsp;mb_internal_encoding(),&nbsp;<&#47;span><span class="string">'UCS-4BE'<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">function<&#47;span><span>&nbsp;uniord(<&#47;span><span class="vars">$u<&#47;span><span>)&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$c<&#47;span><span>&nbsp;=&nbsp;unpack(<&#47;span><span class="string">"N"<&#47;span><span>,&nbsp;mb_convert_encoding(<&#47;span><span class="vars">$u<&#47;span><span>,&nbsp;<&#47;span><span class="string">'UCS-4BE'<&#47;span><span>,&nbsp;<&#47;span><span class="string">'UTF-8'<&#47;span><span>));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;<&#47;span><span class="vars">$c<&#47;span><span>[1];&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>JavaScript 版本<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">JavaScript代码<&#47;div></p>
+<ol class="dp-c" start="1">
+<li class="alt"><span><span><script>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">function<&#47;span><span>&nbsp;unicode(s){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">var<&#47;span><span>&nbsp;len=s.length;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;<span class="keyword">var<&#47;span><span>&nbsp;rs=<&#47;span><span class="string">""<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;alert(len);&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;<span class="keyword">for<&#47;span><span>(<&#47;span><span class="keyword">var<&#47;span><span>&nbsp;i=0;i<len;i++){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var<&#47;span><span>&nbsp;k=s.substring(i,i+1);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rs+=<span class="string">"&amp;#"<&#47;span><span>+s.charCodeAt(i)+<&#47;span><span class="string">";"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;rs;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">function<&#47;span><span>&nbsp;runicode(s){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;<span class="keyword">var<&#47;span><span>&nbsp;k=s.split(<&#47;span><span class="string">";"<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">var<&#47;span><span>&nbsp;rs=<&#47;span><span class="string">""<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;<span class="keyword">for<&#47;span><span>(i=0;i<k.length;i++){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var<&#47;span><span>&nbsp;m=k[i].replace(&#47;&amp;#&#47;,<&#47;span><span class="string">""<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rs+=String.fromCharCode(m);&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;rs;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="comment">&#47;&#47;alert(unicode("我是一个神"));&#47;&#47;我是一个神<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="comment">&#47;&#47;alert(runicode("&amp;#25105;&amp;#26159;&amp;#19968;&amp;#20010;&amp;#31070;"));<&#47;span><span>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><&#47;script>&nbsp;&nbsp;<&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>从朋友那得到的新方法：（2007.8.14）<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">JavaScript代码<&#47;div></p>
+<ol start="1" class="dp-c">
+<li class="alt"><span><span><script&nbsp;language=<&#47;span><span class="string">"javascript"<&#47;span><span>&nbsp;type=<&#47;span><span class="string">"text&#47;javascript"<&#47;span><span>>&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">var<&#47;span><span>&nbsp;oSource&nbsp;=&nbsp;document.getElementById(<&#47;span><span class="string">"source"<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">var<&#47;span><span>&nbsp;oShow2&nbsp;=&nbsp;document.getElementById(<&#47;span><span class="string">"show2"<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">var<&#47;span><span>&nbsp;oTt&nbsp;=&nbsp;document.getElementById(<&#47;span><span class="string">"tt"<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="keyword">function<&#47;span><span>&nbsp;action(pChoice){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;<span class="keyword">switch<&#47;span><span>(pChoice){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;<span class="keyword">case<&#47;span><span>&nbsp;<&#47;span><span class="string">"CONVERT_FMT1"<&#47;span><span>:&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;oShow2.value&nbsp;=&nbsp;ascii(oSource.value);&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;<span class="keyword">break<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<span class="keyword">case<&#47;span><span>&nbsp;<&#47;span><span class="string">"CONVERT_FMT2"<&#47;span><span>:&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;oShow2.value&nbsp;=&nbsp;unicode(oSource.value);&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">break<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;<span class="keyword">case<&#47;span><span>&nbsp;<&#47;span><span class="string">"RECONVERT"<&#47;span><span>:&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;oShow2.value&nbsp;=&nbsp;reconvert(oSource.value);&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;<span class="keyword">break<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="keyword">function<&#47;span><span>&nbsp;ascii(str){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;str.replace(&#47;[^\u0000-\u00FF]&#47;g,<&#47;span><span class="keyword">function<&#47;span><span>($0){<&#47;span><span class="keyword">return<&#47;span><span>&nbsp;escape($0).replace(&#47;(%u)(\w{4})&#47;gi,<&#47;span><span class="string">"\$2;"<&#47;span><span>)});&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="keyword">function<&#47;span><span>&nbsp;unicode(str){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;str.replace(&#47;[^\u0000-\u00FF]&#47;g,<&#47;span><span class="keyword">function<&#47;span><span>($0){<&#47;span><span class="keyword">return<&#47;span><span>&nbsp;escape($0).replace(&#47;(%u)(\w{4})&#47;gi,<&#47;span><span class="string">"\\u$2"<&#47;span><span>)});&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="keyword">function<&#47;span><span>&nbsp;reconvert(str){&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;str&nbsp;=&nbsp;str.replace(&#47;(\\u)(\w{4})&#47;gi,<span class="keyword">function<&#47;span><span>($0){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;(String.fromCharCode(parseInt((escape($0).replace(&#47;(%5Cu)(\w{4})&#47;g,<&#47;span><span class="string">"$2"<&#47;span><span>)),16)));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;str&nbsp;=&nbsp;str.replace(&#47;()(\w{4});&#47;gi,<span class="keyword">function<&#47;span><span>($0){&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;String.fromCharCode(parseInt(escape($0).replace(&#47;(%26%23x)(\w{4})(%3B)&#47;g,<&#47;span><span class="string">"$2"<&#47;span><span>),16));&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;str;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><&#47;script>&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div><br />
+<&#47;p></p>

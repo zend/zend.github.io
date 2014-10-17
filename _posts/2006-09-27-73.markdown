@@ -1,0 +1,91 @@
+---
+layout: post
+status: publish
+published: true
+title: 呛司呛司
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "<p>呛司呛司<br />\r\n作曲：Mackichan,Blair<br />\r\n作词：葛大为<br />\r\n编曲：吕绍淳<br
+  />\r\n演唱：罗志祥<br />\r\n罗志祥-呛司呛司<br />\r\n请多指教美女<br />\r\n五十亿人难得遇见了我<br />\r\n你运气还不错<br
+  />\r\n专情我也不是故意想要推荐自己<br />\r\n放眼没人能比<br />\r\n远远就看穿你不温驯<br />\r\n却有一种魅力<br />\r\n我不是痞只是很有本事有个性<br
+  />\r\n能让你动心<br />\r\noh yeah<br />\r\nMy Girl 别怀疑<br />\r\n我们的频率现在最靠近<br />\r\n想爱我的数不清我想爱的是你...</p>"
+wordpress_id: 67
+date: !binary |-
+  MjAwNi0wOS0yNyAxNDozODo0NCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wOS0yNyAxNDozODo0NCArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments: []
+---
+<p>呛司呛司<br &#47;><br />
+作曲：Mackichan,Blair<br &#47;><br />
+作词：葛大为<br &#47;><br />
+编曲：吕绍淳<br &#47;><br />
+演唱：罗志祥<br &#47;><br />
+罗志祥-呛司呛司<br &#47;><br />
+请多指教美女<br &#47;><br />
+五十亿人难得遇见了我<br &#47;><br />
+你运气还不错<br &#47;><br />
+专情我也不是故意想要推荐自己<br &#47;><br />
+放眼没人能比<br &#47;><br />
+远远就看穿你不温驯<br &#47;><br />
+却有一种魅力<br &#47;><br />
+我不是痞只是很有本事有个性<br &#47;><br />
+能让你动心<br &#47;><br />
+oh yeah<br &#47;><br />
+My Girl 别怀疑<br &#47;><br />
+我们的频率现在最靠近<br &#47;><br />
+想爱我的数不清我想爱的是你<br &#47;><br />
+不是Chance Chance而已<br &#47;><br />
+My Girl 看着戏<br &#47;><br />
+装深情加体贴多的是苍蝇<br &#47;><br />
+我没有那种敌机让你满意<br &#47;><br />
+不是Chance Chance而已<br &#47;><br />
+请多指教美女<br &#47;><br />
+一看见你我就心神不宁喔~<br &#47;><br />
+我才不会忘记你<br &#47;><br />
+他们缺少温柔不够幽默没有体力<br &#47;><br />
+不可能跟我匹敌<br &#47;><br />
+你是天生明星只是我<br &#47;><br />
+也没那么容易<br &#47;><br />
+爱不是游戏<br &#47;><br />
+给我机会表现来让你动心<br &#47;><br />
+oh yeah<br &#47;><br />
+My Girl 别怀疑<br &#47;><br />
+我们的频率现在就拉近<br &#47;><br />
+我的头彩就是你爱是高额奖金<br &#47;><br />
+不是Chance Chance而已<br &#47;><br />
+My Girl 想约你<br &#47;><br />
+牵狗狗逛河滨吃碗芒果冰<br &#47;><br />
+我只有这点本领逗你开心<br &#47;><br />
+不是Chance Chance而已<br &#47;><br />
+有信心就要感动你<br &#47;><br />
+直到痛哭流涕<br &#47;><br />
+现在就打开最强电力<br &#47;><br />
+My Girl 别怀疑<br &#47;><br />
+我们的频率现在最靠近<br &#47;><br />
+想爱我的数不清我想爱的是你<br &#47;><br />
+不是Chance Chance而已<br &#47;><br />
+My Girl 看着戏<br &#47;><br />
+装深情加体贴多的是苍蝇<br &#47;><br />
+我没有那种敌机让你满意<br &#47;><br />
+不是Chance Chance而已<br &#47;><br />
+My Girl 别怀疑<br &#47;><br />
+我们的频率现在就拉近<br &#47;><br />
+我的头彩就是你爱是高额奖金<br &#47;><br />
+不是Chance Chance而已<br &#47;><br />
+My Girl 想约你<br &#47;><br />
+牵狗狗逛河滨吃碗芒果冰<br &#47;><br />
+我只有这点本领逗你开心<br &#47;><br />
+不是Chance Chance而已<br &#47;><br />
+My Girl<br &#47;><br />
+罗志祥-呛司呛司<br &#47;><br />
+Over...<br &#47;><br />
+<&#47;p></p>

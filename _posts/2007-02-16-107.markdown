@@ -1,0 +1,29 @@
+---
+layout: post
+status: publish
+published: true
+title: Javascript里边class的一个简单应用
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: Javascript里边class的一个简单应用,也就是最近很热的类。
+wordpress_id: 96
+date: !binary |-
+  MjAwNy0wMi0xNiAwMDo1Mzo0NiArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wMi0xNSAxNjo1Mzo0NiArMDgwMA==
+categories:
+- 脚本语言
+tags:
+- javascript
+comments: []
+---
+<p>[php]<&#47;p></p>
+<p><script language="JavaScript"><br &#47;><!--<br &#47;>&#47;*<br &#47;>function seaprince()<br &#47;>{<br &#47;>this.name="梁";<br &#47;>this.gender="男";<br &#47;>this.show = function () <br &#47;>{<br &#47;>var call = this.gender=="女"?"女士":"先生";<br &#47;>alert('你好，'+this.name+''+call);<br &#47;>}<br &#47;>};<br &#47;>&#47;&#47; 创建一个新对象<&#47;p></p>
+<p>var s=new seaprince;<br &#47;>s.show();<br &#47;>*&#47;<br &#47;>var seaprince = new Object();<br &#47;>seaprince.name = "梁";<br &#47;>seaprince.gender="男";<br &#47;>seaprince.show = function () {<br &#47;>var call = this.gender=="女"?"女士":"先生";<br &#47;>trace('你好，'+this.name+''+call);<br &#47;>};<br &#47;>seaprince.show();<br &#47;>&#47;&#47;--><br &#47;><&#47;script><&#47;p></p>
+<p>[&#47;php]<&#47;p></p>

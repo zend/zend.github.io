@@ -1,0 +1,38 @@
+---
+layout: post
+status: publish
+published: true
+title: CB 1.2 RC 2 is here!
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: <p>Fixed a lot of bugs.</p>
+wordpress_id: 206
+date: !binary |-
+  MjAwOC0wNy0wMyAxODoyMzowMiArMDgwMA==
+date_gmt: !binary |-
+  MjAwOC0wNy0wMyAxMDoyMzowMiArMDgwMA==
+categories:
+- 脚本语言
+tags:
+- joomla
+- community builder
+comments:
+- id: 990
+  author: sakula
+  author_email: sakulaccx@163.com
+  author_url: ''
+  date: !binary |-
+    MjAwOS0xMC0yNyAxMTozNjozNyArMDgwMA==
+  date_gmt: !binary |-
+    MjAwOS0xMC0yNyAwMzozNjozNyArMDgwMA==
+  content: Thanks for your Community Builder
+---
+<p>The biggest bug fixed to me is the CB 1.2 RC can make the tabs mess up. <br &#47;><br />
+The bug was fixed at RC2.<br &#47;><br />
+Feel free to have a try!<&#47;p></p>

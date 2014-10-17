@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: 幸福的生活
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "[F]Big smile[/F][F]Big smile[/F][F]Big smile[/F]<br />\r\n<br />\r\n刚才看了一下CD的博客，看到了诱人的饭菜，不禁感叹！好幸福的一家人哦。<br
+  />\r\n<br />\r\n有老婆在身边的日子，真幸福。<br />\r\n我什么时候才可以天天过这样的生活哦？<br />\r\n<br />\r\n..."
+wordpress_id: 10
+date: !binary |-
+  MjAwNi0wNi0wNyAwMjowMDozOCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0wNyAwMjowMDozOCArMDgwMA==
+categories:
+- 生活点滴
+tags: []
+comments: []
+---
+<p>[F]Big smile[&#47;F][F]Big smile[&#47;F][F]Big smile[&#47;F]<br &#47;><br />
+<br &#47;><br />
+刚才看了一下CD的博客，看到了诱人的饭菜，不禁感叹！好幸福的一家人哦。<br &#47;><br />
+<br &#47;><br />
+有老婆在身边的日子，真幸福。<br &#47;><br />
+我什么时候才可以天天过这样的生活哦？<br &#47;><br />
+<br &#47;></p>

@@ -1,0 +1,83 @@
+---
+layout: post
+status: publish
+published: true
+title: 各大搜索引擎免费登录网址
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "<p>各大搜索引擎：<br />\r\n<br />\r\n搜索引擎免费登录网址大集合！你会用得着哦。</p>"
+wordpress_id: 130
+date: !binary |-
+  MjAwNy0wNi0yNCAxNjo0Mzo0OCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNi0yNCAxNjo0Mzo0OCArMDgwMA==
+categories:
+- 其他技术
+tags: []
+comments: []
+---
+<p>各大搜索引擎：<br &#47;><br />
+<br &#47;><br />
+搜索引擎<br &#47;><br />
+&nbsp;免费登录网址<br &#47;><br />
+&nbsp;相关问题<br &#47;><br />
+&nbsp;<br &#47;><br />
+Google搜索*&nbsp;&nbsp; <a href="http:&#47;&#47;www.google.com&#47;intl&#47;zh-CN&#47;add_url.html">http:&#47;&#47;www.google.com&#47;intl&#47;zh-CN&#47;add_url.html<&#47;a>&nbsp;&nbsp; 收录比较快<br &#47;><br />
+&nbsp;<br &#47;><br />
+百度搜索*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;www.baidu.com&#47;search&#47;url_submit.html">http:&#47;&#47;www.baidu.com&#47;search&#47;url_submit.html<&#47;a> 收录较快<br &#47;><br />
+&nbsp;<br &#47;><br />
+Google中文搜索*&nbsp;&nbsp; <a href="http:&#47;&#47;www.google.cn&#47;intl&#47;zh-CN&#47;add_url.html">http:&#47;&#47;www.google.cn&#47;intl&#47;zh-CN&#47;add_url.html<&#47;a><br &#47;><br />
+&nbsp;收录比较快<br &#47;><br />
+&nbsp;<br &#47;><br />
+百度博客搜索登录&nbsp;&nbsp; <a href="http:&#47;&#47;utility.baidu.com&#47;blogsearch&#47;submit.php">http:&#47;&#47;utility.baidu.com&#47;blogsearch&#47;submit.php<&#47;a><br &#47;><br />
+&nbsp;百度最新推出的测试版博客搜索<br &#47;><br />
+&nbsp;<br &#47;><br />
+雅虎搜索*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;misc.yahoo.com.cn&#47;search_submit.html">http:&#47;&#47;misc.yahoo.com.cn&#47;search_submit.html<&#47;a> 一周内自动处理您的请求<br &#47;><br />
+&nbsp;<br &#47;><br />
+搜狐&#47;搜狗*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;db.sohu.com&#47;regurl&#47;regform.asp?Step=REGFORM&amp;class=">http:&#47;&#47;db.sohu.com&#47;regurl&#47;regform.asp?Step=REGFORM&amp;class=<&#47;a> 收录快<br &#47;><br />
+&nbsp;<br &#47;><br />
+微软Live搜索*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;search.live.com&#47;docs&#47;submit.aspx">http:&#47;&#47;search.live.com&#47;docs&#47;submit.aspx<&#47;a><br &#47;><br />
+&nbsp;与国内的114搜索同数据库<br &#47;><br />
+&nbsp;<br &#47;><br />
+爱问搜索*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;iask.com&#47;guest&#47;add_url.php">http:&#47;&#47;iask.com&#47;guest&#47;add_url.php<&#47;a> 不要重复提交相同的网站<br &#47;><br />
+&nbsp;<br &#47;><br />
+网易有道搜索*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;tellbot.yodao.com&#47;report">http:&#47;&#47;tellbot.yodao.com&#47;report<&#47;a> 网站登录（测试版）<br &#47;><br />
+&nbsp;<br &#47;><br />
+网易有道博客搜索*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;tellbot.yodao.com&#47;report?type=BLOG">http:&#47;&#47;tellbot.yodao.com&#47;report?type=BLOG<&#47;a> 登录您的博客（需审核）<br &#47;><br />
+&nbsp;<br &#47;><br />
+中国搜索*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;service.chinasearch.com.cn&#47;NetSearch&#47;pageurlrecord&#47;frontpageurl.jsp">http:&#47;&#47;service.chinasearch.com.cn&#47;NetSearch&#47;pageurlrecord&#47;frontpageurl.jsp<&#47;a> 在一个月内按相关标准收录<br &#47;><br />
+&nbsp;<br &#47;><br />
+TOM搜索<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;search.tom.com&#47;tools&#47;weblog&#47;log.php">http:&#47;&#47;search.tom.com&#47;tools&#47;weblog&#47;log.php<&#47;a>&nbsp; <br &#47;><br />
+天网搜索<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;home.tianwang.com&#47;denglu.htm">http:&#47;&#47;home.tianwang.com&#47;denglu.htm<&#47;a>&nbsp; <br &#47;><br />
+Google网页目录&nbsp;&nbsp; <a href="http:&#47;&#47;directory.google.com&#47;Top&#47;World&#47;Chinese_Simplified&#47;">http:&#47;&#47;directory.google.com&#47;Top&#47;World&#47;Chinese_Simplified&#47;<&#47;a> 　dmoz，收录慢<br &#47;><br />
+&nbsp;<br &#47;><br />
+百度网址站<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;post.baidu.com&#47;f?kw=百度site">http:&#47;&#47;post.baidu.com&#47;f?kw=百度site<&#47;a>&nbsp; <br &#47;><br />
+hao123网址之家*<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;post.baidu.com&#47;f?kw=hao123">http:&#47;&#47;post.baidu.com&#47;f?kw=hao123<&#47;a>&nbsp; <br &#47;><br />
+Yahoo!<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;submit.search.yahoo.com&#47;free&#47;request&#47;">http:&#47;&#47;submit.search.yahoo.com&#47;free&#47;request&#47;<&#47;a>&nbsp; <br &#47;><br />
+雅虎分类目录<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;cn.dir.yahoo.com&#47;Regional&#47;Countries_and_Regions&#47;Mainland_China&#47;">http:&#47;&#47;cn.dir.yahoo.com&#47;Regional&#47;Countries_and_Regions&#47;Mainland_China&#47;<&#47;a>&nbsp; <br &#47;><br />
+MSN<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;beta.search.msn.com&#47;docs&#47;submit.aspx">http:&#47;&#47;beta.search.msn.com&#47;docs&#47;submit.aspx<&#47;a>&nbsp; <br &#47;><br />
+alltheweb<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;www.alltheweb.com&#47;help&#47;webmaster&#47;submit_site">http:&#47;&#47;www.alltheweb.com&#47;help&#47;webmaster&#47;submit_site<&#47;a>&nbsp; <br &#47;><br />
+Gigablast<br &#47;><br />
+&nbsp;&nbsp; <a href="http:&#47;&#47;www.gigablast.com&#47;addurl">http:&#47;&#47;www.gigablast.com&#47;addurl<&#47;a> <br &#47;><br />
+&nbsp;<&#47;p></p>

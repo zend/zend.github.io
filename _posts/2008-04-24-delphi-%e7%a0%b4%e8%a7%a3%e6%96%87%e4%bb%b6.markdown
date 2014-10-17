@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: Delphi 破解文件
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+wordpress_id: 192
+date: !binary |-
+  MjAwOC0wNC0yNCAxMzo1Nzo0MyArMDgwMA==
+date_gmt: !binary |-
+  MjAwOC0wNC0yNCAwNTo1Nzo0MyArMDgwMA==
+categories:
+- 其他技术
+tags:
+- delphi
+comments: []
+---
+<p>Delphi 7<&#47;p></p>
+<p>序列号（6AMD-PDJ686-APME9D-9CDR KEY:YVX-27C ）<&#47;p></p>
+<p>dent.slip文件覆盖本地Delphi7安装目录下同名文件（见附件）<&#47;p></p>

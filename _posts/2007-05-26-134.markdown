@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: 爱哭鬼
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: 我爱哭大声的哭你在身边我敢放肆的哭<br />电影感人听情歌我都会哭<br />我爱哭偷偷的哭你清楚却伤我那黱离谱<br />几句话语我的泪却止不住<br
+  />你说分手时候彷佛早就想清楚<br />留我一个躲在角落来不及哭只能傻住<br />我是爱哭鬼我想哭掉对你的思念<br />看著镜子里面没志气的脸然后越哭越后悔<br
+  />我是爱哭鬼我想哭掉对你的依恋<br />我也知道自己这样子不对<br />却还越哭越认真的为谁<br />我不哭我不敢哭哭只会让视线变的模糊<br />视线模糊记忆却会更清楚<br
+  />你说分手时候彷佛早就想清楚<br />留我一个躲在角落来不及哭只能傻住<br />我是爱哭鬼我想哭掉对你的思念<br />看著镜子里面没志气的脸然后越哭越后悔<br
+  />我是爱哭鬼我想哭掉对你的依恋<br />我也知道自己这样子不对<br />却还越哭越认真的可悲
+wordpress_id: 116
+date: !binary |-
+  MjAwNy0wNS0yNiAwMjo1MDo1MCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNS0yNiAwMjo1MDo1MCArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments: []
+---
+<p>歌曲：<span style="FONT-WEIGHT: bold">爱哭鬼<&#47;span><br &#47;>歌手：<span style="FONT-WEIGHT: bold">江美琪 <&#47;span>专辑：<span style="FONT-WEIGHT: bold">爱哭鬼 <&#47;span><br &#47;><br &#47;>我爱哭大声的哭你在身边我敢放肆的哭<br &#47;>电影感人听情歌我都会哭<br &#47;>我爱哭偷偷的哭你清楚却伤我那黱离谱<br &#47;>几句话语我的泪却止不住<br &#47;>你说分手时候彷佛早就想清楚<br &#47;>留我一个躲在角落来不及哭只能傻住<br &#47;>我是爱哭鬼我想哭掉对你的思念<br &#47;>看著镜子里面没志气的脸然后越哭越后悔<br &#47;>我是爱哭鬼我想哭掉对你的依恋<br &#47;>我也知道自己这样子不对<br &#47;>却还越哭越认真的为谁<br &#47;>我不哭我不敢哭哭只会让视线变的模糊<br &#47;>视线模糊记忆却会更清楚<br &#47;>你说分手时候彷佛早就想清楚<br &#47;>留我一个躲在角落来不及哭只能傻住<br &#47;>我是爱哭鬼我想哭掉对你的思念<br &#47;>看著镜子里面没志气的脸然后越哭越后悔<br &#47;>我是爱哭鬼我想哭掉对你的依恋<br &#47;>我也知道自己这样子不对<br &#47;>却还越哭越认真的可悲</p>

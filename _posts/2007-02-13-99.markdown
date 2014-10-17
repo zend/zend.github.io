@@ -1,0 +1,47 @@
+---
+layout: post
+status: publish
+published: true
+title: Javascript里边cookie的一个简单应用
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "<p>一般，javascript中cookie的应用都是相对简单的，往往就是想要记得某个层的当前位置，记住用户的一些简单个人设置，等等。如果说你有比这大的应用，建议你跟服务器的session配合使用。</p>\r\n<p>本文这个应用很简单，也很实用，如果你有同样的需要，可以看一下。</p>"
+wordpress_id: 90
+date: !binary |-
+  MjAwNy0wMi0xMyAwMDo1MTowNyArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wMi0xMiAxNjo1MTowNyArMDgwMA==
+categories:
+- 脚本语言
+tags:
+- javascript
+comments: []
+---
+<p>一般，javascript中cookie的应用都是相对简单的，往往就是想要记得某个层的当前位置，记住用户的一些简单个人设置，等等。如果说你有比这大的应用，建议你跟服务器的session配合使用。<&#47;p></p>
+<p>本文这个应用很简单，也很实用，如果你有同样的需要，可以看一下。<&#47;p></p>
+<p>先看代码：<&#47;p></p>
+<p>[php]<script language="JavaScript"><br &#47;><!--<br &#47;>i=0;<br &#47;>function sc(name,value) {<br &#47;>&nbsp;i++;<br &#47;>&nbsp;document.cookie = 'js_var='+i;<br &#47;>}<br &#47;>function gc() {<br &#47;>&nbsp;document.getElementById('v').innerHTML=document.cookie;<br &#47;>}<br &#47;>&#47;&#47;--><br &#47;><&#47;script><br &#47;>
+<div id='v'><&#47;div><br &#47;><input type="button" value='click' onclick="sc();gc();">[&#47;php]<&#47;p></p>
+<p>效果：<&#47;p></p>
+<p>&nbsp;<&#47;p><br />
+<script language="JavaScript"><br />
+<!--<br />
+i=0;<br />
+function sc(name,value) {<br />
+	i++;<br />
+	document.cookie = 'js_var='+i;<br />
+}<br />
+function gc() {<br />
+	document.getElementById('v').innerHTML=document.cookie;<br />
+}<br />
+&#47;&#47;--><br />
+<&#47;script></p>
+<div id="v"><&#47;div><br />
+<input onclick="sc();gc();" type="button" value="click" &#47;></p>
+<p>怎么样，感觉还可以吧！是不是比网上的很多方法都要简单容易理解得多！？能实现效果的方法中，最简单的就是最好的。<&#47;p></p>

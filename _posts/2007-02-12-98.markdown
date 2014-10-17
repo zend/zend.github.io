@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: 刚发现google earth 的一个超级酷的功能
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: 可以直接在panoramio上传您的照片，在google earth同步显示！
+wordpress_id: 89
+date: !binary |-
+  MjAwNy0wMi0xMiAwMTo1NDo0NiArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wMi0xMSAxNzo1NDo0NiArMDgwMA==
+categories:
+- 其他技术
+tags:
+- Google
+comments: []
+---
+<p>江南中学示例：<&#47;p></p>
+<p>&nbsp;23&deg; 4'3.33"N&nbsp;&nbsp;109&deg;36'14.51"E<&#47;p></p>
+<p>贵港新世纪广场：<&#47;p></p>
+<p>&nbsp;23&deg; 6'44.57"N&nbsp;&nbsp; 109&deg;35'31.25"E<&#47;p></p>
+<p>成都理工大学后门：<&#47;p></p>
+<p>&nbsp;30&deg;40'42.71"N&nbsp; 104&deg; 8'33.51"E<&#47;p></p>
+<p>成都理工大学侧门邮局：<&#47;p></p>
+<p>&nbsp;30&deg;40'39.34"N&nbsp;&nbsp; 104&deg; 8'17.36"E<&#47;p></p>

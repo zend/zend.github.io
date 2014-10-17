@@ -1,0 +1,25 @@
+---
+layout: post
+status: publish
+published: true
+title: 南宁，脚印，期待精彩&hellip;&hellip;
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "即将去成都，顺道到南宁一游。<br />\r\n希望可以精彩。<br />\r\n..."
+wordpress_id: 57
+date: !binary |-
+  MjAwNi0wOC0yMiAxNTo1Mjo1NyArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wOC0yMiAxNTo1Mjo1NyArMDgwMA==
+categories:
+- 生活点滴
+tags: []
+comments: []
+---
+<p>即将去成都，顺道到南宁一游。<br &#47;><br />
+希望可以精彩。<br &#47;></p>

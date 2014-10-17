@@ -1,0 +1,459 @@
+---
+layout: post
+status: publish
+published: true
+title: 将汉字字符串转化成拼音
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: <p>这段PHP代码可以直接把汉字转换成拼音全拼。</p>
+wordpress_id: 83
+date: !binary |-
+  MjAwNy0wMS0yOCAxNjozNzoxMSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wMS0yOCAwODozNzoxMSArMDgwMA==
+categories:
+- 脚本语言
+tags:
+- php
+comments: []
+---
+<p>这段PHP代码可以直接把汉字转换成拼音全拼。<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">PHP代码<&#47;div></p>
+<ol class="dp-c">
+<li class="alt"><span><span><?&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$d<&#47;span><span>=<&#47;span><span class="keyword">array<&#47;span><span>(&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"a"<&#47;span><span>,-20319),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ai"<&#47;span><span>,-20317),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"an"<&#47;span><span>,-20304),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ang"<&#47;span><span>,-20295),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ao"<&#47;span><span>,-20292),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ba"<&#47;span><span>,-20283),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bai"<&#47;span><span>,-20265),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ban"<&#47;span><span>,-20257),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bang"<&#47;span><span>,-20242),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bao"<&#47;span><span>,-20230),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bei"<&#47;span><span>,-20051),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ben"<&#47;span><span>,-20036),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"beng"<&#47;span><span>,-20032),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bi"<&#47;span><span>,-20026),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bian"<&#47;span><span>,-20002),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"biao"<&#47;span><span>,-19990),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bie"<&#47;span><span>,-19986),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bin"<&#47;span><span>,-19982),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bing"<&#47;span><span>,-19976),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bo"<&#47;span><span>,-19805),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"bu"<&#47;span><span>,-19784),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ca"<&#47;span><span>,-19775),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cai"<&#47;span><span>,-19774),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"can"<&#47;span><span>,-19763),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cang"<&#47;span><span>,-19756),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cao"<&#47;span><span>,-19751),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ce"<&#47;span><span>,-19746),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ceng"<&#47;span><span>,-19741),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cha"<&#47;span><span>,-19739),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chai"<&#47;span><span>,-19728),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chan"<&#47;span><span>,-19725),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chang"<&#47;span><span>,-19715),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chao"<&#47;span><span>,-19540),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"che"<&#47;span><span>,-19531),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chen"<&#47;span><span>,-19525),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cheng"<&#47;span><span>,-19515),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chi"<&#47;span><span>,-19500),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chong"<&#47;span><span>,-19484),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chou"<&#47;span><span>,-19479),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chu"<&#47;span><span>,-19467),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chuai"<&#47;span><span>,-19289),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chuan"<&#47;span><span>,-19288),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chuang"<&#47;span><span>,-19281),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chui"<&#47;span><span>,-19275),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chun"<&#47;span><span>,-19270),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"chuo"<&#47;span><span>,-19263),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ci"<&#47;span><span>,-19261),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cong"<&#47;span><span>,-19249),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cou"<&#47;span><span>,-19243),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cu"<&#47;span><span>,-19242),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cuan"<&#47;span><span>,-19238),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cui"<&#47;span><span>,-19235),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cun"<&#47;span><span>,-19227),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"cuo"<&#47;span><span>,-19224),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"da"<&#47;span><span>,-19218),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dai"<&#47;span><span>,-19212),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dan"<&#47;span><span>,-19038),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dang"<&#47;span><span>,-19023),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dao"<&#47;span><span>,-19018),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"de"<&#47;span><span>,-19006),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"deng"<&#47;span><span>,-19003),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"di"<&#47;span><span>,-18996),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dian"<&#47;span><span>,-18977),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"diao"<&#47;span><span>,-18961),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"die"<&#47;span><span>,-18952),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ding"<&#47;span><span>,-18783),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"diu"<&#47;span><span>,-18774),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dong"<&#47;span><span>,-18773),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dou"<&#47;span><span>,-18763),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"du"<&#47;span><span>,-18756),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"duan"<&#47;span><span>,-18741),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dui"<&#47;span><span>,-18735),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"dun"<&#47;span><span>,-18731),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"duo"<&#47;span><span>,-18722),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"e"<&#47;span><span>,-18710),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"en"<&#47;span><span>,-18697),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"er"<&#47;span><span>,-18696),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"fa"<&#47;span><span>,-18526),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"fan"<&#47;span><span>,-18518),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"fang"<&#47;span><span>,-18501),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"fei"<&#47;span><span>,-18490),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"fen"<&#47;span><span>,-18478),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"feng"<&#47;span><span>,-18463),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"fo"<&#47;span><span>,-18448),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"fou"<&#47;span><span>,-18447),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"fu"<&#47;span><span>,-18446),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ga"<&#47;span><span>,-18239),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gai"<&#47;span><span>,-18237),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gan"<&#47;span><span>,-18231),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gang"<&#47;span><span>,-18220),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gao"<&#47;span><span>,-18211),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ge"<&#47;span><span>,-18201),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gei"<&#47;span><span>,-18184),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gen"<&#47;span><span>,-18183),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"geng"<&#47;span><span>,-18181),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gong"<&#47;span><span>,-18012),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gou"<&#47;span><span>,-17997),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gu"<&#47;span><span>,-17988),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gua"<&#47;span><span>,-17970),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"guai"<&#47;span><span>,-17964),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"guan"<&#47;span><span>,-17961),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"guang"<&#47;span><span>,-17950),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gui"<&#47;span><span>,-17947),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"gun"<&#47;span><span>,-17931),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"guo"<&#47;span><span>,-17928),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ha"<&#47;span><span>,-17922),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hai"<&#47;span><span>,-17759),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"han"<&#47;span><span>,-17752),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hang"<&#47;span><span>,-17733),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hao"<&#47;span><span>,-17730),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"he"<&#47;span><span>,-17721),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hei"<&#47;span><span>,-17703),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hen"<&#47;span><span>,-17701),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"heng"<&#47;span><span>,-17697),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hong"<&#47;span><span>,-17692),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hou"<&#47;span><span>,-17683),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hu"<&#47;span><span>,-17676),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hua"<&#47;span><span>,-17496),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"huai"<&#47;span><span>,-17487),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"huan"<&#47;span><span>,-17482),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"huang"<&#47;span><span>,-17468),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hui"<&#47;span><span>,-17454),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"hun"<&#47;span><span>,-17433),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"huo"<&#47;span><span>,-17427),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ji"<&#47;span><span>,-17417),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jia"<&#47;span><span>,-17202),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jian"<&#47;span><span>,-17185),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jiang"<&#47;span><span>,-16983),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jiao"<&#47;span><span>,-16970),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jie"<&#47;span><span>,-16942),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jin"<&#47;span><span>,-16915),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jing"<&#47;span><span>,-16733),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jiong"<&#47;span><span>,-16708),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jiu"<&#47;span><span>,-16706),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ju"<&#47;span><span>,-16689),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"juan"<&#47;span><span>,-16664),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jue"<&#47;span><span>,-16657),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"jun"<&#47;span><span>,-16647),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ka"<&#47;span><span>,-16474),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kai"<&#47;span><span>,-16470),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kan"<&#47;span><span>,-16465),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kang"<&#47;span><span>,-16459),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kao"<&#47;span><span>,-16452),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ke"<&#47;span><span>,-16448),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ken"<&#47;span><span>,-16433),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"keng"<&#47;span><span>,-16429),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kong"<&#47;span><span>,-16427),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kou"<&#47;span><span>,-16423),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ku"<&#47;span><span>,-16419),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kua"<&#47;span><span>,-16412),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kuai"<&#47;span><span>,-16407),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kuan"<&#47;span><span>,-16403),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kuang"<&#47;span><span>,-16401),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kui"<&#47;span><span>,-16393),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kun"<&#47;span><span>,-16220),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"kuo"<&#47;span><span>,-16216),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"la"<&#47;span><span>,-16212),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lai"<&#47;span><span>,-16205),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lan"<&#47;span><span>,-16202),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lang"<&#47;span><span>,-16187),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lao"<&#47;span><span>,-16180),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"le"<&#47;span><span>,-16171),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lei"<&#47;span><span>,-16169),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"leng"<&#47;span><span>,-16158),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"li"<&#47;span><span>,-16155),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lia"<&#47;span><span>,-15959),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lian"<&#47;span><span>,-15958),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"liang"<&#47;span><span>,-15944),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"liao"<&#47;span><span>,-15933),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lie"<&#47;span><span>,-15920),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lin"<&#47;span><span>,-15915),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ling"<&#47;span><span>,-15903),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"liu"<&#47;span><span>,-15889),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"long"<&#47;span><span>,-15878),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lou"<&#47;span><span>,-15707),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lu"<&#47;span><span>,-15701),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lv"<&#47;span><span>,-15681),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"luan"<&#47;span><span>,-15667),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lue"<&#47;span><span>,-15661),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"lun"<&#47;span><span>,-15659),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"luo"<&#47;span><span>,-15652),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ma"<&#47;span><span>,-15640),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mai"<&#47;span><span>,-15631),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"man"<&#47;span><span>,-15625),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mang"<&#47;span><span>,-15454),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mao"<&#47;span><span>,-15448),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"me"<&#47;span><span>,-15436),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mei"<&#47;span><span>,-15435),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"men"<&#47;span><span>,-15419),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"meng"<&#47;span><span>,-15416),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mi"<&#47;span><span>,-15408),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mian"<&#47;span><span>,-15394),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"miao"<&#47;span><span>,-15385),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mie"<&#47;span><span>,-15377),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"min"<&#47;span><span>,-15375),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ming"<&#47;span><span>,-15369),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"miu"<&#47;span><span>,-15363),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mo"<&#47;span><span>,-15362),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mou"<&#47;span><span>,-15183),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"mu"<&#47;span><span>,-15180),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"na"<&#47;span><span>,-15165),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nai"<&#47;span><span>,-15158),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nan"<&#47;span><span>,-15153),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nang"<&#47;span><span>,-15150),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nao"<&#47;span><span>,-15149),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ne"<&#47;span><span>,-15144),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nei"<&#47;span><span>,-15143),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nen"<&#47;span><span>,-15141),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"neng"<&#47;span><span>,-15140),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ni"<&#47;span><span>,-15139),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nian"<&#47;span><span>,-15128),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"niang"<&#47;span><span>,-15121),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"niao"<&#47;span><span>,-15119),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nie"<&#47;span><span>,-15117),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nin"<&#47;span><span>,-15110),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ning"<&#47;span><span>,-15109),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"niu"<&#47;span><span>,-14941),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nong"<&#47;span><span>,-14937),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nu"<&#47;span><span>,-14933),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nv"<&#47;span><span>,-14930),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nuan"<&#47;span><span>,-14929),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nue"<&#47;span><span>,-14928),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"nuo"<&#47;span><span>,-14926),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"o"<&#47;span><span>,-14922),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ou"<&#47;span><span>,-14921),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pa"<&#47;span><span>,-14914),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pai"<&#47;span><span>,-14908),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pan"<&#47;span><span>,-14902),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pang"<&#47;span><span>,-14894),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pao"<&#47;span><span>,-14889),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pei"<&#47;span><span>,-14882),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pen"<&#47;span><span>,-14873),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"peng"<&#47;span><span>,-14871),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pi"<&#47;span><span>,-14857),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pian"<&#47;span><span>,-14678),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"piao"<&#47;span><span>,-14674),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pie"<&#47;span><span>,-14670),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pin"<&#47;span><span>,-14668),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ping"<&#47;span><span>,-14663),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"po"<&#47;span><span>,-14654),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"pu"<&#47;span><span>,-14645),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qi"<&#47;span><span>,-14630),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qia"<&#47;span><span>,-14594),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qian"<&#47;span><span>,-14429),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qiang"<&#47;span><span>,-14407),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qiao"<&#47;span><span>,-14399),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qie"<&#47;span><span>,-14384),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qin"<&#47;span><span>,-14379),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qing"<&#47;span><span>,-14368),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qiong"<&#47;span><span>,-14355),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qiu"<&#47;span><span>,-14353),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qu"<&#47;span><span>,-14345),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"quan"<&#47;span><span>,-14170),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"que"<&#47;span><span>,-14159),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"qun"<&#47;span><span>,-14151),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ran"<&#47;span><span>,-14149),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"rang"<&#47;span><span>,-14145),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"rao"<&#47;span><span>,-14140),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"re"<&#47;span><span>,-14137),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ren"<&#47;span><span>,-14135),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"reng"<&#47;span><span>,-14125),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ri"<&#47;span><span>,-14123),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"rong"<&#47;span><span>,-14122),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"rou"<&#47;span><span>,-14112),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ru"<&#47;span><span>,-14109),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ruan"<&#47;span><span>,-14099),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"rui"<&#47;span><span>,-14097),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"run"<&#47;span><span>,-14094),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ruo"<&#47;span><span>,-14092),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sa"<&#47;span><span>,-14090),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sai"<&#47;span><span>,-14087),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"san"<&#47;span><span>,-14083),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sang"<&#47;span><span>,-13917),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sao"<&#47;span><span>,-13914),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"se"<&#47;span><span>,-13910),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sen"<&#47;span><span>,-13907),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"seng"<&#47;span><span>,-13906),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sha"<&#47;span><span>,-13905),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shai"<&#47;span><span>,-13896),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shan"<&#47;span><span>,-13894),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shang"<&#47;span><span>,-13878),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shao"<&#47;span><span>,-13870),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"she"<&#47;span><span>,-13859),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shen"<&#47;span><span>,-13847),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sheng"<&#47;span><span>,-13831),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shi"<&#47;span><span>,-13658),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shou"<&#47;span><span>,-13611),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shu"<&#47;span><span>,-13601),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shua"<&#47;span><span>,-13406),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shuai"<&#47;span><span>,-13404),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shuan"<&#47;span><span>,-13400),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shuang"<&#47;span><span>,-13398),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shui"<&#47;span><span>,-13395),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shun"<&#47;span><span>,-13391),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"shuo"<&#47;span><span>,-13387),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"si"<&#47;span><span>,-13383),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"song"<&#47;span><span>,-13367),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sou"<&#47;span><span>,-13359),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"su"<&#47;span><span>,-13356),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"suan"<&#47;span><span>,-13343),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sui"<&#47;span><span>,-13340),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"sun"<&#47;span><span>,-13329),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"suo"<&#47;span><span>,-13326),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ta"<&#47;span><span>,-13318),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tai"<&#47;span><span>,-13147),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tan"<&#47;span><span>,-13138),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tang"<&#47;span><span>,-13120),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tao"<&#47;span><span>,-13107),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"te"<&#47;span><span>,-13096),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"teng"<&#47;span><span>,-13095),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ti"<&#47;span><span>,-13091),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tian"<&#47;span><span>,-13076),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tiao"<&#47;span><span>,-13068),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tie"<&#47;span><span>,-13063),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ting"<&#47;span><span>,-13060),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tong"<&#47;span><span>,-12888),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tou"<&#47;span><span>,-12875),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tu"<&#47;span><span>,-12871),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tuan"<&#47;span><span>,-12860),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tui"<&#47;span><span>,-12858),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tun"<&#47;span><span>,-12852),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"tuo"<&#47;span><span>,-12849),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"wa"<&#47;span><span>,-12838),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"wai"<&#47;span><span>,-12831),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"wan"<&#47;span><span>,-12829),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"wang"<&#47;span><span>,-12812),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"wei"<&#47;span><span>,-12802),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"wen"<&#47;span><span>,-12607),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"weng"<&#47;span><span>,-12597),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"wo"<&#47;span><span>,-12594),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"wu"<&#47;span><span>,-12585),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xi"<&#47;span><span>,-12556),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xia"<&#47;span><span>,-12359),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xian"<&#47;span><span>,-12346),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xiang"<&#47;span><span>,-12320),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xiao"<&#47;span><span>,-12300),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xie"<&#47;span><span>,-12120),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xin"<&#47;span><span>,-12099),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xing"<&#47;span><span>,-12089),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xiong"<&#47;span><span>,-12074),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xiu"<&#47;span><span>,-12067),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xu"<&#47;span><span>,-12058),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xuan"<&#47;span><span>,-12039),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xue"<&#47;span><span>,-11867),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"xun"<&#47;span><span>,-11861),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ya"<&#47;span><span>,-11847),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yan"<&#47;span><span>,-11831),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yang"<&#47;span><span>,-11798),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yao"<&#47;span><span>,-11781),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ye"<&#47;span><span>,-11604),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yi"<&#47;span><span>,-11589),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yin"<&#47;span><span>,-11536),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ying"<&#47;span><span>,-11358),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yo"<&#47;span><span>,-11340),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yong"<&#47;span><span>,-11339),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"you"<&#47;span><span>,-11324),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yu"<&#47;span><span>,-11303),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yuan"<&#47;span><span>,-11097),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yue"<&#47;span><span>,-11077),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"yun"<&#47;span><span>,-11067),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"za"<&#47;span><span>,-11055),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zai"<&#47;span><span>,-11052),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zan"<&#47;span><span>,-11045),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zang"<&#47;span><span>,-11041),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zao"<&#47;span><span>,-11038),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"ze"<&#47;span><span>,-11024),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zei"<&#47;span><span>,-11020),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zen"<&#47;span><span>,-11019),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zeng"<&#47;span><span>,-11018),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zha"<&#47;span><span>,-11014),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhai"<&#47;span><span>,-10838),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhan"<&#47;span><span>,-10832),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhang"<&#47;span><span>,-10815),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhao"<&#47;span><span>,-10800),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhe"<&#47;span><span>,-10790),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhen"<&#47;span><span>,-10780),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zheng"<&#47;span><span>,-10764),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhi"<&#47;span><span>,-10587),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhong"<&#47;span><span>,-10544),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhou"<&#47;span><span>,-10533),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhu"<&#47;span><span>,-10519),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhua"<&#47;span><span>,-10331),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhuai"<&#47;span><span>,-10329),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhuan"<&#47;span><span>,-10328),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhuang"<&#47;span><span>,-10322),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhui"<&#47;span><span>,-10315),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhun"<&#47;span><span>,-10309),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zhuo"<&#47;span><span>,-10307),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zi"<&#47;span><span>,-10296),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zong"<&#47;span><span>,-10281),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zou"<&#47;span><span>,-10274),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zu"<&#47;span><span>,-10270),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zuan"<&#47;span><span>,-10262),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zui"<&#47;span><span>,-10260),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zun"<&#47;span><span>,-10256),&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">array<&#47;span><span>(<&#47;span><span class="string">"zuo"<&#47;span><span>,-10254)&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>);&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="keyword">function<&#47;span><span>&nbsp;g(<&#47;span><span class="vars">$num<&#47;span><span>){&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">global<&#47;span><span>&nbsp;<&#47;span><span class="vars">$d<&#47;span><span>;&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">if<&#47;span><span>(<&#47;span><span class="vars">$num<&#47;span><span>>0&amp;&amp;<&#47;span><span class="vars">$num<&#47;span><span><160){&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">return<&#47;span><span>&nbsp;<&#47;span><span class="func">chr<&#47;span><span>(<&#47;span><span class="vars">$num<&#47;span><span>);&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">elseif<&#47;span><span>(<&#47;span><span class="vars">$num<&#47;span><span><-20319||<&#47;span><span class="vars">$num<&#47;span><span>>-10247){&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">return<&#47;span><span>&nbsp;<&#47;span><span class="string">""<&#47;span><span>;&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>}<span class="keyword">else<&#47;span><span>{&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="keyword">for<&#47;span><span>(<&#47;span><span class="vars">$i<&#47;span><span>=<&#47;span><span class="func">count<&#47;span><span>(<&#47;span><span class="vars">$d<&#47;span><span>)-1;<&#47;span><span class="vars">$i<&#47;span><span>>=0;<&#47;span><span class="vars">$i<&#47;span><span>--){<&#47;span><span class="keyword">if<&#47;span><span>(<&#47;span><span class="vars">$d<&#47;span><span>[<&#47;span><span class="vars">$i<&#47;span><span>][1]<=<&#47;span><span class="vars">$num<&#47;span><span>)<&#47;span><span class="keyword">break<&#47;span><span>;}&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">return<&#47;span><span>&nbsp;<&#47;span><span class="vars">$d<&#47;span><span>[<&#47;span><span class="vars">$i<&#47;span><span>][0];&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>}&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">function<&#47;span><span>&nbsp;c(<&#47;span><span class="vars">$str<&#47;span><span>){&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$ret<&#47;span><span>=<&#47;span><span class="string">""<&#47;span><span>;&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">for<&#47;span><span>(<&#47;span><span class="vars">$i<&#47;span><span>=0;<&#47;span><span class="vars">$i<&#47;span><span><<&#47;span><span class="func">strlen<&#47;span><span>(<&#47;span><span class="vars">$str<&#47;span><span>);<&#47;span><span class="vars">$i<&#47;span><span>++){&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$p<&#47;span><span>=ord(<&#47;span><span class="func">substr<&#47;span><span>(<&#47;span><span class="vars">$str<&#47;span><span>,<&#47;span><span class="vars">$i<&#47;span><span>,1));&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">if<&#47;span><span>(<&#47;span><span class="vars">$p<&#47;span><span>>160){&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span><span class="vars">$q<&#47;span><span>=ord(<&#47;span><span class="func">substr<&#47;span><span>(<&#47;span><span class="vars">$str<&#47;span><span>,++<&#47;span><span class="vars">$i<&#47;span><span>,1));&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$p<&#47;span><span>=<&#47;span><span class="vars">$p<&#47;span><span>*256+<&#47;span><span class="vars">$q<&#47;span><span>-65536;&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="vars">$ret<&#47;span><span>.=g(<&#47;span><span class="vars">$p<&#47;span><span>);&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span><span class="keyword">return<&#47;span><span>&nbsp;<&#47;span><span class="vars">$ret<&#47;span><span>;&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span><span class="func">echo<&#47;span><span>&nbsp;c(<&#47;span><span class="string">"海海家园"<&#47;span><span>);&nbsp;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>?>&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>&nbsp;<&#47;p></p>

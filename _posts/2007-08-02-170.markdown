@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: linux内核里的脏话
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "<p>这是一个非常有趣的统计，两张图形象的反映出了Linux内核源代码中，脏话字眼的统计数字。<br />\r\n其实不单是Linux内核源代码，普通的PHP程序的源代码里也会有很好玩的注释哈！这个很形象的反映了程序写程序时的心情。</p>"
+wordpress_id: 141
+date: !binary |-
+  MjAwNy0wOC0wMiAxMjo1NzoyNyArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wOC0wMiAwNDo1NzoyNyArMDgwMA==
+categories:
+- 其他技术
+tags:
+- linux
+comments: []
+---
+<p>这是一个非常有趣的统计，两张图形象的反映出了Linux内核源代码中，脏话字眼的统计数字。<br &#47;><br />
+其实不单是Linux内核源代码，普通的PHP程序的源代码里也会有很好玩的注释哈！这个很形象的反映了程序写程序时的心情。<&#47;p></p>
+<p>内核里平均每行的脏话数<&#47;p></p>
+<p>[attach=90]<&#47;p></p>
+<p>&nbsp;<&#47;p></p>
+<p>内核里的脏话总计数<&#47;p></p>
+<p>[attach=91]<&#47;p></p>
+<p>The number of various words in c, h and S source files in the linux kernel,  updated monthly or whenever I hear of a new release. It's inspired by the linux  kernel fuck count, which unfortunatly is very outdated. <br &#47;><br />
+<br &#47;><br />
+A little about  the counting method used: A word is counted if it appears in any context, even  if part of another word (such as love in rollover, which was why this word  wasn't included ;). It's not grep -c, multiple words on one line may be counted.  And don't worry about the mirror either, the graph is generated on a box local  to ftp.programvareverkstedet.lkams.kernel.org, an official kernel.org mirror.  <br &#47;><br />
+<br &#47;><br />
+Back to other stuff Vidar Holen's made. <br &#47;><br />
+<br &#47;><br />
+You can get the script  here, but it's pretty horrible and I wouldn't recommend it.<&#47;p></p>
+<div style="display: none;" title="menu" id="attach_3_menu" class="t_attach"><img border="0" src="images&#47;attachicons&#47;image.gif" alt="" class="absmiddle" &#47;> <a target="_blank" href="attachment.php?aid=3&amp;nothumb=yes" class="bold">1.png<&#47;a>  (8.04 KB)<br &#47;></p>
+<div class="right smalltxt">2007-8-2 12:09<&#47;div><br />
+<&#47;div></p>
+<div style="display: none;" title="menu" id="attach_4_menu" class="t_attach"><img border="0" src="images&#47;attachicons&#47;image.gif" alt="" class="absmiddle" &#47;> <a target="_blank" href="attachment.php?aid=4&amp;nothumb=yes" class="bold">2.png<&#47;a>  (8.46 KB)<br &#47;></p>
+<div class="right smalltxt">2007-8-2 12:09<&#47;div><br />
+<&#47;div></p>

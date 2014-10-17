@@ -1,0 +1,51 @@
+---
+layout: post
+status: publish
+published: true
+title: 外语出名电台在线听地址（BBC, VOA）
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "<p>VOA&nbsp; rtsp://a247.r.akareal.net/live/D/247/2110/v001/reflector:48984</p>\r\n<p>BBC&nbsp;
+  <a href=\"http://www.bbc.co.uk/worldservice/ram/live_news.ram\">http://www.bbc.co.uk/worldservice/ram/live_news.ram</a></p>\r\n<p>日语
+  <a href=\"http://www.nhk.or.jp/rj/ram/en/japanese.ram\">http://www.nhk.or.jp/rj/ram/en/japanese.ram</a></p>\r\n<p>法语
+  <a href=\"http://www.wrn.org/audio/fre_1.ram\">http://www.wrn.org/audio/fre_1.ram</a></p>\r\n<p>德语
+  <a href=\"http://vid01.wkstmk.at/ram/roi.ram\">http://vid01.wkstmk.at/ram/roi.ram</a></p>\r\n<p>俄语
+  <a href=\"http://www.wrn.org/audio/rus.ram\">http://www.wrn.org/audio/rus.ram</a></p>"
+wordpress_id: 139
+date: !binary |-
+  MjAwNy0wNy0yOCAxNTo1NTozNSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNy0yOCAxNTo1NTozNSArMDgwMA==
+categories:
+- 音乐心情
+tags: []
+comments: []
+---
+<table style="border-collapse: collapse" bordercolor="#111111" cellspacing="8" cellpadding="8" width="100%" background="images&#47;bgpic&#47;000000.gif" border="0">
+<tbody>
+<tr>
+<td align="center" width="34%" height="16"><strong><font face="Arial" color="#006699">VOA<&#47;font><&#47;strong><embed src="rtsp:&#47;&#47;a247.r.akareal.net&#47;live&#47;D&#47;247&#47;2110&#47;v001&#47;reflector:48984" width="52" height="20" type="audio&#47;x-pn-realaudio-plugin" tppabs="defaultsound&#47;1.rm" controls="PlayButton" autostart="false"><&#47;embed><&#47;td></p>
+<td align="center" width="33%" colspan="2" height="16"><strong><font face="Arial" color="#006699">BBC<embed src="http:&#47;&#47;www.bbc.co.uk&#47;worldservice&#47;ram&#47;live_news.ram" width="50" height="20" type="audio&#47;x-pn-realaudio-plugin" autostart="false" controls="PlayButton" tppabs="defaultsound&#47;1.rm"><&#47;embed><&#47;font><&#47;strong><&#47;td></p>
+<td align="center" width="33%" height="16"><font face="黑体" color="#006699">日语<embed src="http:&#47;&#47;www.nhk.or.jp&#47;rj&#47;ram&#47;en&#47;japanese.ram" width="50" height="20" type="audio&#47;x-pn-realaudio-plugin" tppabs="defaultsound&#47;1.rm" controls="PlayButton" autostart="false"><&#47;embed><&#47;font><&#47;td><br />
+        <&#47;tr></p>
+<tr>
+<td align="center" width="34%" height="16"><font face="黑体" color="#006699">法语<embed src="http:&#47;&#47;www.wrn.org&#47;audio&#47;fre_1.ram" width="50" height="20" type="audio&#47;x-pn-realaudio-plugin" tppabs="defaultsound&#47;1.rm" controls="PlayButton" autostart="false"><&#47;embed><&#47;font><&#47;td></p>
+<td align="center" width="33%" colspan="2" height="16"><font face="黑体" color="#006699">德语<embed src="http:&#47;&#47;vid01.wkstmk.at&#47;ram&#47;roi.ram" width="50" height="20" type="audio&#47;x-pn-realaudio-plugin" autostart="false" controls="PlayButton" tppabs="defaultsound&#47;1.rm"><&#47;embed><&#47;font><&#47;td></p>
+<td align="center" width="33%" height="16"><font face="黑体" color="#006699">俄语<embed src="http:&#47;&#47;www.wrn.org&#47;audio&#47;rus.ram" width="50" height="20" type="audio&#47;x-pn-realaudio-plugin" autostart="false" controls="PlayButton" tppabs="defaultsound&#47;1.rm"><&#47;embed><&#47;font><&#47;td><br />
+        <&#47;tr></p>
+<tr>
+<td align="center" width="100%" colspan="4" height="16">&nbsp;<&#47;td><br />
+        <&#47;tr><br />
+    <&#47;tbody><br />
+<&#47;table></p>
+<p>VOA&nbsp; rtsp:&#47;&#47;a247.r.akareal.net&#47;live&#47;D&#47;247&#47;2110&#47;v001&#47;reflector:48984<&#47;p></p>
+<p>BBC&nbsp; <a href="http:&#47;&#47;www.bbc.co.uk&#47;worldservice&#47;ram&#47;live_news.ram">http:&#47;&#47;www.bbc.co.uk&#47;worldservice&#47;ram&#47;live_news.ram<&#47;a><&#47;p></p>
+<p>日语 <a href="http:&#47;&#47;www.nhk.or.jp&#47;rj&#47;ram&#47;en&#47;japanese.ram">http:&#47;&#47;www.nhk.or.jp&#47;rj&#47;ram&#47;en&#47;japanese.ram<&#47;a><&#47;p></p>
+<p>法语 <a href="http:&#47;&#47;www.wrn.org&#47;audio&#47;fre_1.ram">http:&#47;&#47;www.wrn.org&#47;audio&#47;fre_1.ram<&#47;a><&#47;p></p>
+<p>德语 <a href="http:&#47;&#47;vid01.wkstmk.at&#47;ram&#47;roi.ram">http:&#47;&#47;vid01.wkstmk.at&#47;ram&#47;roi.ram<&#47;a><&#47;p></p>
+<p>俄语 <a href="http:&#47;&#47;www.wrn.org&#47;audio&#47;rus.ram">http:&#47;&#47;www.wrn.org&#47;audio&#47;rus.ram<&#47;a><&#47;p></p>

@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: 小心对待PHP setcookie的的时差问题
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+wordpress_id: 190
+date: !binary |-
+  MjAwOC0wNC0wNyAxNzo0OToxMSArMDgwMA==
+date_gmt: !binary |-
+  MjAwOC0wNC0wNyAwOTo0OToxMSArMDgwMA==
+categories:
+- 脚本语言
+tags:
+- php
+comments: []
+---
+<p>今天实现一个功能时，遇到了一个奇怪的问题：<&#47;p></p>
+<p>PHP设置的COOKIE，用JS读取的时候，一个都没有！<&#47;p></p>
+<p>是这样的，我要做一个防发呆系统，如果用户发呆超过一定时间，或者多个窗口，有的窗口退出登录后，就在所有的窗口把他踢到登陆页，要求登陆。这部分代码用JS判断用户是否在登陆状态，主要读取了一个cookie的值。如果一直有活动，这个值会一直被更新。<&#47;p></p>
+<p>setcookie('js_login_chk',$_SESSION['s_admin_user_id'], time()+3600);&nbsp;&nbsp; &#47;&#47; 这个是服务器时间<&#47;p></p>
+<p>这个cookie可能会在客户端被立即删除。<&#47;p></p>
+<p>因为，服务器的一个小时后，可能是客户端的过去了！<&#47;p></p>

@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: 三级网络技术 考试资料
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "。。。。。。。<br />\r\nfor fly, lan, and fox."
+wordpress_id: 52
+date: !binary |-
+  MjAwNi0wNy0yNyAyMTozNTozNSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNy0yNyAyMTozNTozNSArMDgwMA==
+categories:
+- 其他技术
+tags: []
+comments: []
+---
+<p>[URL=http:&#47;&#47;blog.eaxi.com&#47;upload&#47;C%E8%AF%AD%E8%A8%80100%E4%BE%8B.rar]C语言100例.rar[&#47;URL]<br &#47;><br />
+<br &#47;><br />
+[URL=http:&#47;&#47;blog.eaxi.com&#47;upload&#47;nankai100.rar]南开100题[&#47;URL]<br &#47;><br />
+<br &#47;><br />
+[URL=http:&#47;&#47;blog.eaxi.com&#47;upload&#47;%E4%B8%89%E7%BA%A7%E4%B8%8A%E6%9C%BA.rar]三级上机.rar[&#47;URL]<br &#47;><br />
+<br &#47;><br />
+[URL=http:&#47;&#47;blog.eaxi.com&#47;upload&#47;全国计算机等级考试三级C语言模拟系统.rar]全国计算机等级考试三级C语言模拟系统.rar[&#47;URL]</p>

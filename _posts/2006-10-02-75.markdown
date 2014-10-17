@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: 山有木兮木有枝 心悦君兮君不知
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "山有木兮木有枝 心悦君兮君不知<br />\r\n<br />\r\n<br />\r\n到底谁更可怜？？..."
+wordpress_id: 69
+date: !binary |-
+  MjAwNi0xMC0wMiAxMjoxMzo0NCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0xMC0wMiAxMjoxMzo0NCArMDgwMA==
+categories:
+- 生活点滴
+tags: []
+comments: []
+---
+<p>山有木兮木有枝 心悦君兮君不知<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+到底谁更可怜？？</p>

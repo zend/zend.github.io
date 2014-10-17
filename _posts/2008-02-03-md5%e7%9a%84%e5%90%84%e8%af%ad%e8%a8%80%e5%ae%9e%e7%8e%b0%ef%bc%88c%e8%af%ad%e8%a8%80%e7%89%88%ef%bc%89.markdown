@@ -1,0 +1,37 @@
+---
+layout: post
+status: publish
+published: true
+title: MD5的各语言实现（C语言版）
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+wordpress_id: 182
+date: !binary |-
+  MjAwOC0wMi0wMyAxOTo0MDoxNCArMDgwMA==
+date_gmt: !binary |-
+  MjAwOC0wMi0wMyAxMTo0MDoxNCArMDgwMA==
+categories:
+- 其他技术
+tags:
+- C
+comments: []
+---
+<p>见附件。<&#47;p></p>
+<p>用法：<&#47;p></p>
+<p>1. 打开VC6，打开附件中的workspace。<&#47;p></p>
+<p>2. Build All。得到md5.exe。<&#47;p></p>
+<p>3. DOS下运行。<&#47;p></p>
+<p>参数说明：<&#47;p></p>
+<p>Arguments (may be any combination):<br &#47;><br />
+&nbsp; -sstring - digests string　计算字符的MD5值。<br &#47;><br />
+&nbsp; -t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - runs time trial<br &#47;><br />
+&nbsp; -x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - runs test script　执行测试脚本。<br &#47;><br />
+&nbsp; filename - digests file　　计算文件的MD5值。<br &#47;><br />
+&nbsp; (none)&nbsp;&nbsp; - digests standard input　计算标准输入的MD5值。<&#47;p></p>
+<p>&nbsp;<&#47;p></p>

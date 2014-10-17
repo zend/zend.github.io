@@ -1,0 +1,95 @@
+---
+layout: post
+status: publish
+published: true
+title: things to do after ubuntu installed||Fuchsia
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: apt source.list for ubuntu
+wordpress_id: 43
+date: !binary |-
+  MjAwNi0wNy0xMCAxMzoxNzo1OCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNy0xMCAwNToxNzo1OCArMDgwMA==
+categories:
+- 其他技术
+tags:
+- linux
+comments: []
+---
+<p>1. update your apt source.list<br &#47;><br />
+<code>修改源并升级更新<br &#47;><br />
+<br &#47;><br />
+    *<br &#47;><br />
+<br &#47;><br />
+      不同的网络状况连接以下源的速度不同, 所以cn99并不一定是最快的源, 建议在添加前手动验证以下源的连接速度(ping下就行),比如说北京网通ADSL用户连接cn99就非常慢,而ftp.sjtu.edu.cn是相对较快的源,选择最快的源可大大节省下载时间<br &#47;><br />
+<br &#47;><br />
+<&#47;code><code>      sudo cp &#47;etc&#47;apt&#47;sources.list &#47;etc&#47;apt&#47;sources.list_backup<br &#47;><br />
+      sudo gedit &#47;etc&#47;apt&#47;sources.list<br &#47;><br />
+<&#47;code><br &#47;><br />
+    *<br &#47;><br />
+<br &#47;><br />
+      用以下内容替换文件中的所有内容<br &#47;><br />
+<code><br &#47;><br />
+      deb http:&#47;&#47;archive.ubuntu.com&#47;ubuntu&#47; dapper main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;archive.ubuntu.com&#47;ubuntu&#47; dapper-security main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;archive.ubuntu.com&#47;ubuntu&#47; dapper-updates main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;archive.ubuntu.com&#47;ubuntu&#47; dapper-backports main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;archive.ubuntu.org.cn&#47;ubuntu-cn&#47; dapper main restricted universe multiverse<&#47;code><br &#47;><br />
+<br &#47;><br />
+      这里你也可以直接使用更快速的ubuntu.cn99.com的源：<br &#47;><br />
+<code><br &#47;><br />
+      deb http:&#47;&#47;ubuntu.cn99.com&#47;ubuntu&#47; dapper main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;ubuntu.cn99.com&#47;ubuntu&#47; dapper-updates main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;ubuntu.cn99.com&#47;ubuntu&#47; dapper-security main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;ubuntu.cn99.com&#47;ubuntu&#47; dapper-backports main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;ubuntu.cn99.com&#47;ubuntu-cn&#47; dapper main restricted universe multiverse<&#47;code><br &#47;><br />
+<br &#47;><br />
+      这里你还可以使用速度也非常快的的mirror.lupaworld.com的源（推荐）：<br &#47;><br />
+<br &#47;><br />
+<code>      deb http:&#47;&#47;mirror.lupaworld.com&#47;ubuntu&#47;archive&#47; dapper main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;mirror.lupaworld.com&#47;ubuntu&#47;archive&#47; dapper-security main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;mirror.lupaworld.com&#47;ubuntu&#47;archive&#47; dapper-updates main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;mirror.lupaworld.com&#47;ubuntu&#47;archive&#47; dapper-backports main restricted universe multiverse<br &#47;><br />
+      deb http:&#47;&#47;mirror.lupaworld.com&#47;ubuntu&#47;ubuntu-cn&#47; dapper main restricted universe multiverse<&#47;code><br &#47;><br />
+<br &#47;><br />
+      如果是教育网用户请使用上海交通大学的源:<br &#47;><br />
+<code><br &#47;><br />
+      deb http:&#47;&#47;ftp.sjtu.edu.cn&#47;ubuntu&#47; dapper main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;ftp.sjtu.edu.cn&#47;ubuntu&#47; dapper-backports main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;ftp.sjtu.edu.cn&#47;ubuntu&#47; dapper-proposed main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;ftp.sjtu.edu.cn&#47;ubuntu&#47; dapper-security main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;ftp.sjtu.edu.cn&#47;ubuntu&#47; dapper-updates main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;ftp.sjtu.edu.cn&#47;ubuntu-cn&#47; dapper main multiverse restricted universe<br &#47;><br />
+<&#47;code><br &#47;><br />
+      或者使用清华大学计算机系学生科协的源:<br &#47;><br />
+<code><br &#47;><br />
+      deb http:&#47;&#47;mirror.net9.org&#47;ubuntu&#47; dapper main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;mirror.net9.org&#47;ubuntu&#47; dapper-backports main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;mirror.net9.org&#47;ubuntu&#47; dapper-proposed main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;mirror.net9.org&#47;ubuntu&#47; dapper-security main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;mirror.net9.org&#47;ubuntu&#47; dapper-updates main multiverse restricted universe<br &#47;><br />
+      deb http:&#47;&#47;mirror.net9.org&#47;ubuntu-cn&#47; dapper main multiverse restricted universe <br &#47;><br />
+<&#47;code><br &#47;><br />
+    *<br &#47;><br />
+<br &#47;><br />
+      保存编辑好的文件<br &#47;><br />
+<br &#47;><br />
+<code>      sudo apt-get update<br &#47;><br />
+      sudo apt-get dist-upgrade(optional)<&#47;code><br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+2. 配置好UBUNTU的APT源之后，建议马上加上中文输入法，推荐用fcitx!<br &#47;><br />
+<code>sudo apt-get install fcitx im-switch<br &#47;><br />
+im-switch -s fcitx<br &#47;><br />
+<&#47;code><br &#47;><br />
+<br &#47;><br />
+3. 加上播放器，听歌！<br &#47;></p>

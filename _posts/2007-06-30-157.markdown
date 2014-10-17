@@ -1,0 +1,62 @@
+---
+layout: post
+status: publish
+published: true
+title: DNS Status codes
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+wordpress_id: 134
+date: !binary |-
+  MjAwNy0wNi0zMCAyMzoyNjozOCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNi0zMCAxNToyNjozOCArMDgwMA==
+categories:
+- 其他技术
+tags:
+- dns
+comments: []
+---
+<p>&nbsp; clientDeleteProhibited &nbsp; <br &#47;><br />
+&nbsp; The &nbsp; clientDeleteProhibited &nbsp; status &nbsp; may &nbsp; be &nbsp; added &nbsp; to &nbsp; an &nbsp; object &nbsp; by &nbsp; either &nbsp; the &nbsp; registrar &nbsp; who &nbsp; owns &nbsp; the &nbsp; object &nbsp; or &nbsp; the &nbsp; registry &nbsp; administrator. &nbsp; If &nbsp; an &nbsp; object &nbsp; is &nbsp; on &nbsp; clientDeleteProhibited, &nbsp; it &nbsp; may &nbsp; not &nbsp; be &nbsp; deleted &nbsp; until &nbsp; the &nbsp; status &nbsp; is &nbsp; removed. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; serverDeleteProhibited &nbsp; <br &#47;><br />
+&nbsp; The &nbsp; serverDeleteProhibited &nbsp; is &nbsp; the &nbsp; same &nbsp; as &nbsp; the &nbsp; clientDeleteProhibited &nbsp; status, &nbsp; except &nbsp; that &nbsp; only &nbsp; the &nbsp; registry &nbsp; administrator &nbsp; may &nbsp; add &nbsp; or &nbsp; remove &nbsp; this &nbsp; status &nbsp; from &nbsp; the &nbsp; object. &nbsp; If &nbsp; an &nbsp; object &nbsp; is &nbsp; on &nbsp; clientDeleteProhibited, &nbsp; it &nbsp; may &nbsp; not &nbsp; be &nbsp; deleted &nbsp; until &nbsp; the &nbsp; status &nbsp; is &nbsp; removed. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; clientTransferProhibited &nbsp; <br &#47;><br />
+&nbsp; The &nbsp; clientTransferProhibited &nbsp; status &nbsp; may &nbsp; be &nbsp; added &nbsp; to &nbsp; an &nbsp; object &nbsp; by &nbsp; either &nbsp; the &nbsp; registrar &nbsp; who &nbsp; owns &nbsp; the &nbsp; object &nbsp; or &nbsp; the &nbsp; registry &nbsp; administrator. &nbsp; If &nbsp; an &nbsp; object &nbsp; is &nbsp; on &nbsp; clientTransferProhibited, &nbsp; it &nbsp; may &nbsp; not &nbsp; be &nbsp; transferred &nbsp; until &nbsp; the &nbsp; status &nbsp; is &nbsp; removed. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; serverTransferProhibited &nbsp; <br &#47;><br />
+&nbsp; The &nbsp; serverTransferProhibited &nbsp; is &nbsp; the &nbsp; same &nbsp; as &nbsp; the &nbsp; clientTransferProhibited &nbsp; status, &nbsp; except &nbsp; that &nbsp; only &nbsp; the &nbsp; registry &nbsp; administrator &nbsp; may &nbsp; add &nbsp; or &nbsp; remove &nbsp; this &nbsp; status &nbsp; from &nbsp; the &nbsp; object. &nbsp; If &nbsp; an &nbsp; object &nbsp; is &nbsp; on &nbsp; clientTransferProhibited, &nbsp; it &nbsp; may &nbsp; not &nbsp; be &nbsp; transferred &nbsp; until &nbsp; the &nbsp; status &nbsp; is &nbsp; removed. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; clientUpdateProhibited &nbsp; <br &#47;><br />
+&nbsp; The &nbsp; clientUpdateProhibited &nbsp; status &nbsp; may &nbsp; be &nbsp; added &nbsp; to &nbsp; an &nbsp; object &nbsp; by &nbsp; either &nbsp; the &nbsp; registrar &nbsp; who &nbsp; owns &nbsp; the &nbsp; object &nbsp; or &nbsp; the &nbsp; registry &nbsp; administrator. &nbsp; If &nbsp; an &nbsp; object &nbsp; is &nbsp; on &nbsp; clientUpdateProhibited, &nbsp; it &nbsp; may &nbsp; not &nbsp; be &nbsp; updated &nbsp; until &nbsp; the &nbsp; status &nbsp; is &nbsp; removed. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; serverUpdateProhibited &nbsp; <br &#47;><br />
+&nbsp; The &nbsp; serverUpdateProhibited &nbsp; is &nbsp; the &nbsp; same &nbsp; as &nbsp; the &nbsp; clientUpdateProhibited &nbsp; status, &nbsp; except &nbsp; that &nbsp; only &nbsp; the &nbsp; registry &nbsp; administrator &nbsp; may &nbsp; add &nbsp; or &nbsp; remove &nbsp; this &nbsp; status &nbsp; from &nbsp; the &nbsp; object. &nbsp; If &nbsp; an &nbsp; object &nbsp; is &nbsp; on &nbsp; clientUpdateProhibited, &nbsp; it &nbsp; may &nbsp; not &nbsp; be &nbsp; updated &nbsp; until &nbsp; the &nbsp; status &nbsp; is &nbsp; removed. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; clientRenewProhibited &nbsp; <br &#47;><br />
+&nbsp; The &nbsp; clientRenewProhibited &nbsp; status &nbsp; may &nbsp; be &nbsp; added &nbsp; to &nbsp; an &nbsp; object &nbsp; by &nbsp; either &nbsp; the &nbsp; registrar &nbsp; who &nbsp; owns &nbsp; the &nbsp; object &nbsp; or &nbsp; the &nbsp; registry &nbsp; administrator. &nbsp; If &nbsp; an &nbsp; object &nbsp; is &nbsp; on &nbsp; clientRenewProhibited, &nbsp; it &nbsp; may &nbsp; not &nbsp; be &nbsp; renewed &nbsp; until &nbsp; the &nbsp; status &nbsp; is &nbsp; removed. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; serverRenewProhibited &nbsp; <br &#47;><br />
+&nbsp; The &nbsp; serverRenewProhibited &nbsp; is &nbsp; the &nbsp; same &nbsp; as &nbsp; the &nbsp; clientRenewProhibited &nbsp; status, &nbsp; except &nbsp; that &nbsp; only &nbsp; the &nbsp; registry &nbsp; administrator &nbsp; may &nbsp; add &nbsp; or &nbsp; remove &nbsp; this &nbsp; status &nbsp; from &nbsp; the &nbsp; object. &nbsp; If &nbsp; an &nbsp; object &nbsp; is &nbsp; on &nbsp; clientRenewProhibited, &nbsp; it &nbsp; may &nbsp; not &nbsp; be &nbsp; renewed &nbsp; until &nbsp; the &nbsp; status &nbsp; is &nbsp; removed. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; clientHold &nbsp; <br &#47;><br />
+&nbsp; An &nbsp; object &nbsp; on &nbsp; clientHold &nbsp; is &nbsp; not &nbsp; published &nbsp; in &nbsp; the &nbsp; DNS &nbsp; zone &nbsp; file. &nbsp; If &nbsp; it &nbsp; is &nbsp; a &nbsp; domain, &nbsp; it &nbsp; will &nbsp; not &nbsp; resolve &nbsp; until &nbsp; the &nbsp; clientHold &nbsp; status &nbsp; is &nbsp; removed. &nbsp; This &nbsp; status &nbsp; may &nbsp; be &nbsp; added &nbsp; to &nbsp; an &nbsp; object &nbsp; by &nbsp; either &nbsp; the &nbsp; registrar &nbsp; who &nbsp; sponsors &nbsp; the &nbsp; object &nbsp; or &nbsp; the &nbsp; registry &nbsp; administrator. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; serverHold &nbsp; <br &#47;><br />
+&nbsp; This &nbsp; status &nbsp; is &nbsp; the &nbsp; same &nbsp; as &nbsp; the &nbsp; clientHold &nbsp; status &nbsp; in &nbsp; that &nbsp; it &nbsp; prevents &nbsp; the &nbsp; domain &nbsp; from &nbsp; being &nbsp; published &nbsp; into &nbsp; the &nbsp; DNS &nbsp; zone &nbsp; file; &nbsp; however, &nbsp; it &nbsp; can &nbsp; only &nbsp; be &nbsp; added &nbsp; to &nbsp; an &nbsp; object &nbsp; by &nbsp; the &nbsp; registry &nbsp; administrator. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; pendingTransfer &nbsp; <br &#47;><br />
+&nbsp; Depending &nbsp; on &nbsp; the &nbsp; rules &nbsp; of &nbsp; your &nbsp; particular &nbsp; registry, &nbsp; the &nbsp; pendingTransfer &nbsp; status &nbsp; may &nbsp; be &nbsp; needed. &nbsp; This &nbsp; status &nbsp; is &nbsp; used &nbsp; to &nbsp; describe &nbsp; an &nbsp; object &nbsp; that &nbsp; is &nbsp; currently &nbsp; being &nbsp; transferred. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; pendingDelete &nbsp; <br &#47;><br />
+&nbsp; This &nbsp; status &nbsp; is &nbsp; given &nbsp; to &nbsp; an &nbsp; object &nbsp; when &nbsp; it &nbsp; is &nbsp; scheduled &nbsp; for &nbsp; deletion, &nbsp; as &nbsp; long &nbsp; as &nbsp; it &nbsp; is &nbsp; not &nbsp; deleted &nbsp; within &nbsp; the &nbsp; initial &nbsp; grace &nbsp; period &nbsp; given. &nbsp; The &nbsp; object &nbsp; remains &nbsp; pendingDelete &nbsp; for &nbsp; a &nbsp; period &nbsp; to &nbsp; avoid &nbsp; deletion &nbsp; mistakes, &nbsp; as &nbsp; it &nbsp; is &nbsp; easy &nbsp; to &nbsp; reverse &nbsp; the &nbsp; deletion &nbsp; process &nbsp; during &nbsp; this &nbsp; time. &nbsp; <br &#47;><br />
+&nbsp; &nbsp; <br &#47;><br />
+&nbsp; ok &nbsp; <br &#47;><br />
+&nbsp; This &nbsp; status &nbsp; is &nbsp; given &nbsp; to &nbsp; an &nbsp; object &nbsp; when &nbsp; no &nbsp; other &nbsp; status &nbsp; attributes &nbsp; apply. &nbsp; This &nbsp; status &nbsp; cannot &nbsp; be &nbsp; added &nbsp; or &nbsp; removed, &nbsp; except &nbsp; by &nbsp; the &nbsp; server.&nbsp;&nbsp;<&#47;p></p>

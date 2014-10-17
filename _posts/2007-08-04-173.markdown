@@ -1,0 +1,106 @@
+---
+layout: post
+status: publish
+published: true
+title: 自定义、个性化smarty里的html_checkboxes
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "<p>最近这个项目里，涉及到很多表单的处理，select, radio, checkbox等等。而且这些都是动态生成的，所以就必须得找一个好办法处理这些表单元素。<br
+  />\r\n<br />\r\n由于系统采用smarty，所以首先考虑用smarty自带的表单处理函数，html_checkboxes，html_options，html_radios，html_select_date，html_select_time，html_select_time等。。<br
+  />\r\n<br />\r\n但是在使用的过程中，html_checkboxes却很讨厌。</p>"
+wordpress_id: 144
+date: !binary |-
+  MjAwNy0wOC0wNCAxODoyMToyMSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wOC0wNCAxMDoyMToyMSArMDgwMA==
+categories:
+- 个人作品
+tags:
+- php
+- smarty
+comments: []
+---
+<p>最近这个项目里，涉及到很多表单的处理，select, radio, checkbox等等。而且这些都是动态生成的，所以就必须得找一个好办法处理这些表单元素。<br &#47;><br />
+<br &#47;><br />
+由于系统采用smarty，所以首先考虑用smarty自带的表单处理函数，html_checkboxes，html_options， html_radios，html_select_date，html_select_time，html_select_time等。。<br &#47;><br />
+<br &#47;><br />
+但是在使用的过程中，html_checkboxes却很讨厌。只有一个separator方法，要么弄成一行，要么弄成一列，元素一多了都很丑。比不上用表格控制。<br &#47;><br />
+<br &#47;><br />
+解决方案一：给smarty的源文件动了一下小手术。<br &#47;><br />
+<br &#47;><br />
+先加一个参数：<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">PHP代码<&#47;div></p>
+<ol class="dp-c" start="1">
+<li class="alt"><span><span class="keyword">case<&#47;span><span>&nbsp;<&#47;span><span class="string">'cols'<&#47;span><span>:&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;$<span class="vars">$_key<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="func">intval<&#47;span><span>(<&#47;span><span class="vars">$_val<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>修改返回值：<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">PHP代码<&#47;div></p>
+<ol class="dp-c" start="1">
+<li class="alt"><span><span class="keyword">if<&#47;span><span>(!<&#47;span><span class="keyword">empty<&#47;span><span class="func">empty<&#47;span><span>(<&#47;span><span class="vars">$params<&#47;span><span>[<&#47;span><span class="string">'assign'<&#47;span><span>]))&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$smarty<&#47;span><span>->assign(<&#47;span><span class="vars">$params<&#47;span><span>[<&#47;span><span class="string">'assign'<&#47;span><span>],&nbsp;<&#47;span><span class="vars">$_html_result<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>}&nbsp;<span class="keyword">else<&#47;span><span>&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if<&#47;span><span>&nbsp;(&nbsp;isset(<&#47;span><span class="vars">$cols<&#47;span><span>)&nbsp;)&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$ret<&#47;span><span>&nbsp;=&nbsp;<&#47;span><span class="string">'<br />
+<table&nbsp;width=100%>
+<tr>'<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li></p>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$_i<&#47;span><span>&nbsp;=&nbsp;0;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">foreach<&#47;span><span>&nbsp;(<&#47;span><span class="vars">$_html_result<&#47;span><span>&nbsp;<&#47;span><span class="keyword">as<&#47;span><span>&nbsp;<&#47;span><span class="vars">$_val<&#47;span><span>)&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$_i<&#47;span><span>++;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$ret<&#47;span><span>&nbsp;.=&nbsp;<&#47;span><span class="string">"
+<td>$_val<&#47;td>"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li></p>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if<&#47;span><span>&nbsp;(<&#47;span><span class="vars">$_i<&#47;span><span>%<&#47;span><span class="vars">$cols<&#47;span><span>===0)&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$ret<&#47;span><span>&nbsp;.=&nbsp;<&#47;span><span class="string">"<&#47;tr><br />
+<tr>"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li></p>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$ret<&#47;span><span>&nbsp;.=&nbsp;<&#47;span><span class="string">"<&#47;tr><&#47;table>"<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;<&#47;span><span class="vars">$ret<&#47;span><span>;&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;<span class="keyword">else<&#47;span><span>&nbsp;{&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return<&#47;span><span>&nbsp;implode(<&#47;span><span class="string">"\n"<&#47;span><span>,<&#47;span><span class="vars">$_html_result<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li>
+<li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<&#47;span><&#47;li>
+<li class=""><span>}&nbsp;&nbsp;<&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>大功告成，smarty模板文件里的调用：<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">XML&#47;HTML代码<&#47;div></p>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span>{{html_checkboxes&nbsp;<&#47;span><span class="attribute">name<&#47;span><span>=<&#47;span><span class="attribute-value">"stateserve"<&#47;span><span>&nbsp;<&#47;span><span class="attribute">options<&#47;span><span>=$stateserve&nbsp;<&#47;span><span class="attribute">cols<&#47;span><span>=<&#47;span><span class="attribute-value">8<&#47;span><span>}}&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>解决方案二：<br &#47;><br />
+不直接显示，先取得返回值，再用html_table显示它：<br &#47;><br />
+使用html_checkboxes里的隐藏参数assign:<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">XML&#47;HTML代码<&#47;div></p>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span>{{html_checkboxes&nbsp;<&#47;span><span class="attribute">name<&#47;span><span>=<&#47;span><span class="attribute-value">"stateserve"<&#47;span><span>&nbsp;<&#47;span><span class="attribute">options<&#47;span><span>=$stateserve&nbsp;<&#47;span><span class="attribute">cols<&#47;span><span>=<&#47;span><span class="attribute-value">8<&#47;span><span>&nbsp;<&#47;span><span class="attribute">assign<&#47;span><span>=<&#47;span><span class="attribute-value">"checkboxes"<&#47;span><span>}}&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>这里，相应于执行了一次<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">PHP代码<&#47;div></p>
+<ol class="dp-c" start="1">
+<li class="alt"><span><span class="vars">$smarty<&#47;span><span>->assign(<&#47;span><span class="string">"checkboxes"<&#47;span><span>,<&#47;span><span class="vars">$_html_result<&#47;span><span>);&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>得到了$checkboxes这个smarty变量。下面用html_table显示它：<&#47;p></p>
+<div class="codeText">
+<div class="codeHead">XML&#47;HTML代码<&#47;div></p>
+<ol class="dp-xml" start="1">
+<li class="alt"><span><span>{{html_table&nbsp;<&#47;span><span class="attribute">loop<&#47;span><span>=$checkboxes&nbsp;<&#47;span><span class="attribute">cols<&#47;span><span>=<&#47;span><span class="attribute-value">8<&#47;span><span> <&#47;span><span class="attribute">table_attr<&#47;span><span>=<&#47;span><span class="attribute-value">'border="0"'<&#47;span><span>}}&nbsp;&nbsp;<&#47;span><&#47;span><&#47;li><br />
+<&#47;ol><br />
+<&#47;div></p>
+<p>两种方案的效果一样。<&#47;p></p>

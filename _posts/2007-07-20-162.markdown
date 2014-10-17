@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: ! '@Live.com信箱注册又现漏洞 注册Live信箱'
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: <p>呵呵，刚煮了一个 <a href="mailto:hai.hai@live.com">hai.hai@live.com</a></p>
+wordpress_id: 138
+date: !binary |-
+  MjAwNy0wNy0yMCAwMjozMjo0NCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNy0yMCAwMjozMjo0NCArMDgwMA==
+categories:
+- 收藏夹
+tags: []
+comments: []
+---
+<p>新闻来源:LiveSide<br &#47;><br />
+@Live.com信箱注册又现漏洞，赶紧动手吧：<br &#47;><br />
+1. 访问<a href="http:&#47;&#47;www.hotmail.com&#47;" target="_blank">www.Hotmail.com<&#47;a>，点击Sign UP<br &#47;><br />
+2. 这时出现@hotmail.com后缀的Email地址<br &#47;><br />
+3. 修改地址栏中的地址<strong><em>hmnewuser.aspx<&#47;em><&#47;strong>为<strong><em>newuser.aspx<&#47;em><&#47;strong>，并删除后面的<strong><em>&amp;hm=1<&#47;em><&#47;strong>字符<br &#47;><br />
+4. @hotmail.com就变成@live.com<br &#47;><br />
+<br &#47;><br />
+例如：<a href="https:&#47;&#47;signup.live.com&#47;hmnewuser.aspx?mkt=en-us&amp;revipc=US&amp;ts=3967950&amp;sh=62Zm&amp;hm=1&amp;ru=http%3a%2f%2fmail.live.com%2f%3fnewuser%3dyes&amp;rx=http%3a%2f%2fget.live.com%2fmail%2foverview&amp;rollrs=04&amp;lic=1" target="_blank"><font color="#0000ff">https:&#47;&#47;signup.live.com&#47;<strong>hmnewuser.aspx<&#47;strong>?mkt=en-us&amp;revipc=US&amp;ts=3967950&amp;sh=62Zm<strong>&amp;hm=1<&#47;strong>&amp;ru=http%3a%2f%2fmail.live.com%2f%3fnewuser%3dyes&amp;rx=http%3a%2f%2fget.live.com%2fmail%2foverview&amp;rollrs=04&amp;lic=1<&#47;font><&#47;a><br &#47;><br />
+<br &#47;><br />
+就会变成： <br &#47;><br />
+<a href="https:&#47;&#47;signup.live.com&#47;newuser.aspx?mkt=en-us&amp;revipc=US&amp;ts=3967973&amp;sh=P1iS&amp;ru=http%3a%2f%2fmail.live.com%2f%3fnewuser%3dyes&amp;rx=http%3a%2f%2fget.live.com%2fmail%2foverview&amp;rollrs=04&amp;lic=1" target="_blank"><font color="#0000ff">https:&#47;&#47;signup.live.com&#47;<strong>newuser.aspx<&#47;strong>?mkt=en-us&amp;revipc=US&amp;ts=3967973&amp;sh=P1iS&amp;ru=http%3a%2f%2fmail.live.com%2f%3fnewuser%3dyes&amp;rx=http%3a%2f%2fget.live.com%2fmail%2foverview&amp;rollrs=04&amp;lic=1<&#47;font><&#47;a> <br &#47;><br />
+<br &#47;><br />
+注意：直接访问第二个连接可能无法直接注册，请按照提示步骤多试几次。其他国别的后缀请修改浏览器语言注册。<&#47;p></p>

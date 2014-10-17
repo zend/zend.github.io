@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: 论坛转帖器
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: 超级论坛转帖器...
+wordpress_id: 28
+date: !binary |-
+  MjAwNi0wNi0yMyAwMDozOToxNiArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0yMyAwMDozOToxNiArMDgwMA==
+categories:
+- 脚本语言
+tags: []
+comments: []
+---
+<p>超级论坛转帖器</p>

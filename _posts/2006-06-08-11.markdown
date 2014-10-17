@@ -1,0 +1,750 @@
+---
+layout: post
+status: publish
+published: true
+title: 单片机做的计算器完成了！
+author:
+  display_name: admin
+  login: admin
+  email: combbs@gmail.com
+  url: http://seaprince.cn/
+author_login: admin
+author_email: combbs@gmail.com
+author_url: http://seaprince.cn/
+excerpt: ! "这次用的是单片机的实验板做的。<br />\r\n一些设备介绍：<br />\r\n[HR][/HR]<br />\r\n单片机：AT89S52<br
+  />\r\n键盘：4×4键盘，一个中断按键，一个复位按键。<br />\r\n显示：4位LED数码管显示。<br />\r\n声音：普通蜂鸣器。<br />\r\n[HR][/HR]<br
+  />\r\n程序主要思想：<br />\r\n用有限的按键显示16进制的简单计算器，实现16位的16进制数的加减乘除计算。要求可以连续计算，把结果做为下一次计算的初值。<br
+  />\r\n要点：<br />\r\n键盘：线反转法键盘扫描，并用查表法获取对应键值。<br />\r\n显示：用多位循环显示来完成多位LED的显示。<br />\r\n声音主要用来做操作提..."
+wordpress_id: 11
+date: !binary |-
+  MjAwNi0wNi0wOCAxMjoyMDoyNyArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0wOCAwNDoyMDoyNyArMDgwMA==
+categories:
+- 其他技术
+tags:
+- 单片机
+comments: []
+---
+<p>这次用的是单片机的实验板做的。<br &#47;><br />
+一些设备介绍：<br &#47;><br />
+[HR][&#47;HR]<br &#47;><br />
+单片机：AT89S52<br &#47;><br />
+键盘：4&times;4键盘，一个中断按键，一个复位按键。<br &#47;><br />
+显示：4位LED数码管显示。<br &#47;><br />
+声音：普通蜂鸣器。<br &#47;><br />
+[HR][&#47;HR]<br &#47;><br />
+程序主要思想：<br &#47;><br />
+用有限的按键显示16进制的简单计算器，实现16位的16进制数的加减乘除计算。要求可以连续计算，把结果做为下一次计算的初值。<br &#47;><br />
+要点：<br &#47;><br />
+键盘：线反转法键盘扫描，并用查表法获取对应键值。<br &#47;><br />
+显示：用多位循环显示来完成多位LED的显示。<br &#47;><br />
+声音主要用来做操作提示用。<br &#47;><br />
+[HR][&#47;HR]<br &#47;><br />
+程序详解：<br &#47;><br />
+加法子程序：<br &#47;><br />
+<code><br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+ADD16:<br &#47;><br />
+	;16位加法，在本例里，全部的加法都用16位加法完成，超过16位的进位直接丢弃<br &#47;><br />
+	MOV A,NUM2<br &#47;><br />
+	ADD A,NUM4<br &#47;><br />
+	MOV RES2,A    ;低位相加<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	MOV A,NUM1<br &#47;><br />
+	ADDC A,NUM3<br &#47;><br />
+	MOV RES1,A	;高位相加<br &#47;><br />
+	RET<br &#47;><br />
+<br &#47;><br />
+<&#47;code><br &#47;><br />
+<br &#47;><br />
+减法子程序：<br &#47;><br />
+<code><br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+SUB16:<br &#47;><br />
+	;16位减法<br &#47;><br />
+<br &#47;><br />
+	MOV A,NUM2	;被减数低位<br &#47;><br />
+	CLR C		;清借位位<br &#47;><br />
+	SUBB A,NUM4	;低位相减<br &#47;><br />
+	MOV RES2,A	;结果高位<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	MOV A,NUM1<br &#47;><br />
+	SUBB A,NUM3<br &#47;><br />
+	MOV RES1,A	;结果低位<br &#47;><br />
+<br &#47;><br />
+	RET<br &#47;><br />
+<&#47;code><br &#47;><br />
+<br &#47;><br />
+乘法子程序：<br &#47;><br />
+<code><br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+MUL16:<br &#47;><br />
+	;16位乘法。注：这里要用大数乘以小数！也就是如果有16位的数出现时，用8&times;16位，不能用16&times;8位<br &#47;><br />
+<br &#47;><br />
+	MOV A,NUM2	;16位数的低8位<br &#47;><br />
+	MOV B,NUM4	;乘数<br &#47;><br />
+	MUL AB<br &#47;><br />
+	MOV R1,A	;积的低8位<br &#47;><br />
+	MOV R2,B	;积的高8位<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	MOV A,NUM1	;16位数的高8位<br &#47;><br />
+	MOV B,NUM4	;乘数<br &#47;><br />
+	MUL AB<br &#47;><br />
+	MOV R3,A	;LOW<br &#47;><br />
+	MOV R4,B	;HIGHT<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	MOV A,R2<br &#47;><br />
+	ADD A,R3	;<br &#47;><br />
+	MOV RES1,A	;结果高位<br &#47;><br />
+	MOV RES2,R1	;结果低位<br &#47;><br />
+<br &#47;><br />
+	RET<br &#47;><br />
+<&#47;code><br &#47;><br />
+<br &#47;><br />
+除法子程序：<br &#47;><br />
+（十六位除以八位的）<br &#47;><br />
+<code><br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+ DIV16:<br &#47;><br />
+	;八位八位的来（NUM1 NUM2)除（NUM4)<br &#47;><br />
+	;先高八位除<br &#47;><br />
+	 MOV A,NUM1<br &#47;><br />
+	 MOV B,NUM4<br &#47;><br />
+	 DIV AB<br &#47;><br />
+	 MOV R1,A	;1<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	 MOV A,#0F0H<br &#47;><br />
+	 ANL A,NUM2	;取高四位<br &#47;><br />
+	 ORL A,B		;余数与低八位的高四位合并<br &#47;><br />
+	 SWAP A<br &#47;><br />
+	 MOV R6,A<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	 MOV A,R6<br &#47;><br />
+	 MOV B,NUM4<br &#47;><br />
+	 DIV AB<br &#47;><br />
+	 MOV R2,A	;2<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	 MOV A,#0FH<br &#47;><br />
+	 ANL A,NUM2	;取低四位<br &#47;><br />
+	 SWAP A<br &#47;><br />
+	 ORL A,B		;余数与低八位的低四位再合并！<br &#47;><br />
+	 SWAP A<br &#47;><br />
+	 MOV R7,A<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	 MOV A,R7<br &#47;><br />
+	 MOV B,NUM4<br &#47;><br />
+	 DIV AB<br &#47;><br />
+	 MOV R3,A	;3<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	 MOV A,R2<br &#47;><br />
+	 SWAP A<br &#47;><br />
+	 ORL A,R3<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	 MOV RES1,R1	;商的高八位<br &#47;><br />
+	 MOV RES2,A	;商的低八位<br &#47;><br />
+	 RET<br &#47;><br />
+<&#47;code><br &#47;><br />
+<br &#47;><br />
+（十六位除以十位的）<br &#47;><br />
+<code><br &#47;><br />
+DIV16:<br &#47;><br />
+		MOV A,R5<br &#47;><br />
+		JNZ BEGIN<br &#47;><br />
+		MOV A,R4<br &#47;><br />
+		JZ OVER<br &#47;><br />
+<br &#47;><br />
+BEGIN:	MOV A,R7<br &#47;><br />
+		JNZ BEGIN1<br &#47;><br />
+		MOV A,R6<br &#47;><br />
+		JNZ BEGIN1<br &#47;><br />
+		RET<br &#47;><br />
+BEGIN1:	CLR A<br &#47;><br />
+		MOV R2,A<br &#47;><br />
+		MOV R3,A<br &#47;><br />
+		MOV R1,#10H<br &#47;><br />
+DIV1:	CLR C<br &#47;><br />
+		MOV A,R6<br &#47;><br />
+		RLC A<br &#47;><br />
+		MOV R6,A<br &#47;><br />
+		MOV A,R7<br &#47;><br />
+		RLC A<br &#47;><br />
+		MOV R7,A<br &#47;><br />
+		MOV A,R2<br &#47;><br />
+		RLC A<br &#47;><br />
+		MOV R2,A<br &#47;><br />
+		MOV A,R3<br &#47;><br />
+		RLC A<br &#47;><br />
+		MOV R3,A<br &#47;><br />
+DIV2:	        MOV A,R2<br &#47;><br />
+		SUBB A,R4<br &#47;><br />
+		MOV R0,A<br &#47;><br />
+		MOV A,R3<br &#47;><br />
+		SUBB A,R5<br &#47;><br />
+		JC NEXT<br &#47;><br />
+		INC R6<br &#47;><br />
+		MOV R3,A<br &#47;><br />
+		MOV A,R0<br &#47;><br />
+		MOV R2,A<br &#47;><br />
+NEXT:	DJNZ R1,DIV1<br &#47;><br />
+                AJMP NOOVER<br &#47;><br />
+ADD1:	MOV A,R6<br &#47;><br />
+		ADD A,#01H<br &#47;><br />
+		MOV R6,A<br &#47;><br />
+		MOV A,R7<br &#47;><br />
+		ADDC A,#00H<br &#47;><br />
+		MOV R7,A<br &#47;><br />
+NOOVER:	MOV OVER,#00H<br &#47;><br />
+		RET<br &#47;><br />
+OVER:	MOV OVER,#0FFH<br &#47;><br />
+		RET<br &#47;><br />
+<&#47;code><br &#47;><br />
+<br &#47;><br />
+显示：<br &#47;><br />
+<code><br &#47;><br />
+DISPLAY:        MOV R0,IS_OP<br &#47;><br />
+                CJNE R0,#0H,BACK<br &#47;><br />
+                MOV A,LED1		;函数功能: 显示一位<br &#47;><br />
+           	ACALL GETLED_CODE<br &#47;><br />
+           	MOV P0       ,A<br &#47;><br />
+           	CLR P2.7<br &#47;><br />
+           	ACALL DLMS<br &#47;><br />
+           	SETB P2.7<br &#47;><br />
+                ;<br &#47;><br />
+           	MOV A,LED2<br &#47;><br />
+           	ACALL GETLED_CODE<br &#47;><br />
+            	MOV P0       ,A<br &#47;><br />
+           	CLR P2.6<br &#47;><br />
+           	ACALL DLMS<br &#47;><br />
+           	SETB P2.6<br &#47;><br />
+                ;<br &#47;><br />
+           	MOV A,LED3<br &#47;><br />
+           	ACALL GETLED_CODE<br &#47;><br />
+           	MOV P0,A<br &#47;><br />
+           	CLR P2.5<br &#47;><br />
+           	ACALL DLMS<br &#47;><br />
+           	SETB P2.5<br &#47;><br />
+                ;<br &#47;><br />
+           	MOV A,LED4<br &#47;><br />
+           	ACALL GETLED_CODE<br &#47;><br />
+           	MOV P0       ,A<br &#47;><br />
+           	CLR P2.4<br &#47;><br />
+           	ACALL DLMS<br &#47;><br />
+          	SETB P2.4<br &#47;><br />
+          	 RET<br &#47;><br />
+<&#47;code><br &#47;><br />
+<br &#47;><br />
+键盘检测：<br &#47;><br />
+<code><br &#47;><br />
+<br &#47;><br />
+KEY_DT:         ACALL	DISPLAY<br &#47;><br />
+		ACALL   SC_L		;开始列扫描<br &#47;><br />
+                CJNE    A,#0FH,KEY_01	;如果有按键跳到KEY_01<br &#47;><br />
+                AJMP    KEY_DT<br &#47;><br />
+KEY_01:         MOV     R6,#0AH<br &#47;><br />
+KEY_02:         ACALL   DISPLAY<br &#47;><br />
+                DJNZ    R6,KEY_02<br &#47;><br />
+                ACALL   SC_L<br &#47;><br />
+                CJNE    A,#0FH,KEY_03<br &#47;><br />
+                AJMP    KEY_DT<br &#47;><br />
+KEY_03:         MOV     B,A<br &#47;><br />
+                ACALL   SC_H<br &#47;><br />
+                ADD     A,B<br &#47;><br />
+                MOV     KEY1,A<br &#47;><br />
+                ACALL   K_CODE<br &#47;><br />
+                ACALL   K_DSPL<br &#47;><br />
+                MOV     TEMP_KEY,A<br &#47;><br />
+                MOV     R6,#0AH<br &#47;><br />
+KEY_04:         ACALL   DISPLAY<br &#47;><br />
+                DJNZ    R6,KEY_04<br &#47;><br />
+                MOV     A,TEMP_KEY<br &#47;><br />
+BACK:           RET<br &#47;><br />
+SC_L:           MOV     A,#0FH<br &#47;><br />
+                MOV     P1,A<br &#47;><br />
+                MOV     A,P1<br &#47;><br />
+                ANL     A,#0FH<br &#47;><br />
+                RET<br &#47;><br />
+SC_H:           MOV     A,#0F0H<br &#47;><br />
+                MOV     P1,A<br &#47;><br />
+                MOV     A,P1<br &#47;><br />
+                ANL     A,#0F0H<br &#47;><br />
+                RET<br &#47;><br />
+K_CODE:         MOV     A,#00H<br &#47;><br />
+                MOV     DPTR,#KCODE<br &#47;><br />
+K_CD0:          MOV     B,A<br &#47;><br />
+                MOVC    A,@A+DPTR<br &#47;><br />
+                CJNE    A,KEY1,K_CD1<br &#47;><br />
+                AJMP    K_CD2<br &#47;><br />
+K_CD1:          MOV     A,B<br &#47;><br />
+                INC     ACC<br &#47;><br />
+                CJNE    A,#10H,K_CD0<br &#47;><br />
+K_CD2:          MOV     A,B<br &#47;><br />
+                RET<br &#47;><br />
+K_DSPL:         CJNE    A,#10H,K_DSP1<br &#47;><br />
+                AJMP    K_BACK<br &#47;><br />
+K_DSP1:         MOV     LED1,LED2<br &#47;><br />
+                MOV     LED2,LED3<br &#47;><br />
+                MOV     LED3,LED4<br &#47;><br />
+                MOV     LED4,A<br &#47;><br />
+<br &#47;><br />
+K_BACK:         RET<br &#47;><br />
+KCODE:          DB 0E7H ,0D7H   ,0B7H   ,077H<br &#47;><br />
+                DB 0EBH ,0DBH   ,0BBH   ,07BH<br &#47;><br />
+                DB 0EDH ,0DDH   ,0BDH   ,07DH<br &#47;><br />
+                DB 0EEH ,0DEH   ,0BEH   ,07EH<br &#47;><br />
+<br &#47;><br />
+GETLED_CODE:    MOV DPTR ,#LED_CODE<br &#47;><br />
+                MOVC A ,@A+DPTR<br &#47;><br />
+                RET<br &#47;><br />
+<br &#47;><br />
+LED_CODE:       DB 0D7H, 14H ,0CDH ; 0 1 2<br &#47;><br />
+                DB 5DH,  1EH , 5BH ; 3 4 5<br &#47;><br />
+                DB 0DBH , 15H,0DFH ; 6 7 8<br &#47;><br />
+                DB 5FH  , 9FH,0DAH ; 9 A B<br &#47;><br />
+		DB 0C3H,0DCH, 0CBH ; C D E<br &#47;><br />
+		DB 8BH,98H,8FH     ; F N P<br &#47;><br />
+		DB 0D6H,00H        ; V NONE<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+GETCODE:        MOV     DPTR,#LED_CODE<br &#47;><br />
+                MOVC    A,@A+DPTR<br &#47;><br />
+                RET<br &#47;><br />
+<br &#47;><br />
+<&#47;code><br &#47;><br />
+<br &#47;><br />
+完整的程序：<br &#47;><br />
+<code><br &#47;><br />
+;定义一些程序保留的内存地址<br &#47;><br />
+	NUM1 EQU 30H	;高<br &#47;><br />
+	NUM2 EQU 31H	;低<br &#47;><br />
+	NUM3 EQU 32H	;高<br &#47;><br />
+	NUM4 EQU 33H	;低<br &#47;><br />
+	;;;;;;;;;;;;;;;<br &#47;><br />
+	RES1 EQU 34H<br &#47;><br />
+	RES2 EQU 35H<br &#47;><br />
+	;;;;;;;;;;;;;;;<br &#47;><br />
+	DISP1 EQU 36H<br &#47;><br />
+	DISP2 EQU 37H<br &#47;><br />
+	;;;;;;;;;;;;;;;<br &#47;><br />
+	KEY1 EQU 38H<br &#47;><br />
+	KEY2 EQU 39H<br &#47;><br />
+	KEY3 EQU 40H<br &#47;><br />
+	KEY4 EQU 41H<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	LED1 EQU 42H<br &#47;><br />
+	LED2 EQU 43H<br &#47;><br />
+	LED3 EQU 44H<br &#47;><br />
+	LED4 EQU 45H<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	TEMP_KEY EQU 46H<br &#47;><br />
+	OP EQU 47H<br &#47;><br />
+        IS_OP EQU 48H<br &#47;><br />
+<br &#47;><br />
+	;AJMP F<br &#47;><br />
+        ACALL CLEAR<br &#47;><br />
+	AJMP CALC<br &#47;><br />
+ ;需要的子程序<br &#47;><br />
+<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+ADD16:<br &#47;><br />
+	;16位加法，在本例里，全部的加法都用16位加法完成，超过16位的进位直接丢弃<br &#47;><br />
+	MOV A,NUM2<br &#47;><br />
+	ADD A,NUM4<br &#47;><br />
+	MOV RES2,A    ;低位相加<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	MOV A,NUM1<br &#47;><br />
+	ADDC A,NUM3<br &#47;><br />
+	MOV RES1,A	;高位相加<br &#47;><br />
+	RET<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+SUB16:<br &#47;><br />
+	;16位减法<br &#47;><br />
+<br &#47;><br />
+	MOV A,NUM2	;被减数低位<br &#47;><br />
+	CLR C		;清借位位<br &#47;><br />
+	SUBB A,NUM4	;低位相减<br &#47;><br />
+	MOV RES2,A	;结果高位<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	MOV A,NUM1<br &#47;><br />
+	SUBB A,NUM3<br &#47;><br />
+	MOV RES1,A	;结果低位<br &#47;><br />
+<br &#47;><br />
+	RET<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+MUL16:<br &#47;><br />
+	;16位乘法。注：这里要用大数乘以小数！也就是如果有16位的数出现时，用8&times;16位，不能用16&times;8位<br &#47;><br />
+<br &#47;><br />
+	MOV A,NUM2	;16位数的低8位<br &#47;><br />
+	MOV B,NUM4	;乘数<br &#47;><br />
+	MUL AB<br &#47;><br />
+	MOV R1,A	;积的低8位<br &#47;><br />
+	MOV R2,B	;积的高8位<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	MOV A,NUM1	;16位数的高8位<br &#47;><br />
+	MOV B,NUM4	;乘数<br &#47;><br />
+	MUL AB<br &#47;><br />
+	MOV R3,A	;LOW<br &#47;><br />
+	MOV R4,B	;HIGHT<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	MOV A,R2<br &#47;><br />
+	ADD A,R3	;<br &#47;><br />
+	MOV RES1,A	;结果高位<br &#47;><br />
+	MOV RES2,R1	;结果低位<br &#47;><br />
+<br &#47;><br />
+	RET<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+; DIV16:<br &#47;><br />
+;	八位八位的来（NUM1 NUM2)除（NUM4)<br &#47;><br />
+;	先高八位除<br &#47;><br />
+	; MOV A,NUM1<br &#47;><br />
+	; MOV B,NUM4<br &#47;><br />
+	; DIV AB<br &#47;><br />
+	; MOV R1,A	;1<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	; MOV A,#0F0H<br &#47;><br />
+	; ANL A,NUM2	;取高四位<br &#47;><br />
+	; ORL A,B		;余数与低八位的高四位合并<br &#47;><br />
+	; SWAP A<br &#47;><br />
+	; MOV R6,A<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	; MOV A,R6<br &#47;><br />
+	; MOV B,NUM4<br &#47;><br />
+	; DIV AB<br &#47;><br />
+	; MOV R2,A	;2<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	; MOV A,#0FH<br &#47;><br />
+	; ANL A,NUM2	;取低四位<br &#47;><br />
+	; SWAP A<br &#47;><br />
+	; ORL A,B		;余数与低八位的低四位再合并！<br &#47;><br />
+	; SWAP A<br &#47;><br />
+	; MOV R7,A<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	; MOV A,R7<br &#47;><br />
+	; MOV B,NUM4<br &#47;><br />
+	; DIV AB<br &#47;><br />
+	; MOV R3,A	;3<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	; MOV A,R2<br &#47;><br />
+	; SWAP A<br &#47;><br />
+	; ORL A,R3<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+	; MOV RES1,R1	;商的高八位<br &#47;><br />
+	; MOV RES2,A	;商的低八位<br &#47;><br />
+        ; RET<br &#47;><br />
+DIV16:<br &#47;><br />
+		MOV A,R5<br &#47;><br />
+		JNZ BEGIN<br &#47;><br />
+		MOV A,R4<br &#47;><br />
+		JZ OVER<br &#47;><br />
+<br &#47;><br />
+BEGIN:	MOV A,R7<br &#47;><br />
+		JNZ BEGIN1<br &#47;><br />
+		MOV A,R6<br &#47;><br />
+		JNZ BEGIN1<br &#47;><br />
+		RET<br &#47;><br />
+BEGIN1:	CLR A<br &#47;><br />
+		MOV R2,A<br &#47;><br />
+		MOV R3,A<br &#47;><br />
+		MOV R1,#10H<br &#47;><br />
+DIV1:	CLR C<br &#47;><br />
+		MOV A,R6<br &#47;><br />
+		RLC A<br &#47;><br />
+		MOV R6,A<br &#47;><br />
+		MOV A,R7<br &#47;><br />
+		RLC A<br &#47;><br />
+		MOV R7,A<br &#47;><br />
+		MOV A,R2<br &#47;><br />
+		RLC A<br &#47;><br />
+		MOV R2,A<br &#47;><br />
+		MOV A,R3<br &#47;><br />
+		RLC A<br &#47;><br />
+		MOV R3,A<br &#47;><br />
+DIV2:	        MOV A,R2<br &#47;><br />
+		SUBB A,R4<br &#47;><br />
+		MOV R0,A<br &#47;><br />
+		MOV A,R3<br &#47;><br />
+		SUBB A,R5<br &#47;><br />
+		JC NEXT<br &#47;><br />
+		INC R6<br &#47;><br />
+		MOV R3,A<br &#47;><br />
+		MOV A,R0<br &#47;><br />
+		MOV R2,A<br &#47;><br />
+NEXT:	DJNZ R1,DIV1<br &#47;><br />
+                AJMP NOOVER<br &#47;><br />
+ADD1:	MOV A,R6<br &#47;><br />
+		ADD A,#01H<br &#47;><br />
+		MOV R6,A<br &#47;><br />
+		MOV A,R7<br &#47;><br />
+		ADDC A,#00H<br &#47;><br />
+		MOV R7,A<br &#47;><br />
+NOOVER:	MOV OVER,#00H<br &#47;><br />
+		RET<br &#47;><br />
+OVER:	MOV OVER,#0FFH<br &#47;><br />
+		RET<br &#47;><br />
+<br &#47;><br />
+DISPSUB:          ACALL    KEY_DT<br &#47;><br />
+		DJNZ	R3,DISPSUB   ; 限制输入4个，多余的不接受<br &#47;><br />
+<br &#47;><br />
+                AJMP    WAIT_OP<br &#47;><br />
+DISPLAY:        MOV R0,IS_OP<br &#47;><br />
+                CJNE R0,#0H,BACK<br &#47;><br />
+                MOV A,LED1		;函数功能: 显示一位<br &#47;><br />
+           	ACALL GETLED_CODE<br &#47;><br />
+           	MOV P0       ,A<br &#47;><br />
+           	CLR P2.7<br &#47;><br />
+           	ACALL DLMS<br &#47;><br />
+           	SETB P2.7<br &#47;><br />
+                ;<br &#47;><br />
+           	MOV A,LED2<br &#47;><br />
+           	ACALL GETLED_CODE<br &#47;><br />
+            	MOV P0       ,A<br &#47;><br />
+           	CLR P2.6<br &#47;><br />
+           	ACALL DLMS<br &#47;><br />
+           	SETB P2.6<br &#47;><br />
+                ;<br &#47;><br />
+           	MOV A,LED3<br &#47;><br />
+           	ACALL GETLED_CODE<br &#47;><br />
+           	MOV P0,A<br &#47;><br />
+           	CLR P2.5<br &#47;><br />
+           	ACALL DLMS<br &#47;><br />
+           	SETB P2.5<br &#47;><br />
+                ;<br &#47;><br />
+           	MOV A,LED4<br &#47;><br />
+           	ACALL GETLED_CODE<br &#47;><br />
+           	MOV P0       ,A<br &#47;><br />
+           	CLR P2.4<br &#47;><br />
+           	ACALL DLMS<br &#47;><br />
+          	SETB P2.4<br &#47;><br />
+          	 RET<br &#47;><br />
+<br &#47;><br />
+KEY_DT:         ACALL	DISPLAY<br &#47;><br />
+		ACALL   SC_L		;开始列扫描<br &#47;><br />
+                CJNE    A,#0FH,KEY_01	;如果有按键跳到KEY_01<br &#47;><br />
+                AJMP    KEY_DT<br &#47;><br />
+KEY_01:         MOV     R6,#0AH<br &#47;><br />
+KEY_02:         ACALL   DISPLAY<br &#47;><br />
+                DJNZ    R6,KEY_02<br &#47;><br />
+                ACALL   SC_L<br &#47;><br />
+                CJNE    A,#0FH,KEY_03<br &#47;><br />
+                AJMP    KEY_DT<br &#47;><br />
+KEY_03:         MOV     B,A<br &#47;><br />
+                ACALL   SC_H<br &#47;><br />
+                ADD     A,B<br &#47;><br />
+                MOV     KEY1,A<br &#47;><br />
+                ACALL   K_CODE<br &#47;><br />
+                ACALL   K_DSPL<br &#47;><br />
+                MOV     TEMP_KEY,A<br &#47;><br />
+                MOV     R6,#0AH<br &#47;><br />
+KEY_04:         ACALL   DISPLAY<br &#47;><br />
+                DJNZ    R6,KEY_04<br &#47;><br />
+                MOV     A,TEMP_KEY<br &#47;><br />
+BACK:           RET<br &#47;><br />
+SC_L:           MOV     A,#0FH<br &#47;><br />
+                MOV     P1,A<br &#47;><br />
+                MOV     A,P1<br &#47;><br />
+                ANL     A,#0FH<br &#47;><br />
+                RET<br &#47;><br />
+SC_H:           MOV     A,#0F0H<br &#47;><br />
+                MOV     P1,A<br &#47;><br />
+                MOV     A,P1<br &#47;><br />
+                ANL     A,#0F0H<br &#47;><br />
+                RET<br &#47;><br />
+K_CODE:         MOV     A,#00H<br &#47;><br />
+                MOV     DPTR,#KCODE<br &#47;><br />
+K_CD0:          MOV     B,A<br &#47;><br />
+                MOVC    A,@A+DPTR<br &#47;><br />
+                CJNE    A,KEY1,K_CD1<br &#47;><br />
+                AJMP    K_CD2<br &#47;><br />
+K_CD1:          MOV     A,B<br &#47;><br />
+                INC     ACC<br &#47;><br />
+                CJNE    A,#10H,K_CD0<br &#47;><br />
+K_CD2:          MOV     A,B<br &#47;><br />
+                RET<br &#47;><br />
+K_DSPL:         CJNE    A,#10H,K_DSP1<br &#47;><br />
+                AJMP    K_BACK<br &#47;><br />
+K_DSP1:         MOV     LED1,LED2<br &#47;><br />
+                MOV     LED2,LED3<br &#47;><br />
+                MOV     LED3,LED4<br &#47;><br />
+                MOV     LED4,A<br &#47;><br />
+<br &#47;><br />
+K_BACK:         RET<br &#47;><br />
+KCODE:          DB 0E7H ,0D7H   ,0B7H   ,077H<br &#47;><br />
+                DB 0EBH ,0DBH   ,0BBH   ,07BH<br &#47;><br />
+                DB 0EDH ,0DDH   ,0BDH   ,07DH<br &#47;><br />
+                DB 0EEH ,0DEH   ,0BEH   ,07EH<br &#47;><br />
+<br &#47;><br />
+GETLED_CODE:    MOV DPTR ,#LED_CODE<br &#47;><br />
+                MOVC A ,@A+DPTR<br &#47;><br />
+                RET<br &#47;><br />
+<br &#47;><br />
+LED_CODE:       DB 0D7H, 14H ,0CDH ; 0 1 2<br &#47;><br />
+                DB 5DH,  1EH , 5BH ; 3 4 5<br &#47;><br />
+                DB 0DBH , 15H,0DFH ; 6 7 8<br &#47;><br />
+                DB 5FH  , 9FH,0DAH ; 9 A B<br &#47;><br />
+		DB 0C3H,0DCH, 0CBH ; C D E<br &#47;><br />
+		DB 8BH,98H,8FH     ; F N P<br &#47;><br />
+		DB 0D6H,00H        ; V NONE<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+GETCODE:        MOV     DPTR,#LED_CODE<br &#47;><br />
+                MOVC    A,@A+DPTR<br &#47;><br />
+                RET<br &#47;><br />
+<br &#47;><br />
+CLEAR:<br &#47;><br />
+	MOV LED1,#13H<br &#47;><br />
+	MOV LED2,#13H<br &#47;><br />
+	MOV LED3,#13H<br &#47;><br />
+	MOV LED4,#13H<br &#47;><br />
+	ACALL DISPLAY<br &#47;><br />
+	RET<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+;;延时<br &#47;><br />
+DLMS:	MOV     R5,#4<br &#47;><br />
+DL01:	MOV     R7,#250<br &#47;><br />
+DL02:	DJNZ    R7,DL02<br &#47;><br />
+	DJNZ    R5,DL01<br &#47;><br />
+	RET<br &#47;><br />
+;;;延时255ms<br &#47;><br />
+DL255MS:	MOV R6,#0FFH<br &#47;><br />
+			ACALL DLMS<br &#47;><br />
+			DJNZ R6,DL255MS<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+READ_NUM_KEY:<br &#47;><br />
+	;读取一次数字输入，必须输入四个<br &#47;><br />
+	;ACALL CLEAR<br &#47;><br />
+	ACALL KEY_DT<br &#47;><br />
+	MOV R1,A<br &#47;><br />
+	ACALL KEY_DT<br &#47;><br />
+	MOV R2,A<br &#47;><br />
+	ACALL KEY_DT<br &#47;><br />
+	MOV R3,A<br &#47;><br />
+	ACALL KEY_DT<br &#47;><br />
+	MOV R4,A<br &#47;><br />
+	RET<br &#47;><br />
+;;;;;;;;;;;;;;;<br &#47;><br />
+WAIT_OP:<br &#47;><br />
+	ACALL KEY_DT<br &#47;><br />
+	MOV OP,A<br &#47;><br />
+	OP0:<br &#47;><br />
+		CJNE A,#0,OP1	;+<br &#47;><br />
+		ACALL BELL<br &#47;><br />
+		RET<br &#47;><br />
+	OP1:<br &#47;><br />
+		CJNE A,#1,OP2	;-<br &#47;><br />
+		ACALL BELL<br &#47;><br />
+		RET<br &#47;><br />
+	OP2:<br &#47;><br />
+		CJNE A,#2,OP3	;*<br &#47;><br />
+		ACALL BELL<br &#47;><br />
+		RET<br &#47;><br />
+	OP3:<br &#47;><br />
+		CJNE A,#3,NONE	;&#47;<br &#47;><br />
+		ACALL BELL<br &#47;><br />
+		RET<br &#47;><br />
+	NONE:<br &#47;><br />
+		AJMP WAIT_OP<br &#47;><br />
+	RET<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+;响铃<br &#47;><br />
+BELL:<br &#47;><br />
+	CLR P3.7<br &#47;><br />
+	MOV R3,#02FH<br &#47;><br />
+	BELL_DL:ACALL DLMS<br &#47;><br />
+		DJNZ R3,BELL_DL<br &#47;><br />
+	SETB P3.7<br &#47;><br />
+	RET<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+;;转换成数值<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+;;开始计算<br &#47;><br />
+DO_CALC:<br &#47;><br />
+	MOV A,OP<br &#47;><br />
+	CALC0:<br &#47;><br />
+		CJNE A,#0h,CALC1	;+<br &#47;><br />
+		ACALL ADD16<br &#47;><br />
+		RET<br &#47;><br />
+	CALC1:<br &#47;><br />
+		CJNE A,#1h,CALC2	;-<br &#47;><br />
+		ACALL SUB16<br &#47;><br />
+		RET<br &#47;><br />
+	CALC2:<br &#47;><br />
+		CJNE A,#2h,CALC3	;*<br &#47;><br />
+		ACALL MUL16<br &#47;><br />
+		RET<br &#47;><br />
+	CALC3:<br &#47;><br />
+			;&#47;<br &#47;><br />
+<br &#47;><br />
+		MOV R7,NUM1<br &#47;><br />
+		MOV R6,NUM2<br &#47;><br />
+		MOV R5,NUM3<br &#47;><br />
+		MOV R4,NUM4<br &#47;><br />
+		ACALL DIV16<br &#47;><br />
+<br &#47;><br />
+		MOV RES1,R7<br &#47;><br />
+		MOV RES2,R6<br &#47;><br />
+		RET<br &#47;><br />
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+;; 显示结果<br &#47;><br />
+ECHO_RES:<br &#47;><br />
+	;MOV RES1,#67H<br &#47;><br />
+	;MOV RES2,#89H<br &#47;><br />
+	MOV A,RES1<br &#47;><br />
+	SWAP A			;高低位交换<br &#47;><br />
+	ANL A,#0FH		;取低位，就是刚才的高4位<br &#47;><br />
+	MOV LED1,A<br &#47;><br />
+	MOV A,RES1<br &#47;><br />
+	ANL A,#0FH<br &#47;><br />
+	MOV LED2,A<br &#47;><br />
+	;<br &#47;><br />
+	MOV A,RES2<br &#47;><br />
+	SWAP A<br &#47;><br />
+	ANL A,#0FH<br &#47;><br />
+	MOV LED3,A<br &#47;><br />
+	MOV A,RES2<br &#47;><br />
+	ANL A,#0FH<br &#47;><br />
+	MOV LED4,A<br &#47;><br />
+	ACALL DISPLAY<br &#47;><br />
+	;AJMP ECHO_RES<br &#47;><br />
+	RET<br &#47;><br />
+CALC:<br &#47;><br />
+	; testing.!<br &#47;><br />
+	ACALL READ_NUM_KEY<br &#47;><br />
+	MOV A,R1<br &#47;><br />
+	SWAP A<br &#47;><br />
+	ORL A,R2<br &#47;><br />
+	MOV NUM1,A	;第一个数<br &#47;><br />
+	MOV A,R3<br &#47;><br />
+	SWAP A<br &#47;><br />
+	ORL A,R4<br &#47;><br />
+	MOV NUM2,A	;第二个数<br &#47;><br />
+	;;;;;;;;;;;;;;;;;;;;;;;;<br &#47;><br />
+<br &#47;><br />
+	;<br &#47;><br />
+ CONTINUE:<br &#47;><br />
+	ACALL WAIT_OP<br &#47;><br />
+        ACALL CLEAR<br &#47;><br />
+	ACALL BELL<br &#47;><br />
+	ACALL READ_NUM_KEY<br &#47;><br />
+	MOV R4,A<br &#47;><br />
+	MOV A,R1<br &#47;><br />
+	SWAP A<br &#47;><br />
+	ORL A,R2<br &#47;><br />
+	MOV NUM3,A	;第三个数<br &#47;><br />
+	MOV A,R3<br &#47;><br />
+	SWAP A<br &#47;><br />
+	ORL A,R4<br &#47;><br />
+	MOV NUM4,A	;第四个数<br &#47;><br />
+<br &#47;><br />
+	ACALL DO_CALC	;！！！开始计算<br &#47;><br />
+<br &#47;><br />
+        ACALL KEY_DT<br &#47;><br />
+        ACALL BELL<br &#47;><br />
+	ACALL ECHO_RES<br &#47;><br />
+        ACALL KEY_DT<br &#47;><br />
+        ACALL CLEAR<br &#47;><br />
+        MOV NUM1,RES1<br &#47;><br />
+        MOV NUM2,RES2<br &#47;><br />
+	AJMP CONTINUE<br &#47;><br />
+        RET<br &#47;><br />
+<&#47;code><br &#47;><br />
+[URL=http:&#47;&#47;blog.eaxi.com&#47;upload&#47;最终程序.rar]最终程序.rar[&#47;URL]</p>

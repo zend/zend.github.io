@@ -1,0 +1,70 @@
+---
+layout: post
+status: publish
+published: true
+title: 优化大师的注册码（所有新版本适用）+Zend Studio SN
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: ! "<p>注册名： seaprince.cn<br />\r\n<br />\r\n771353<br />\r\n<br />\r\n3359308E-8B5C86A5-52CB621E-BD64550A</p>\r\n<p>Zend
+  Studio Enterprise 5.5 sn</p>\r\n<p>seaprince<br />\r\nE0EF18EA12182039</p>"
+wordpress_id: 120
+date: !binary |-
+  MjAwNy0wNi0xMSAxMzozNTo1OSArMDgwMA==
+date_gmt: !binary |-
+  MjAwNy0wNi0xMSAxMzozNTo1OSArMDgwMA==
+categories:
+- 其他技术
+tags: []
+comments:
+- id: 49
+  author: Seaprince
+  author_email: anony@mo.us
+  author_url: ''
+  date: !binary |-
+    MjAwOC0xMi0xNyAxMjoyMzoxOCArMDgwMA==
+  date_gmt: !binary |-
+    MjAwOC0xMi0xNyAxMjoyMzoxOCArMDgwMA==
+  content: EditPlus V2.11-Name:Free User Code:CDC8D0784D8
+- id: 796
+  author: admin
+  author_email: combbs@gmail.com
+  author_url: http://seaprince.cn/
+  date: !binary |-
+    MjAwOS0wOC0wNCAxNDoxOToxNyArMDgwMA==
+  date_gmt: !binary |-
+    MjAwOS0wOC0wNCAwNjoxOToxNyArMDgwMA==
+  content: ! 'Zend Studio 7.0
+
+
+    seaprince
+
+    3F6F65175D662F665175D662'
+- id: 988
+  author: admin
+  author_email: combbs@gmail.com
+  author_url: http://seaprince.cn/
+  date: !binary |-
+    MjAwOS0xMC0wNSAxMDozNDo0NyArMDgwMA==
+  date_gmt: !binary |-
+    MjAwOS0xMC0wNSAwMjozNDo0NyArMDgwMA==
+  content: ! "<a href=\"#comment-796\" rel=\"nofollow\">@admin <&#47;a> \nhttp:&#47;&#47;x.zendstudio.net&#47;zend-studio-7-keymaker-online&#47;
+    Zend Studio 7 系列的在线注册机。"
+---
+<p>注册名： blog.eaxi.com<br &#47;><br />
+<br &#47;><br />
+771353<br &#47;><br />
+<br &#47;><br />
+3359308E-8B5C86A5-52CB621E-BD64550A<&#47;p></p>
+<p>Zend Studio Enterprise 5.5 sn<&#47;p></p>
+<p>seaprince<br &#47;><br />
+E0EF18EA12182039<&#47;p></p>
+<p><br &#47;><br />
+zend studio for eclipse 6.0<br &#47;><br />
+<br &#47;><br />
+Seaprince<br &#47;><br />
+A150FC38376665140000<&#47;p></p>

@@ -1,0 +1,42 @@
+---
+layout: post
+status: publish
+published: true
+title: ! '[置顶]关于板块更新的一些说明'
+author:
+  display_name: ''
+  login: Seaprince
+  email: seaprince@mail.com
+  url: ''
+author_login: Seaprince
+author_email: seaprince@mail.com
+excerpt: 关于博客的各个分类
+wordpress_id: 33
+date: !binary |-
+  MjAwNi0wNi0zMCAwMDo0MjoyOCArMDgwMA==
+date_gmt: !binary |-
+  MjAwNi0wNi0zMCAwMDo0MjoyOCArMDgwMA==
+categories:
+- 生活点滴
+tags: []
+comments: []
+---
+<p>这次更新后由以前的三个板块变成了现的三个。<br &#47;><br />
+<br &#47;><br />
+其中：<br &#47;><br />
+<br &#47;><br />
+[FONT-COLOR=Red][FONT-SIZE=4]默认分类：[&#47;FONT-SIZE][&#47;FONT-COLOR]<br &#47;><br />
+放一些我在学习，生活中的一些小心得，一般技术性都不强。反正不属于别的两个类时就放到这个类了！<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[FONT-COLOR=Red][FONT-SIZE=4]技术点滴：[&#47;FONT-SIZE][&#47;FONT-COLOR]<br &#47;><br />
+主要放一些技术性的文章，有相关兴趣的朋友可以看看！应该会错漏百出，请读者指正！<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[FONT-COLOR=Red][FONT-SIZE=4]幸福一刻：[&#47;FONT-SIZE][&#47;FONT-COLOR]<br &#47;><br />
+这是缘自一个灵感。幸福需要积累，需要记录；相对的，难过挫折需要淡忘！<br &#47;><br />
+我尝试着每生活中的每一个感动都记录下来！以后一定是一笔很丰厚的财富。<br &#47;><br />
+<br &#47;><br />
+<br &#47;><br />
+[FONT-COLOR=Red][FONT-SIZE=4]音乐：[&#47;FONT-SIZE][&#47;FONT-COLOR]<br &#47;><br />
+曾经感动我们的音乐。</p>
