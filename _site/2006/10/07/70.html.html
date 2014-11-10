@@ -1,0 +1,336 @@
+<p>主要特点：</p>
+
+<p>任意标准数据表格（无跨行和跨列），只要设定 id （默认为 id = PowerTable ）即可生效！</p>
+
+<p>任意修改、删除、编辑、表格行列，支持拖动表头交换列；</p>
+
+<p>按列中英文排序（中文排序支持拼音和笔画，500 行 中文排序 不到 3 秒！感谢 myhyli 帮助，提高了排序速度）</p>
+
+<p>倒出生成精简数据表（无冗余代码）</p>
+
+<p>相关显示颜色可以通过下面变量自行定制<br />
+show_col = false;<br />
+charMode = 1;<br />
+act_bgc = “#BEC5DE”;<br />
+act_fc = “black”;<br />
+cur_bgc = “#ccffcc”;<br />
+cur_fc = “black”;</p>
+
+<p>ATT. 如果在较大的页面中引用，请将 window.onload 事件的内容指向 PowerTable 之后！</p>
+
+<p>PS. 我的汉字排序方法和秋水的应该至少是相当的，都是引用字表，取索引位，只是没有加上拼音识别罢了，就效率上应该相当的（原理都一样）！</p>
+
+<p>`<!--<br />
+All Files Design &#038; Write by Windy_sk, you can use it freely but ...<br />
+YOU MUST KEEP THIS ITEM !<br />
+Email: seasonx@163.net<br />
+--><br />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />&lt;/p&gt;</p>
+
+<p>
+</p>
+<p>&lt;table width=100% border=1 cellSpacing=0 cellPadding=2 id=”PowerTable”&gt;&lt;/p&gt;
+&lt;tr align=middle bgColor=#ffcc00&gt;&lt;/p&gt;</p>
+<td>First Name</td>
+<p></p>
+<td>Last Name</td>
+<p></p>
+<td>Team</td>
+<p></p>
+<td>Engine</td>
+<p></p>
+<td>Tyres</td>
+<p></p>
+<td>Fastest Lap</td>
+<p></p>
+<td>国家</td>
+<p>&lt;/tr&gt;</p>
+<p></p>
+<tr>
+<td>Michael</td>
+<p></p>
+<td>Schumacher</td>
+<p></p>
+<td>Ferrari</td>
+<p></p>
+<td>Ferrari</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.15.872</td>
+<p></p>
+<td>德国</td>
+</tr>
+<p></p>
+<tr>
+<td>Rubens</td>
+<p></p>
+<td>Barrichello</td>
+<p></p>
+<td>Ferrari</td>
+<p></p>
+<td>Ferrari</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.16.760</td>
+<p></p>
+<td>法国</td>
+</tr>
+<p></p>
+<tr>
+<td>Ralph</td>
+<p></p>
+<td>Schumacher</td>
+<p></p>
+<td>Williams</td>
+<p></p>
+<td>BMW</td>
+<p></p>
+<td>Michelin</td>
+<p></p>
+<td>1.16.297</td>
+<p></p>
+<td>美国</td>
+</tr>
+<p></p>
+<tr>
+<td>Juan-Pablo</td>
+<p></p>
+<td>Montoya</td>
+<p></p>
+<td>Williams</td>
+<p></p>
+<td>BMW</td>
+<p></p>
+<td>Michelin</td>
+<p></p>
+<td>1.17.123</td>
+<p></p>
+<td>柬埔寨</td>
+</tr>
+<p></p>
+<tr>
+<td>David</td>
+<p></p>
+<td>Coulthard</td>
+<p></p>
+<td>McLaren</td>
+<p></p>
+<td>Mercedes</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.16.423</td>
+<p></p>
+<td>泰国</td>
+</tr>
+<p></p>
+<tr>
+<td>Mika</td>
+<p></p>
+<td>Hakkinen</td>
+<p></p>
+<td>McLaren</td>
+<p></p>
+<td>Mercedes</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.16.979</td>
+<p></p>
+<td>越南</td>
+</tr>
+<p></p>
+<tr>
+<td>Jarno</td>
+<p></p>
+<td>Trulli</td>
+<p></p>
+<td>Jordan</td>
+<p></p>
+<td>Honda</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.16.459</td>
+<p></p>
+<td>菲律宾</td>
+</tr>
+<p></p>
+<tr>
+<td>Ricardo</td>
+<p></p>
+<td>Zonta</td>
+<p></p>
+<td>Jordan</td>
+<p></p>
+<td>Honda</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.17.328</td>
+<p></p>
+<td>英国</td>
+</tr>
+<p></p>
+<tr>
+<td>Olivia</td>
+<p></p>
+<td>Panis</td>
+<p></p>
+<td>BAR</td>
+<p></p>
+<td>Honda</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.16.771</td>
+<p></p>
+<td>蒙古</td>
+</tr>
+<p></p>
+<tr>
+<td>Jacques</td>
+<p></p>
+<td>Villeneuve</td>
+<p></p>
+<td>BAR</td>
+<p></p>
+<td>Honda</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.17.035</td>
+<p></p>
+<td>马来西亚</td>
+</tr>
+<p></p>
+<tr>
+<td>Kimi</td>
+<p></p>
+<td>Raikkonen</td>
+<p></p>
+<td>Sauber</td>
+<p></p>
+<td>Petronas</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.16.875</td>
+<p></p>
+<td>缅甸</td>
+</tr>
+<p></p>
+<tr>
+<td>Nick</td>
+<p></p>
+<td>Heidfeld</td>
+<p></p>
+<td>Sauber</td>
+<p></p>
+<td>Petronas</td>
+<p></p>
+<td>Bridgestone</td>
+<p></p>
+<td>1.17.165</td>
+<p></p>
+<td>朝鲜</td>
+</tr>
+<p></p>
+<tr>
+<td>Eddie</td>
+<p></p>
+<td>Irvine</td>
+<p></p>
+<td>Jaguar</td>
+<p></p>
+<td>Cosworth</td>
+<p></p>
+<td>Michelin</td>
+<p></p>
+<td>1.18.016</td>
+<p></p>
+<td>中国</td>
+</tr>
+<p></p>
+<tr>
+<td>Pedro</td>
+<p></p>
+<td>de la Rosa</td>
+<p></p>
+<td>Jaguar</td>
+<p></p>
+<td>Cosworth</td>
+<p></p>
+<td>Michelin</td>
+<p></p>
+<td>1.18.015</td>
+<p></p>
+<td>俄罗斯</td>
+</tr>
+<p></p>
+<tr>
+<td>Hugh</td>
+<p></p>
+<td>Gengine</td>
+<p></p>
+<td>Lotus</td>
+<p></p>
+<td>Renault</td>
+<p></p>
+<td>Michelin</td>
+<p></p>
+<td>1.15.015</td>
+<p></p>
+<td>韩国</td>
+</tr>
+<p></p>
+<tr>
+<td>Gloria</td>
+<p></p>
+<td>Slap</td>
+<p></p>
+<td>Lotus</td>
+<p></p>
+<td>Renault</td>
+<p></p>
+<td>Michelin</td>
+<p></p>
+<td>1.15.012</td>
+<p></p>
+<td>日本</td>
+</tr>
+<p>
+
+<p></p>
+<p>
+&lt;input type=button value=ins_row onclick=add_row(Main_Tab)/&gt;<br />
+&lt;input type=button value=ins_col onclick=add_col(Main_Tab)/&gt;<br />
+&lt;input type=button value=Del_row onclick=del_row(Main_Tab)/&gt;<br />
+&lt;input type=button value=Del_col onclick=del_col(Main_Tab)/&gt;<br />
+&lt;input type=button value=Restore onclick=res_tab(Main_Tab)/&gt;<br />
+&lt;input type=button value=Export  onclick=exp_tab(Main_Tab)/&gt;<br />
+ ( Move: <br />
+&lt;input type=button id=move value=Up    onclick=Move_up(Main_Tab)/&gt;<br />
+&lt;input type=button id=move value=Down  onclick=Move_down(Main_Tab)/&gt;<br />
+&lt;input type=button id=move value=Left  onclick=Move_left(Main_Tab)/&gt;<br />
+&lt;input type=button id=move value=Right onclick=Move_right(Main_Tab)/&gt; )<br />
+汉字排序：<br />
+&lt;select id=sel_Mode onchange="charMode=this.selectedIndex"&gt;<br /><option>拼音<br />
+</option><option>笔画<br />
+</option><br />
+<span style="cursor:hand; color: red; text-Decoration: underline" onclick="if(detail.style.display==''){detail.style.display='none';this.innerText='Show Detail'}else{detail.style.display='';this.innerText='Hide Detail'}">Show Detail</span>
+</p>
+<p></p>
+&lt;div id=detail style="display:none"&gt;
+&lt;input type=text id=monitor size=30 style="width:200px"/&gt;</p>
+<p>
+&lt;textarea id=showContent cols=100 rows=20&gt;
+
+<p>`
+
+这是blueidea上的一个牛人在2002年11月18日完成的，到今天，我才清楚这是怎么回事儿！
+
+可悲！！！
+</p></p>
