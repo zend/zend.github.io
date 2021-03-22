@@ -1,0 +1,5 @@
+baseURL: https://us.eaxi.com
+disablePathToLower: true
+languageCode: en-us
+title: Another Me
+theme: herring-cove
