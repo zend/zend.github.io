@@ -77,6 +77,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-posts-2009-08-12-445-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/posts/20090812-445.html" class="article-date">
+  <time class="dt-published" datetime="2009-08-11T16:00:00.000Z" itemprop="datePublished">2009-08-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/posts/20090812-445.html">用apt-cacher-ng给自己的局域网搭建一个apt缓存</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>由于内网机器较多，而且需要安装的软件也多数大同小异，所以说萌发了要搭建一个apt缓存的想法。 </p>
+<p>网上说apt-cacher-ng是个不错的选择，所以就下载试试。 </p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装灰常简单： </p>
+<p>aptitude update &amp;&amp; aptitude install apt-cacher-ng </p>
+<p>安装完成。 </p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>软件的配置文件在&#x2F;etc&#x2F;apt-cacher-ng&#x2F;acng.conf </p>
+<p>缓存目录在&#x2F;var&#x2F;cache&#x2F;apt-cacher-ng </p>
+<p>日志目录在&#x2F;var&#x2F;log&#x2F;apt-cacher-ng </p>
+<p>它还提供了一个web接口，默认端口是3142 </p>
+<p>可以访问<a target="_blank" rel="noopener" href="http://192.168.0.251:3142/">http://192.168.0.251:3142/</a> 来查看。 </p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>当你在web界面访问它的时候，你就会看到很详细的指引。 </p>
+<p>如果看不懂英文，就按我说的去做吧： </p>
+<p>在其他debian机器上，用root登录，执行： </p>
+<p>echo &amp;#8216;Acquire::http { Proxy &amp;#8220;http:&#x2F;&#x2F;[::ffff:192.168.0.251]:3142&amp;#8243;;};&amp;#8217; &gt; &#x2F;etc&#x2F;apt&#x2F;apt.conf.d&#x2F;15apt-cacher-ng </p>
+<p>如果你apt缓存机器本身也想使用这个缓存，那么，也按上面的去做吧。 </p>
+<p>呵呵，现在如果你在某一台机器下载过一个东西，在另外一台就可以直接从缓存读取啦，速度那个没得说。再快的外网也快不过内网吧。 </p>
+<p>&amp;#8211;EOF&amp;#8211;</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://b.eaxi.com/posts/20090812-445.html" data-id="cl74krpro00h7atoj2i6ygn8z" data-title="用apt-cacher-ng给自己的局域网搭建一个apt缓存" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/debian/" rel="tag">debian</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-posts-2009-08-12-448-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/posts/20090812-448.html" class="article-date">
@@ -121,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090812-448.html" data-id="cl74ijgv900h9asot428vh83q" data-title="UCenter Home2.0的无法同步登录的修正" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090812-448.html" data-id="cl74krprp00haatoja9acdi5s" data-title="UCenter Home2.0的无法同步登录的修正" class="article-share-link">分享</a>
       
       
       
@@ -168,7 +229,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090811-439.html" data-id="cl74ijgv300gzasoth5606rli" data-title="HTML5 video 标签测试" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090811-439.html" data-id="cl74krprm00h0atojhaal1jkw" data-title="HTML5 video 标签测试" class="article-share-link">分享</a>
       
       
       
@@ -235,7 +296,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090809-434.html" data-id="cl74ijgv200gwasot7py29276" data-title="Windows下源码编译PHP" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090809-434.html" data-id="cl74krprl00gxatojdll31ypy" data-title="Windows下源码编译PHP" class="article-share-link">分享</a>
       
       
       
@@ -284,7 +345,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090802-426.html" data-id="cl74ijguz00grasot8knxb59k" data-title="Debian NO_PUBKEY error" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090802-426.html" data-id="cl74krprj00gsatojeyd2epne" data-title="Debian NO_PUBKEY error" class="article-share-link">分享</a>
       
       
       
@@ -335,7 +396,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090725-416.html" data-id="cl74ijguy00goasotg9i5821z" data-title="ubuntu 9.04 screenshot" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090725-416.html" data-id="cl74krpri00gpatoj9ivt41ce" data-title="ubuntu 9.04 screenshot" class="article-share-link">分享</a>
       
       
       
@@ -384,7 +445,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090724-412.html" data-id="cl74ijguw00gkasoteqqy2mtw" data-title="小心对待rewrite中邪恶的百分号（%）" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090724-412.html" data-id="cl74krprh00glatoj0z5q08is" data-title="小心对待rewrite中邪恶的百分号（%）" class="article-share-link">分享</a>
       
       
       
@@ -437,7 +498,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090716-387.html" data-id="cl74ijguv00ghasot6oxqfens" data-title="用PHP通过邮箱获取QQ好友列表" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090716-387.html" data-id="cl74krprg00giatojcxos8gqn" data-title="用PHP通过邮箱获取QQ好友列表" class="article-share-link">分享</a>
       
       
       
@@ -492,7 +553,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090709-248.html" data-id="cl74ijgus00gcasot8k9eh76f" data-title="测试WORD2007发布文章" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090709-248.html" data-id="cl74krprf00gdatoj1unebcsq" data-title="测试WORD2007发布文章" class="article-share-link">分享</a>
       
       
       
@@ -564,55 +625,12 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090709-259.html" data-id="cl74ijguu00geasot6e93eguw" data-title="使用IE8的WebSlice 功能" class="article-share-link">分享</a>
+      <a data-url="https://b.eaxi.com/posts/20090709-259.html" data-id="cl74krprf00gfatoj5jo43t63" data-title="使用IE8的WebSlice 功能" class="article-share-link">分享</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ie8/" rel="tag">ie8</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webslice/" rel="tag">webslice</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-posts-2009-07-05-1-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/posts/20090705-1.html" class="article-date">
-  <time class="dt-published" datetime="2009-07-04T16:00:00.000Z" itemprop="datePublished">2009-07-05</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%B8%8D%E6%83%B3%E5%88%86%E7%B1%BB/">不想分类</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/posts/20090705-1.html">Hello world!</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://b.eaxi.com/posts/20090705-1.html" data-id="cl74ijgup00g4asot2dqr1egv" data-title="Hello world!" class="article-share-link">分享</a>
-      
-      
-      
     </footer>
   </div>
   
@@ -665,7 +683,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/12/">十二月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/08/">八月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">七月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/05/">五月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/12/">十二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/11/">十一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/07/">七月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">四月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/02/">二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/01/">一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/11/">十一月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/10/">十月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/09/">九月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/06/">六月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/03/">三月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/09/">九月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">八月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/01/">一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">八月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/07/">七月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/06/">六月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/05/">五月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/04/">四月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/03/">三月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/02/">二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/12/">十二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">八月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">七月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/06/">六月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/05/">五月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/04/">四月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/02/">二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/01/">一月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/12/">十二月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/11/">十一月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/10/">十月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/09/">九月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/08/">八月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/07/">七月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/06/">六月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/05/">五月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/04/">四月 2006</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/12/">十二月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/08/">八月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">七月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/05/">五月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/12/">十二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/11/">十一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/07/">七月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">四月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/02/">二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/01/">一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/11/">十一月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/10/">十月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/09/">九月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/06/">六月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/03/">三月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/09/">九月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">八月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/01/">一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">八月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/07/">七月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/06/">六月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/05/">五月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/04/">四月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/03/">三月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/02/">二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/12/">十二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">八月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">七月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/06/">六月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/05/">五月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/04/">四月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/02/">二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/01/">一月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/12/">十二月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/11/">十一月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/10/">十月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/09/">九月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/08/">八月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/07/">七月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/06/">六月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/05/">五月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/04/">四月 2006</a></li></ul>
     </div>
   </div>
 
@@ -676,6 +694,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/08/22/Dropbear-SSH-Public-Key-Authentication/">SSH Public Key Authentication</a>
+          </li>
         
           <li>
             <a href="/posts/20140328-625.html">avrdude: stk500_recv(): programmer is not responding</a>
@@ -691,10 +713,6 @@
         
           <li>
             <a href="/posts/20120816-618.html">version `GLIBC_2.7&amp;#8242; not found</a>
-          </li>
-        
-          <li>
-            <a href="/posts/20120727-615.html">ClearSilver 64位机器上编译，test_crc错误的问题</a>
           </li>
         
       </ul>
