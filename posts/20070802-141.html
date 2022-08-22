@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>linux内核里的脏话 | 小时光</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="这是一个非常有趣的统计，两张图形象的反映出了Linux内核源代码中，脏话字眼的统计数字。 其实不单是Linux内核源代码，普通的PHP程序的源代码里也会有很好玩的注释哈！这个很形象的反映了程序写程序时的心情。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux内核里的脏话">
+<meta property="og:url" content="https://b.eaxi.com/posts/20070802-141.html">
+<meta property="og:site_name" content="小时光">
+<meta property="og:description" content="这是一个非常有趣的统计，两张图形象的反映出了Linux内核源代码中，脏话字眼的统计数字。 其实不单是Linux内核源代码，普通的PHP程序的源代码里也会有很好玩的注释哈！这个很形象的反映了程序写程序时的心情。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://b.eaxi.com/posts/images/attachicons/image.gif">
+<meta property="og:image" content="https://b.eaxi.com/posts/images/attachicons/image.gif">
+<meta property="article:published_time" content="2007-08-01T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-22T08:45:13.902Z">
+<meta property="article:author" content="Zenghai Liang">
+<meta property="article:tag" content="linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://b.eaxi.com/posts/images/attachicons/image.gif">
+  
+    <link rel="alternate" href="/atom.xml" title="小时光" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小时光</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">海子的胡思乱想及碎碎念</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://b.eaxi.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-posts-2007-08-02-141-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/posts/20070802-141.html" class="article-date">
+  <time class="dt-published" datetime="2007-08-01T16:00:00.000Z" itemprop="datePublished">2007-08-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/">其他技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      linux内核里的脏话
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>这是一个非常有趣的统计，两张图形象的反映出了Linux内核源代码中，脏话字眼的统计数字。<br>其实不单是Linux内核源代码，普通的PHP程序的源代码里也会有很好玩的注释哈！这个很形象的反映了程序写程序时的心情。</p>
+<p>内核里平均每行的脏话数</p>
+<p>[attach&#x3D;90]</p>
+<p>&amp;nbsp;</p>
+<p>内核里的脏话总计数</p>
+<p>[attach&#x3D;91]</p>
+<p>The number of various words in c, h and S source files in the linux kernel, updated monthly or whenever I hear of a new release. It&amp;#8217;s inspired by the linux kernel fuck count, which unfortunatly is very outdated. </p>
+<p>A little about the counting method used: A word is counted if it appears in any context, even if part of another word (such as love in rollover, which was why this word wasn&amp;#8217;t included ;). It&amp;#8217;s not grep -c, multiple words on one line may be counted. And don&amp;#8217;t worry about the mirror either, the graph is generated on a box local to ftp.programvareverkstedet.lkams.kernel.org, an official kernel.org mirror. </p>
+<p>Back to other stuff Vidar Holen&amp;#8217;s made. </p>
+<p>You can get the script here, but it&amp;#8217;s pretty horrible and I wouldn&amp;#8217;t recommend it.</p>
+<div style="display: none;" title="menu" id="attach_3_menu" class="t_attach">
+  <img border="0" src="images/attachicons/image.gif" alt="" class="absmiddle" /> <a target="_blank" href="attachment.php?aid=3&nothumb=yes" class="bold">1.png</a> (8.04 KB)</p> <div class="right smalltxt">
+    2007-8-2 12:09
+  </div>
+</div>
+
+<div style="display: none;" title="menu" id="attach_4_menu" class="t_attach">
+  <img border="0" src="images/attachicons/image.gif" alt="" class="absmiddle" /> <a target="_blank" href="attachment.php?aid=4&nothumb=yes" class="bold">2.png</a> (8.46 KB)</p> <div class="right smalltxt">
+    2007-8-2 12:09
+  </div>
+</div>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://b.eaxi.com/posts/20070802-141.html" data-id="cl74ijgs4008tasot78lg6juf" data-title="linux内核里的脏话" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/posts/20070802-140.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          『郭同学经典文集』我妈妈说我的智商只有76
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/20070802-142.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">徐静蕾手写体自由版</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-C/">C/C++</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C-C/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/post/">post</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/status/">status</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%8D%E6%83%B3%E5%88%86%E7%B1%BB/">不想分类</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/">其他技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80/">脚本语言</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%94%B6%E8%97%8F%E5%A4%B9/">收藏夹</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80/">脚本语言</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/">生活点滴</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80/">脚本语言</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90%E5%BF%83%E6%83%85/">音乐心情</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Alipay/" rel="tag">Alipay</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Go-Golang-glibc/" rel="tag">Go Golang glibc</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google/" rel="tag">Google</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jsoncpp-json-cpp/" rel="tag">Jsoncpp json cpp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MooTools/" rel="tag">MooTools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SEO/" rel="tag">SEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SaaS/" rel="tag">SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/" rel="tag">apache</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/autohotkey-windows/" rel="tag">autohotkey windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bsd/" rel="tag">bsd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c-php-linux/" rel="tag">c php linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c-struct/" rel="tag">c struct</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c10k/" rel="tag">c10k</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chrome/" rel="tag">chrome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cifs/" rel="tag">cifs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/community-builder/" rel="tag">community builder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cygwin/" rel="tag">cygwin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/debian/" rel="tag">debian</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/delphi/" rel="tag">delphi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dns/" rel="tag">dns</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/facebook/" rel="tag">facebook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/find/" rel="tag">find</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/firefox/" rel="tag">firefox</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flickr/" rel="tag">flickr</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html5/" rel="tag">html5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ie8/" rel="tag">ie8</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript-js/" rel="tag">javascript js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/joomla/" rel="tag">joomla</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/keyring/" rel="tag">keyring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-64bit-clearsilver/" rel="tag">linux 64bit clearsilver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-c/" rel="tag">linux c</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-iptables/" rel="tag">linux iptables</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-samba/" rel="tag">linux samba</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-setproctitle/" rel="tag">linux setproctitle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/make/" rel="tag">make</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/memcached/" rel="tag">memcached</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mount/" rel="tag">mount</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mount-cifs/" rel="tag">mount.cifs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/" rel="tag">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/" rel="tag">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openid/" rel="tag">openid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php-linux-fsockopen/" rel="tag">php linux fsockopen</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php-ssh2-linux/" rel="tag">php ssh2 linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/proftpd/" rel="tag">proftpd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qq/" rel="tag">qq</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rewrite/" rel="tag">rewrite</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rsync/" rel="tag">rsync</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sablog/" rel="tag">sablog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sed/" rel="tag">sed</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/slimbox/" rel="tag">slimbox</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/smarty/" rel="tag">smarty</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tcp-ip/" rel="tag">tcp&#x2F;ip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telnet-http/" rel="tag">telnet http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/" rel="tag">video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim-gvim-linux/" rel="tag">vim gvim linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webslice/" rel="tag">webslice</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win7/" rel="tag">win7</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/" rel="tag">windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/word2007/" rel="tag">word2007</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress-ipad-ios/" rel="tag">wordpress ipad ios</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress-theme/" rel="tag">wordpress theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xargs/" rel="tag">xargs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yahoo/" rel="tag">yahoo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yslow/" rel="tag">yslow</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%94%E7%AC%94/" rel="tag">五笔</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" rel="tag">单片机</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Alipay/" style="font-size: 10px;">Alipay</a> <a href="/tags/C/" style="font-size: 11.11px;">C</a> <a href="/tags/Go-Golang-glibc/" style="font-size: 10px;">Go Golang glibc</a> <a href="/tags/Google/" style="font-size: 16.67px;">Google</a> <a href="/tags/Jsoncpp-json-cpp/" style="font-size: 10px;">Jsoncpp json cpp</a> <a href="/tags/MooTools/" style="font-size: 10px;">MooTools</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/SaaS/" style="font-size: 10px;">SaaS</a> <a href="/tags/apache/" style="font-size: 14.44px;">apache</a> <a href="/tags/autohotkey-windows/" style="font-size: 10px;">autohotkey windows</a> <a href="/tags/bsd/" style="font-size: 10px;">bsd</a> <a href="/tags/c-php-linux/" style="font-size: 10px;">c php linux</a> <a href="/tags/c-struct/" style="font-size: 10px;">c struct</a> <a href="/tags/c10k/" style="font-size: 10px;">c10k</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/cifs/" style="font-size: 10px;">cifs</a> <a href="/tags/community-builder/" style="font-size: 11.11px;">community builder</a> <a href="/tags/css/" style="font-size: 11.11px;">css</a> <a href="/tags/cygwin/" style="font-size: 10px;">cygwin</a> <a href="/tags/debian/" style="font-size: 12.22px;">debian</a> <a href="/tags/delphi/" style="font-size: 10px;">delphi</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/facebook/" style="font-size: 10px;">facebook</a> <a href="/tags/find/" style="font-size: 10px;">find</a> <a href="/tags/firefox/" style="font-size: 13.33px;">firefox</a> <a href="/tags/flickr/" style="font-size: 10px;">flickr</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/ie8/" style="font-size: 10px;">ie8</a> <a href="/tags/javascript/" style="font-size: 17.78px;">javascript</a> <a href="/tags/javascript-js/" style="font-size: 10px;">javascript js</a> <a href="/tags/joomla/" style="font-size: 15.56px;">joomla</a> <a href="/tags/keyring/" style="font-size: 10px;">keyring</a> <a href="/tags/linux/" style="font-size: 18.89px;">linux</a> <a href="/tags/linux-64bit-clearsilver/" style="font-size: 10px;">linux 64bit clearsilver</a> <a href="/tags/linux-c/" style="font-size: 10px;">linux c</a> <a href="/tags/linux-iptables/" style="font-size: 10px;">linux iptables</a> <a href="/tags/linux-samba/" style="font-size: 10px;">linux samba</a> <a href="/tags/linux-setproctitle/" style="font-size: 10px;">linux setproctitle</a> <a href="/tags/make/" style="font-size: 10px;">make</a> <a href="/tags/memcached/" style="font-size: 13.33px;">memcached</a> <a href="/tags/mount/" style="font-size: 10px;">mount</a> <a href="/tags/mount-cifs/" style="font-size: 10px;">mount.cifs</a> <a href="/tags/mysql/" style="font-size: 11.11px;">mysql</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/openid/" style="font-size: 10px;">openid</a> <a href="/tags/php/" style="font-size: 20px;">php</a> <a href="/tags/php-linux-fsockopen/" style="font-size: 10px;">php linux fsockopen</a> <a href="/tags/php-ssh2-linux/" style="font-size: 10px;">php ssh2 linux</a> <a href="/tags/proftpd/" style="font-size: 10px;">proftpd</a> <a href="/tags/qq/" style="font-size: 10px;">qq</a> <a href="/tags/rewrite/" style="font-size: 10px;">rewrite</a> <a href="/tags/rsync/" style="font-size: 10px;">rsync</a> <a href="/tags/sablog/" style="font-size: 10px;">sablog</a> <a href="/tags/sed/" style="font-size: 11.11px;">sed</a> <a href="/tags/slimbox/" style="font-size: 10px;">slimbox</a> <a href="/tags/smarty/" style="font-size: 10px;">smarty</a> <a href="/tags/tcp-ip/" style="font-size: 10px;">tcp/ip</a> <a href="/tags/telnet-http/" style="font-size: 10px;">telnet http</a> <a href="/tags/video/" style="font-size: 10px;">video</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vim-gvim-linux/" style="font-size: 10px;">vim gvim linux</a> <a href="/tags/webslice/" style="font-size: 10px;">webslice</a> <a href="/tags/win7/" style="font-size: 10px;">win7</a> <a href="/tags/windows/" style="font-size: 12.22px;">windows</a> <a href="/tags/word2007/" style="font-size: 10px;">word2007</a> <a href="/tags/wordpress/" style="font-size: 11.11px;">wordpress</a> <a href="/tags/wordpress-ipad-ios/" style="font-size: 10px;">wordpress ipad ios</a> <a href="/tags/wordpress-theme/" style="font-size: 10px;">wordpress theme</a> <a href="/tags/xargs/" style="font-size: 10px;">xargs</a> <a href="/tags/yahoo/" style="font-size: 11.11px;">yahoo</a> <a href="/tags/yslow/" style="font-size: 10px;">yslow</a> <a href="/tags/%E4%BA%94%E7%AC%94/" style="font-size: 10px;">五笔</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 14.44px;">单片机</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/12/">十二月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/08/">八月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">七月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/05/">五月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/12/">十二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/11/">十一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/07/">七月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">四月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/02/">二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/01/">一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/11/">十一月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/10/">十月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/09/">九月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/06/">六月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/03/">三月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/09/">九月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">八月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/01/">一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">八月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/07/">七月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/06/">六月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/05/">五月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/04/">四月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/03/">三月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/02/">二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/12/">十二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">八月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">七月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/06/">六月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/05/">五月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/04/">四月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/02/">二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/01/">一月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/12/">十二月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/11/">十一月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/10/">十月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/09/">九月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/08/">八月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/07/">七月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/06/">六月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/05/">五月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/04/">四月 2006</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/posts/20140328-625.html">avrdude: stk500_recv(): programmer is not responding</a>
+          </li>
+        
+          <li>
+            <a href="/posts/20130328-623.html">node v0.8+ compiling</a>
+          </li>
+        
+          <li>
+            <a href="/posts/20121221-621.html">setproctitle</a>
+          </li>
+        
+          <li>
+            <a href="/posts/20120816-618.html">version `GLIBC_2.7&amp;#8242; not found</a>
+          </li>
+        
+          <li>
+            <a href="/posts/20120727-615.html">ClearSilver 64位机器上编译，test_crc错误的问题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 Zenghai Liang<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>简繁体在线转换器 | 小时光</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="http:&#x2F;&#x2F;blog.eaxi.com&#x2F;post&#x2F;trans.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简繁体在线转换器">
+<meta property="og:url" content="https://b.eaxi.com/posts/20060714-45.html">
+<meta property="og:site_name" content="小时光">
+<meta property="og:description" content="http:&#x2F;&#x2F;blog.eaxi.com&#x2F;post&#x2F;trans.html">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2006-07-13T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-22T08:45:13.894Z">
+<meta property="article:author" content="Zenghai Liang">
+<meta property="article:tag" content="linux">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="小时光" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小时光</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">海子的胡思乱想及碎碎念</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://b.eaxi.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-posts-2006-07-14-45-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/posts/20060714-45.html" class="article-date">
+  <time class="dt-published" datetime="2006-07-13T16:00:00.000Z" itemprop="datePublished">2006-07-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/">其他技术</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      简繁体在线转换器
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="http://blog.eaxi.com/post/trans.html">http://blog.eaxi.com/post/trans.html</a></p>
+<p>&amp;nbsp;这个是Javascript源文件：std_stranjf.js</p>
+<div class="codeText">
+  <div class="codeHead">
+    JavaScript代码
+  </div>
+  
+  <ol class="dp-c">
+    <li class="alt">
+      <span><span class="keyword">var</span><span>&nbsp;Default_isFT&nbsp;=&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//默认是否繁体，0-简体，1-繁体 </span><span>&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span class="keyword">var</span><span>&nbsp;StranIt_Delay&nbsp;=&nbsp;100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//翻译延时毫秒（设这个的目的是让网页先流畅的显现出来） </span><span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span class="keyword">function</span><span>&nbsp;StranText(txt,toFT,chgTxt) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(txt==</span><span class="string">""</span><span>||txt==</span><span class="keyword">null</span><span>)</span><span class="keyword">return</span><span>&nbsp;</span><span class="string">""</span><span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;toFT=toFT==</span><span class="keyword">null</span><span>?BodyIsFt:toFT &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(chgTxt)txt=txt.replace((toFT?</span><span class="string">"简"</span><span>:</span><span class="string">"繁"</span><span>),(toFT?</span><span class="string">"繁"</span><span>:</span><span class="string">"简"</span><span>)) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(toFT){</span><span class="keyword">return</span><span>&nbsp;Traditionalized(txt)} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">else</span><span>&nbsp;{</span><span class="keyword">return</span><span>&nbsp;Simplized(txt)} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span class="keyword">function</span><span>&nbsp;StranBody(fobj) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(</span><span class="keyword">typeof</span><span>(fobj)==</span><span class="string">"object"</span><span>){</span><span class="keyword">var</span><span>&nbsp;obj=fobj.childNodes} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">else</span><span>&nbsp; &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;tmptxt=StranLink_Obj.innerHTML.toString() &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(tmptxt.indexOf(</span><span class="string">"简"</span><span>)<0) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BodyIsFt=1 &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StranLink_Obj.innerHTML=StranText(tmptxt,0,1) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(</span><span class="string">"StranLink"</span><span>).title=StranText(document.getElementById(</span><span class="string">"StranLink"</span><span>).title,0,1) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">else</span><span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BodyIsFt=0 &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StranLink_Obj.innerHTML=StranText(tmptxt,1,1) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(</span><span class="string">"StranLink"</span><span>).title=StranText(document.getElementById(</span><span class="string">"StranLink"</span><span>).title,1,1) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setCookie(JF_cn,BodyIsFt,7) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;obj=document.body.childNodes &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">for</span><span>(</span><span class="keyword">var</span><span>&nbsp;i=0;i<obj.length;i++) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;OO=obj.item(i) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(</span><span class="string">"||BR|HR|TEXTAREA|"</span><span>.indexOf(</span><span class="string">"|"</span><span>+OO.tagName+</span><span class="string">"|"</span><span>)>0||OO==StranLink_Obj)</span><span class="keyword">continue</span><span>; &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(OO.title!=</span><span class="string">""</span><span>&&OO.title!=</span><span class="keyword">null</span><span>)OO.title=StranText(OO.title); &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(OO.alt!=</span><span class="string">""</span><span>&&OO.alt!=</span><span class="keyword">null</span><span>)OO.alt=StranText(OO.alt); &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(OO.tagName==</span><span class="string">"INPUT"</span><span>&&OO.value!=</span><span class="string">""</span><span>&&OO.type!=</span><span class="string">"text"</span><span>&&OO.type!=</span><span class="string">"hidden"</span><span>)OO.value=StranText(OO.value); &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(OO.nodeType==3){OO.data=StranText(OO.data)} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">else</span><span>&nbsp;StranBody(OO) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span class="keyword">function</span><span>&nbsp;JTPYStr() &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span>&nbsp;</span><span class="string">&#8216;皑蔼碍爱翱袄奥坝罢摆败颁办绊帮绑镑谤剥饱宝报鲍辈贝钡狈备惫绷笔毕毙闭边编贬变辩辫鳖瘪濒滨宾摈饼拨钵铂驳卜补参蚕残惭惨灿苍舱仓沧厕侧册测层诧搀掺蝉馋谗缠铲产阐颤场尝长偿肠厂畅钞车彻尘陈衬撑称惩诚骋痴迟驰耻齿炽冲虫宠畴踌筹绸丑橱厨锄雏础储触处传疮闯创锤纯绰辞词赐聪葱囱从丛凑窜错达带贷担单郸掸胆惮诞弹当挡党荡档捣岛祷导盗灯邓敌涤递缔点垫电淀钓调迭谍叠钉顶锭订东动栋冻斗犊独读赌镀锻断缎兑队对吨顿钝夺鹅额讹恶饿儿尔饵贰发罚阀珐矾钒烦范贩饭访纺飞废费纷坟奋愤粪丰枫锋风疯冯缝讽凤肤辐抚辅赋复负讣妇缚该钙盖干赶秆赣冈刚钢纲岗皋镐搁鸽阁铬个给龚宫巩贡钩沟构购够蛊顾剐关观馆惯贯广规硅归龟闺轨诡柜贵刽辊滚锅国过骇韩汉阂鹤贺横轰鸿红后壶护沪户哗华画划话怀坏欢环还缓换唤痪焕涣黄谎挥辉毁贿秽会烩汇讳诲绘荤浑伙获货祸击机积饥讥鸡绩缉极辑级挤几蓟剂济计记际继纪夹荚颊贾钾价驾歼监坚笺间艰缄茧检碱硷拣捡简俭减荐槛鉴践贱见键舰剑饯渐溅涧浆蒋桨奖讲酱胶浇骄娇搅铰矫侥脚饺缴绞轿较秸阶节茎惊经颈静镜径痉竞净纠厩旧驹举据锯惧剧鹃绢杰洁结诫届紧锦仅谨进晋烬尽劲荆觉决诀绝钧军骏开凯颗壳课垦恳抠库裤夸块侩宽矿旷况亏岿窥馈溃扩阔蜡腊莱来赖蓝栏拦篮阑兰澜谰揽览懒缆烂滥捞劳涝乐镭垒类泪篱离里鲤礼丽厉励砾历沥隶俩联莲连镰怜涟帘敛脸链恋炼练粮凉两辆谅疗辽镣猎临邻鳞凛赁龄铃凌灵岭领馏刘龙聋咙笼垄拢陇楼娄搂篓芦卢颅庐炉掳卤虏鲁赂禄录陆驴吕铝侣屡缕虑滤绿峦挛孪滦乱抡轮伦仑沦纶论萝罗逻锣箩骡骆络妈玛码蚂马骂吗买麦卖迈脉瞒馒蛮满谩猫锚铆贸么霉没镁门闷们锰梦谜弥觅绵缅庙灭悯闽鸣铭谬谋亩钠纳难挠脑恼闹馁腻撵捻酿鸟聂啮镊镍柠狞宁拧泞钮纽脓浓农疟诺欧鸥殴呕沤盘庞国爱赔喷鹏骗飘频贫苹凭评泼颇扑铺朴谱脐齐骑岂启气弃讫牵扦钎铅迁签谦钱钳潜浅谴堑枪呛墙蔷强抢锹桥乔侨翘窍窃钦亲轻氢倾顷请庆琼穷趋区躯驱龋颧权劝却鹊让饶扰绕热韧认纫荣绒软锐闰润洒萨鳃赛伞丧骚扫涩杀纱筛晒闪陕赡缮伤赏烧绍赊摄慑设绅审婶肾渗声绳胜圣师狮湿诗尸时蚀实识驶势释饰视试寿兽枢输书赎属术树竖数帅双谁税顺说硕烁丝饲耸怂颂讼诵擞苏诉肃虽绥岁孙损笋缩琐锁獭挞抬摊贪瘫滩坛谭谈叹汤烫涛绦腾誊锑题体屉条贴铁厅听烃铜统头图涂团颓蜕脱鸵驮驼椭洼袜弯湾顽万网韦违围为潍维苇伟伪纬谓卫温闻纹稳问瓮挝蜗涡窝呜钨乌诬无芜吴坞雾务误锡牺袭习铣戏细虾辖峡侠狭厦锨鲜纤咸贤衔闲显险现献县馅羡宪线厢镶乡详响项萧销晓啸蝎协挟携胁谐写泻谢锌衅兴汹锈绣虚嘘须许绪续轩悬选癣绚学勋询寻驯训讯逊压鸦鸭哑亚讶阉烟盐严颜阎艳厌砚彦谚验鸯杨扬疡阳痒养样瑶摇尧遥窑谣药爷页业叶医铱颐遗仪彝蚁艺亿忆义诣议谊译异绎荫阴银饮樱婴鹰应缨莹萤营荧蝇颖哟拥佣痈踊咏涌优忧邮铀犹游诱舆鱼渔娱与屿语吁御狱誉预驭鸳渊辕园员圆缘远愿约跃钥岳粤悦阅云郧匀陨运蕴酝晕韵杂灾载攒暂赞赃脏凿枣灶责择则泽贼赠扎札轧铡闸诈斋债毡盏斩辗崭栈战绽张涨帐账胀赵蛰辙锗这贞针侦诊镇阵挣睁狰帧郑证织职执纸挚掷帜质钟终种肿众诌轴皱昼骤猪诸诛烛瞩嘱贮铸筑驻专砖转赚桩庄装妆壮状锥赘坠缀谆浊兹资渍踪综总纵邹诅组钻致钟么为只凶准启板里雳余链泄&#8217;</span><span>; &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span class="keyword">function</span><span>&nbsp;FTPYStr() &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span>&nbsp;</span><span class="string">&#8216;皚藹礙愛翺襖奧壩罷擺敗頒辦絆幫綁鎊謗剝飽寶報鮑輩貝鋇狽備憊繃筆畢斃閉邊編貶變辯辮鼈癟瀕濱賓擯餅撥缽鉑駁蔔補參蠶殘慚慘燦蒼艙倉滄廁側冊測層詫攙摻蟬饞讒纏鏟産闡顫場嘗長償腸廠暢鈔車徹塵陳襯撐稱懲誠騁癡遲馳恥齒熾沖蟲寵疇躊籌綢醜櫥廚鋤雛礎儲觸處傳瘡闖創錘純綽辭詞賜聰蔥囪從叢湊竄錯達帶貸擔單鄲撣膽憚誕彈當擋黨蕩檔搗島禱導盜燈鄧敵滌遞締點墊電澱釣調叠諜疊釘頂錠訂東動棟凍鬥犢獨讀賭鍍鍛斷緞兌隊對噸頓鈍奪鵝額訛惡餓兒爾餌貳發罰閥琺礬釩煩範販飯訪紡飛廢費紛墳奮憤糞豐楓鋒風瘋馮縫諷鳳膚輻撫輔賦複負訃婦縛該鈣蓋幹趕稈贛岡剛鋼綱崗臯鎬擱鴿閣鉻個給龔宮鞏貢鈎溝構購夠蠱顧剮關觀館慣貫廣規矽歸龜閨軌詭櫃貴劊輥滾鍋國過駭韓漢閡鶴賀橫轟鴻紅後壺護滬戶嘩華畫劃話懷壞歡環還緩換喚瘓煥渙黃謊揮輝毀賄穢會燴彙諱誨繪葷渾夥獲貨禍擊機積饑譏雞績緝極輯級擠幾薊劑濟計記際繼紀夾莢頰賈鉀價駕殲監堅箋間艱緘繭檢堿鹼揀撿簡儉減薦檻鑒踐賤見鍵艦劍餞漸濺澗漿蔣槳獎講醬膠澆驕嬌攪鉸矯僥腳餃繳絞轎較稭階節莖驚經頸靜鏡徑痙競淨糾廄舊駒舉據鋸懼劇鵑絹傑潔結誡屆緊錦僅謹進晉燼盡勁荊覺決訣絕鈞軍駿開凱顆殼課墾懇摳庫褲誇塊儈寬礦曠況虧巋窺饋潰擴闊蠟臘萊來賴藍欄攔籃闌蘭瀾讕攬覽懶纜爛濫撈勞澇樂鐳壘類淚籬離裏鯉禮麗厲勵礫曆瀝隸倆聯蓮連鐮憐漣簾斂臉鏈戀煉練糧涼兩輛諒療遼鐐獵臨鄰鱗凜賃齡鈴淩靈嶺領餾劉龍聾嚨籠壟攏隴樓婁摟簍蘆盧顱廬爐擄鹵虜魯賂祿錄陸驢呂鋁侶屢縷慮濾綠巒攣孿灤亂掄輪倫侖淪綸論蘿羅邏鑼籮騾駱絡媽瑪碼螞馬罵嗎買麥賣邁脈瞞饅蠻滿謾貓錨鉚貿麽黴沒鎂門悶們錳夢謎彌覓綿緬廟滅憫閩鳴銘謬謀畝鈉納難撓腦惱鬧餒膩攆撚釀鳥聶齧鑷鎳檸獰甯擰濘鈕紐膿濃農瘧諾歐鷗毆嘔漚盤龐國愛賠噴鵬騙飄頻貧蘋憑評潑頗撲鋪樸譜臍齊騎豈啓氣棄訖牽扡釺鉛遷簽謙錢鉗潛淺譴塹槍嗆牆薔強搶鍬橋喬僑翹竅竊欽親輕氫傾頃請慶瓊窮趨區軀驅齲顴權勸卻鵲讓饒擾繞熱韌認紉榮絨軟銳閏潤灑薩鰓賽傘喪騷掃澀殺紗篩曬閃陝贍繕傷賞燒紹賒攝懾設紳審嬸腎滲聲繩勝聖師獅濕詩屍時蝕實識駛勢釋飾視試壽獸樞輸書贖屬術樹豎數帥雙誰稅順說碩爍絲飼聳慫頌訟誦擻蘇訴肅雖綏歲孫損筍縮瑣鎖獺撻擡攤貪癱灘壇譚談歎湯燙濤縧騰謄銻題體屜條貼鐵廳聽烴銅統頭圖塗團頹蛻脫鴕馱駝橢窪襪彎灣頑萬網韋違圍爲濰維葦偉僞緯謂衛溫聞紋穩問甕撾蝸渦窩嗚鎢烏誣無蕪吳塢霧務誤錫犧襲習銑戲細蝦轄峽俠狹廈鍁鮮纖鹹賢銜閑顯險現獻縣餡羨憲線廂鑲鄉詳響項蕭銷曉嘯蠍協挾攜脅諧寫瀉謝鋅釁興洶鏽繡虛噓須許緒續軒懸選癬絢學勳詢尋馴訓訊遜壓鴉鴨啞亞訝閹煙鹽嚴顔閻豔厭硯彥諺驗鴦楊揚瘍陽癢養樣瑤搖堯遙窯謠藥爺頁業葉醫銥頤遺儀彜蟻藝億憶義詣議誼譯異繹蔭陰銀飲櫻嬰鷹應纓瑩螢營熒蠅穎喲擁傭癰踴詠湧優憂郵鈾猶遊誘輿魚漁娛與嶼語籲禦獄譽預馭鴛淵轅園員圓緣遠願約躍鑰嶽粵悅閱雲鄖勻隕運蘊醞暈韻雜災載攢暫贊贓髒鑿棗竈責擇則澤賊贈紮劄軋鍘閘詐齋債氈盞斬輾嶄棧戰綻張漲帳賬脹趙蟄轍鍺這貞針偵診鎮陣掙睜猙幀鄭證織職執紙摯擲幟質鍾終種腫衆謅軸皺晝驟豬諸誅燭矚囑貯鑄築駐專磚轉賺樁莊裝妝壯狀錐贅墜綴諄濁茲資漬蹤綜總縱鄒詛組鑽緻鐘麼為隻兇準啟闆裡靂餘鍊洩&#8217;</span><span>; &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span class="keyword">function</span><span>&nbsp;Traditionalized(cc){ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;str=</span><span class="string">&#8221;</span><span>,ss=JTPYStr(),tt=FTPYStr(); &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">for</span><span>(</span><span class="keyword">var</span><span>&nbsp;i=0;i<cc.length;i++) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(cc.charCodeAt(i)>10000&&ss.indexOf(cc.charAt(i))!=-1)str+=tt.charAt(ss.indexOf(cc.charAt(i))); &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">else</span><span>&nbsp;str+=cc.charAt(i); &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span>&nbsp;str; &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span class="keyword">function</span><span>&nbsp;Simplized(cc){ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;str=</span><span class="string">&#8221;</span><span>,ss=JTPYStr(),tt=FTPYStr(); &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">for</span><span>(</span><span class="keyword">var</span><span>&nbsp;i=0;i<cc.length;i++) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(cc.charCodeAt(i)>10000&&tt.indexOf(cc.charAt(i))!=-1)str+=ss.charAt(tt.indexOf(cc.charAt(i))); &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">else</span><span>&nbsp;str+=cc.charAt(i); &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span>&nbsp;str; &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span class="keyword">function</span><span>&nbsp;setCookie(name,&nbsp;value) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;argv&nbsp;=&nbsp;setCookie.arguments; &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;argc&nbsp;=&nbsp;setCookie.arguments.length; &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;expires&nbsp;=&nbsp;(argc&nbsp;>&nbsp;2)&nbsp;?&nbsp;argv[2]&nbsp;:&nbsp;</span><span class="keyword">null</span><span>; &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(expires!=</span><span class="keyword">null</span><span>) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;LargeExpDate&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;Date&nbsp;(); &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LargeExpDate.setTime(LargeExpDate.getTime()&nbsp;+&nbsp;(expires*1000*3600*24)); &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;document.cookie&nbsp;=&nbsp;name&nbsp;+&nbsp;</span><span class="string">"="</span><span>&nbsp;+&nbsp;escape&nbsp;(value)+((expires&nbsp;==&nbsp;</span><span class="keyword">null</span><span>)&nbsp;?&nbsp;</span><span class="string">""</span><span>&nbsp;:&nbsp;(</span><span class="string">";&nbsp;expires="</span><span>&nbsp;+LargeExpDate.toGMTString())); &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span class="keyword">function</span><span>&nbsp;getCookie(Name) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;search&nbsp;=&nbsp;Name&nbsp;+&nbsp;</span><span class="string">"="</span><span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(document.cookie.length&nbsp;>&nbsp;0)&nbsp; &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset&nbsp;=&nbsp;document.cookie.indexOf(search) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(offset&nbsp;!=&nbsp;-1)&nbsp; &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset&nbsp;+=&nbsp;search.length &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end&nbsp;=&nbsp;document.cookie.indexOf(</span><span class="string">";"</span><span>,&nbsp;offset) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(end&nbsp;==&nbsp;-1)&nbsp;end&nbsp;=&nbsp;document.cookie.length &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span>&nbsp;unescape(document.cookie.substring(offset,&nbsp;end)) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">else</span><span>&nbsp;</span><span class="keyword">return</span><span>&nbsp;</span><span class="string">""</span><span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span class="keyword">var</span><span>&nbsp;StranLink_Obj=document.getElementById(</span><span class="string">"StranLink"</span><span>) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span class="keyword">if</span><span>&nbsp;(StranLink_Obj) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;JF_cn=</span><span class="string">"ft"</span><span>+self.location.hostname.toString().replace(/\./g,</span><span class="string">""</span><span>) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">var</span><span>&nbsp;BodyIsFt=getCookie(JF_cn) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(BodyIsFt!=</span><span class="string">"1"</span><span>)BodyIsFt=Default_isFT &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">with</span><span>(StranLink_Obj) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(</span><span class="keyword">typeof</span><span>(document.all)!=</span><span class="string">"object"</span><span>) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;href=</span><span class="string">"javascript:StranBody()"</span><span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">else</span><span>&nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;href=</span><span class="string">"#"</span><span>; &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onclick=&nbsp;</span><span class="keyword">new</span><span>&nbsp;Function(</span><span class="string">"StranBody();return&nbsp;false"</span><span>) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title=StranText(</span><span class="string">"点击浏览繁体中文网页"</span><span>,1,1) &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;innerHTML=StranText(innerHTML,1,1) &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;</span>
+    </li>
+    <li class="alt">
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span>(BodyIsFt==</span><span class="string">"1"</span><span>){setTimeout(</span><span class="string">"StranBody()"</span><span>,StranIt_Delay)} &nbsp;&nbsp;</span>
+    </li>
+    <li class="">
+      <span>} &nbsp;&nbsp;</span>
+    </li>
+  </ol>
+</div>
+
+<p>&amp;nbsp;</p>
+<p>调用方法：</p>
+<p>在任意位置写上：</p>
+<div class="codeText">
+  <div class="codeHead">
+    XML/HTML代码
+  </div>
+  
+  <ol class="dp-xml">
+    <li class="alt">
+      <span><span class="tag"><</span><span class="tag-name">a</span><span>&nbsp;</span><span class="attribute">id</span><span>=</span><span class="attribute-value">"StranLink"</span><span class="tag">></span><span>繁體中文</span><span class="tag"></</span><span class="tag-name">a</span><span class="tag">></span><span>&nbsp;&nbsp;</span></span>
+    </li>
+    <li class="">
+      <span class="tag"><</span><span class="tag-name">script</span><span>&nbsp;</span><span class="attribute">src</span><span>=</span><span class="attribute-value">"include/std_stranjf.js"</span><span>&nbsp;</span><span class="attribute">type</span><span>=</span><span class="attribute-value">"text/javascript"</span><span class="tag">></span><span class="tag"></</span><span class="tag-name">script</span><span class="tag">></span><span>&nbsp;&nbsp;</span>
+    </li>
+  </ol>
+</div>
+
+<p>简繁体在线转换器：</p>
+<textarea id="trad2simp" name="trad2simp" rows="20" cols="52"></textarea>   
+<p><input type="submit" onclick="$('trad2simp').value=Traditionalized($('trad2simp').value)" name='submit' value='Traditionalized' /> <input type="submit" onclick="$('trad2simp').value=Simplized($('trad2simp').value)" name='submit' value='Simplized' /></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://b.eaxi.com/posts/20060714-45.html" data-id="cl74ijgp1002rasot1d6d0w2s" data-title="简繁体在线转换器" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/posts/20060714-44.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          秀一下我的ubuntu！！
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/20060710-43.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">things to do after ubuntu installed||Fuchsia</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C-C/">C/C++</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/C-C/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/post/">post</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/status/">status</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%8D%E6%83%B3%E5%88%86%E7%B1%BB/">不想分类</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/">其他技术</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80/">脚本语言</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%94%B6%E8%97%8F%E5%A4%B9/">收藏夹</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80/">脚本语言</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/">生活点滴</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80/">脚本语言</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9F%B3%E4%B9%90%E5%BF%83%E6%83%85/">音乐心情</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Alipay/" rel="tag">Alipay</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Go-Golang-glibc/" rel="tag">Go Golang glibc</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google/" rel="tag">Google</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jsoncpp-json-cpp/" rel="tag">Jsoncpp json cpp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MooTools/" rel="tag">MooTools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SEO/" rel="tag">SEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SaaS/" rel="tag">SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/" rel="tag">apache</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/autohotkey-windows/" rel="tag">autohotkey windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bsd/" rel="tag">bsd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c-php-linux/" rel="tag">c php linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c-struct/" rel="tag">c struct</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/c10k/" rel="tag">c10k</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chrome/" rel="tag">chrome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cifs/" rel="tag">cifs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/community-builder/" rel="tag">community builder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cygwin/" rel="tag">cygwin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/debian/" rel="tag">debian</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/delphi/" rel="tag">delphi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dns/" rel="tag">dns</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/facebook/" rel="tag">facebook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/find/" rel="tag">find</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/firefox/" rel="tag">firefox</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flickr/" rel="tag">flickr</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html5/" rel="tag">html5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ie8/" rel="tag">ie8</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript-js/" rel="tag">javascript js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/joomla/" rel="tag">joomla</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/keyring/" rel="tag">keyring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-64bit-clearsilver/" rel="tag">linux 64bit clearsilver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-c/" rel="tag">linux c</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-iptables/" rel="tag">linux iptables</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-samba/" rel="tag">linux samba</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux-setproctitle/" rel="tag">linux setproctitle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/make/" rel="tag">make</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/memcached/" rel="tag">memcached</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mount/" rel="tag">mount</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mount-cifs/" rel="tag">mount.cifs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/" rel="tag">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/" rel="tag">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openid/" rel="tag">openid</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php-linux-fsockopen/" rel="tag">php linux fsockopen</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php-ssh2-linux/" rel="tag">php ssh2 linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/proftpd/" rel="tag">proftpd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/qq/" rel="tag">qq</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rewrite/" rel="tag">rewrite</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rsync/" rel="tag">rsync</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sablog/" rel="tag">sablog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sed/" rel="tag">sed</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/slimbox/" rel="tag">slimbox</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/smarty/" rel="tag">smarty</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tcp-ip/" rel="tag">tcp&#x2F;ip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/telnet-http/" rel="tag">telnet http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/" rel="tag">video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/" rel="tag">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim-gvim-linux/" rel="tag">vim gvim linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webslice/" rel="tag">webslice</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win7/" rel="tag">win7</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/" rel="tag">windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/word2007/" rel="tag">word2007</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress-ipad-ios/" rel="tag">wordpress ipad ios</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress-theme/" rel="tag">wordpress theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/xargs/" rel="tag">xargs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yahoo/" rel="tag">yahoo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yslow/" rel="tag">yslow</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%94%E7%AC%94/" rel="tag">五笔</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" rel="tag">单片机</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Alipay/" style="font-size: 10px;">Alipay</a> <a href="/tags/C/" style="font-size: 11.11px;">C</a> <a href="/tags/Go-Golang-glibc/" style="font-size: 10px;">Go Golang glibc</a> <a href="/tags/Google/" style="font-size: 16.67px;">Google</a> <a href="/tags/Jsoncpp-json-cpp/" style="font-size: 10px;">Jsoncpp json cpp</a> <a href="/tags/MooTools/" style="font-size: 10px;">MooTools</a> <a href="/tags/SEO/" style="font-size: 10px;">SEO</a> <a href="/tags/SaaS/" style="font-size: 10px;">SaaS</a> <a href="/tags/apache/" style="font-size: 14.44px;">apache</a> <a href="/tags/autohotkey-windows/" style="font-size: 10px;">autohotkey windows</a> <a href="/tags/bsd/" style="font-size: 10px;">bsd</a> <a href="/tags/c-php-linux/" style="font-size: 10px;">c php linux</a> <a href="/tags/c-struct/" style="font-size: 10px;">c struct</a> <a href="/tags/c10k/" style="font-size: 10px;">c10k</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/cifs/" style="font-size: 10px;">cifs</a> <a href="/tags/community-builder/" style="font-size: 11.11px;">community builder</a> <a href="/tags/css/" style="font-size: 11.11px;">css</a> <a href="/tags/cygwin/" style="font-size: 10px;">cygwin</a> <a href="/tags/debian/" style="font-size: 12.22px;">debian</a> <a href="/tags/delphi/" style="font-size: 10px;">delphi</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/facebook/" style="font-size: 10px;">facebook</a> <a href="/tags/find/" style="font-size: 10px;">find</a> <a href="/tags/firefox/" style="font-size: 13.33px;">firefox</a> <a href="/tags/flickr/" style="font-size: 10px;">flickr</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/ie8/" style="font-size: 10px;">ie8</a> <a href="/tags/javascript/" style="font-size: 17.78px;">javascript</a> <a href="/tags/javascript-js/" style="font-size: 10px;">javascript js</a> <a href="/tags/joomla/" style="font-size: 15.56px;">joomla</a> <a href="/tags/keyring/" style="font-size: 10px;">keyring</a> <a href="/tags/linux/" style="font-size: 18.89px;">linux</a> <a href="/tags/linux-64bit-clearsilver/" style="font-size: 10px;">linux 64bit clearsilver</a> <a href="/tags/linux-c/" style="font-size: 10px;">linux c</a> <a href="/tags/linux-iptables/" style="font-size: 10px;">linux iptables</a> <a href="/tags/linux-samba/" style="font-size: 10px;">linux samba</a> <a href="/tags/linux-setproctitle/" style="font-size: 10px;">linux setproctitle</a> <a href="/tags/make/" style="font-size: 10px;">make</a> <a href="/tags/memcached/" style="font-size: 13.33px;">memcached</a> <a href="/tags/mount/" style="font-size: 10px;">mount</a> <a href="/tags/mount-cifs/" style="font-size: 10px;">mount.cifs</a> <a href="/tags/mysql/" style="font-size: 11.11px;">mysql</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/openid/" style="font-size: 10px;">openid</a> <a href="/tags/php/" style="font-size: 20px;">php</a> <a href="/tags/php-linux-fsockopen/" style="font-size: 10px;">php linux fsockopen</a> <a href="/tags/php-ssh2-linux/" style="font-size: 10px;">php ssh2 linux</a> <a href="/tags/proftpd/" style="font-size: 10px;">proftpd</a> <a href="/tags/qq/" style="font-size: 10px;">qq</a> <a href="/tags/rewrite/" style="font-size: 10px;">rewrite</a> <a href="/tags/rsync/" style="font-size: 10px;">rsync</a> <a href="/tags/sablog/" style="font-size: 10px;">sablog</a> <a href="/tags/sed/" style="font-size: 11.11px;">sed</a> <a href="/tags/slimbox/" style="font-size: 10px;">slimbox</a> <a href="/tags/smarty/" style="font-size: 10px;">smarty</a> <a href="/tags/tcp-ip/" style="font-size: 10px;">tcp/ip</a> <a href="/tags/telnet-http/" style="font-size: 10px;">telnet http</a> <a href="/tags/video/" style="font-size: 10px;">video</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/vim-gvim-linux/" style="font-size: 10px;">vim gvim linux</a> <a href="/tags/webslice/" style="font-size: 10px;">webslice</a> <a href="/tags/win7/" style="font-size: 10px;">win7</a> <a href="/tags/windows/" style="font-size: 12.22px;">windows</a> <a href="/tags/word2007/" style="font-size: 10px;">word2007</a> <a href="/tags/wordpress/" style="font-size: 11.11px;">wordpress</a> <a href="/tags/wordpress-ipad-ios/" style="font-size: 10px;">wordpress ipad ios</a> <a href="/tags/wordpress-theme/" style="font-size: 10px;">wordpress theme</a> <a href="/tags/xargs/" style="font-size: 10px;">xargs</a> <a href="/tags/yahoo/" style="font-size: 11.11px;">yahoo</a> <a href="/tags/yslow/" style="font-size: 10px;">yslow</a> <a href="/tags/%E4%BA%94%E7%AC%94/" style="font-size: 10px;">五笔</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 14.44px;">单片机</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">三月 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/12/">十二月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/08/">八月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">七月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/06/">六月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/05/">五月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/04/">四月 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/12/">十二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/11/">十一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/07/">七月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">四月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/02/">二月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/01/">一月 2011</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/11/">十一月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/10/">十月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/09/">九月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/06/">六月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/03/">三月 2010</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/12/">十二月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/11/">十一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/09/">九月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">八月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/07/">七月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/05/">五月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/01/">一月 2009</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/12/">十二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/08/">八月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/07/">七月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/06/">六月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/05/">五月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/04/">四月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/03/">三月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/02/">二月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/01/">一月 2008</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/12/">十二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/08/">八月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/07/">七月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/06/">六月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/05/">五月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/04/">四月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/02/">二月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2007/01/">一月 2007</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/12/">十二月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/11/">十一月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/10/">十月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/09/">九月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/08/">八月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/07/">七月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/06/">六月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/05/">五月 2006</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2006/04/">四月 2006</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/posts/20140328-625.html">avrdude: stk500_recv(): programmer is not responding</a>
+          </li>
+        
+          <li>
+            <a href="/posts/20130328-623.html">node v0.8+ compiling</a>
+          </li>
+        
+          <li>
+            <a href="/posts/20121221-621.html">setproctitle</a>
+          </li>
+        
+          <li>
+            <a href="/posts/20120816-618.html">version `GLIBC_2.7&amp;#8242; not found</a>
+          </li>
+        
+          <li>
+            <a href="/posts/20120727-615.html">ClearSilver 64位机器上编译，test_crc错误的问题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 Zenghai Liang<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
