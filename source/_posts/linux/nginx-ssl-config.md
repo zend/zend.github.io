@@ -1,5 +1,5 @@
 ---
-title: 给子域名增加SSL自动续期
+title: Nginx的安全配置
 date: 2025-03-12 14:04:04
 tags:
 ---
