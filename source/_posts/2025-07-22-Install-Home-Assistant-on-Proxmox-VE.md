@@ -212,10 +212,3 @@ qm start 100
   * https://www.wundertech.net/how-to-set-up-home-assistant-on-proxmox/
   * https://www.reddit.com/r/homeassistant/comments/1gjq2hx/how_to_install_haos_132_on_proxmox_82_in_10/
 
-如果遇到具体错误或需要进一步帮助，请提供以下信息：
-- Proxmox 版本（`pveversion` 命令输出）。
-- 存储池名称（在 Web 界面查看）。
-- 完整的错误日志或截图。
-- 网络配置详情（桥接、IP 分配方式）。
-
-祝你成功安装 Home Assistant！
